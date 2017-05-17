@@ -1,0 +1,106 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[<b>HLDC Frame Types</b>]]></text>
+   </component>
+   
+<component id="ID_txt01">
+   <text><![CDATA[Field length,<br/> in bytes]]></text>
+</component>
+
+<component id="ID_txt02">
+   <text><![CDATA[1]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[1 or 2]]></text>
+</component>
+
+<component id="ID_txt04">
+   <text><![CDATA[1 or 2]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[Variable]]></text>
+</component>
+<component id="ID_txt06">
+   <text><![CDATA[2]]></text>
+</component>
+
+<component id="ID_txt07">
+   <text><![CDATA[1]]></text>
+</component>
+
+<component id="ID_txt08">
+   <text><![CDATA[Flag]]></text>
+</component>
+
+<component id="ID_txt09">
+   <text><![CDATA[Address]]></text>
+</component>
+
+<component id="ID_txt10">
+   <text><![CDATA[Control]]></text>
+</component>
+
+<component id="ID_txt11">
+   <text><![CDATA[Data]]></text>
+</component>
+
+<component id="ID_txt12">
+   <text><![CDATA[FCS]]></text>
+</component>
+
+<component id="ID_txt13">
+   <text><![CDATA[Flag]]></text>
+</component>
+
+<component id="ID_txt14">
+   <text><![CDATA[Information (I) frame format]]></text>
+</component>
+
+<component id="ID_txt15">
+   <text><![CDATA[Receive sequence number]]></text>
+</component>
+
+<component id="ID_txt16">
+   <text><![CDATA[Poll final]]></text>
+</component>
+
+<component id="ID_txt17">
+   <text><![CDATA[Send sequence number]]></text>
+</component>
+
+<component id="ID_txt18">
+   <text><![CDATA[Receive sequence number]]></text>
+</component>
+
+<component id="ID_txt19">
+   <text><![CDATA[Poll final]]></text>
+</component>
+
+<component id="ID_txt20">
+   <text><![CDATA[Function code]]></text>
+</component>
+
+<component id="ID_txt21">
+   <text><![CDATA[Supervisory (S) frame format]]></text>
+</component>
+
+<component id="ID_txt22">
+   <text><![CDATA[Unnumbered (U) frame format]]></text>
+</component>
+
+<component id="ID_txt23">
+   <text><![CDATA[Function code]]></text>
+</component>
+
+<component id="ID_txt24">
+   <text><![CDATA[Poll final]]></text>
+</component>
+
+<component id="ID_txt25">
+   <text><![CDATA[Function code]]></text>
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.1.3 Dedicated Line Requirements</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Dedicated Line Requirements</h1>
+        <div>
+          <p>Using leased lines, each of SPAN’s sites is connected through a switch at the local telephone company’s central office (CO) through the local loop, and then across the entire network. The Chicago and New York sites each use a dedicated T1 line (equivalent to 24 DS0 channels) to connect to the switch, while other sites use ISDN connections (56 kb/s), as shown in the figure. Because the Dallas site connects with both New York and Chicago, it has two locally leased lines. The network providers have provided SPAN with one DS0 between the respective COs, except for the larger pipe connecting Chicago to New York, which has four DS0s. DS0s are priced differently from region to region, and usually are offered at a fixed price. These lines are truly dedicated in that the network provider reserves that line for SPAN’s own use. There is no sharing, and SPAN is paying for the end-to-end circuit regardless of how much bandwidth it uses.</p>
+          <p></p>
+          <p>A dedicated line provides little practical opportunity for a one-to-many connection without getting more lines from the network provider. In the example, almost all communication must flow through the corporate headquarters, simply to reduce the cost of additional lines.</p>
+          <p></p>
+          <p>Upon further examination of the bandwidth requirements for each site, it becomes apparent that there is a lack of efficiency: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Of the 24 DS0 channels available in the T1 connection, the Chicago site only uses seven. Some carriers offer fractional T1 connections in increments of 64 kb/s, but this requires a specialized device called a multiplexer at the customer end to channelize the signals. In this case, SPAN has opted for the full T1 service.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Similarly, the New York site only uses five of its available 24 DS0s.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Because Dallas must connect to Chicago and New York, there are two lines connecting through the CO to each site.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The leased-line design also limits flexibility. Unless circuits are already installed, connecting new sites typically requires new circuit installations and takes considerable time to implement. From a network reliability point of view, imagine the additional costs in money and complexity of adding spare and redundant circuits.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

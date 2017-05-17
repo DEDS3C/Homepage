@@ -1,0 +1,103 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Enterprise Architecture</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Enterprise Campus</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Building Access]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[Building Distribution]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[Campus Core]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[Campus Infrastructure Module]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[Server Farm and Data Center]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[Network<br/>Management]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[Edge Distribution]]></text>
+</component>
+
+<component id="ID_s1_txt09">
+<text><![CDATA[<b>Enterprise Edge</b>]]></text>
+</component>
+
+<component id="ID_s1_txt10">
+<text><![CDATA[E-Commerce]]></text>
+</component>
+
+<component id="ID_s1_txt11">
+<text><![CDATA[Internet Connectivity]]></text>
+</component>
+
+<component id="ID_s1_txt12">
+<text><![CDATA[Remote Access and VPN]]></text>
+</component>
+
+<component id="ID_s1_txt13">
+<text><![CDATA[WAN Site-to-site VPN ]]></text>
+</component>
+
+<component id="ID_s1_txt14">
+<text><![CDATA[<b>Service Provider Edge</b>]]></text>
+</component>
+
+<component id="ID_s1_txt15">
+<text><![CDATA[ISP A]]></text>
+</component>
+
+<component id="ID_s1_txt16">
+<text><![CDATA[ISP B]]></text>
+</component>
+
+<component id="ID_s1_txt17">
+<text><![CDATA[PSTN]]></text>
+</component>
+
+<component id="ID_s1_txt18">
+<text><![CDATA[Frame Relay, ATM, MAN, ...]]></text>
+</component>
+
+<component id="ID_s1_txt19">
+<text><![CDATA[<b>Remote</b>]]></text>
+</component>
+
+<component id="ID_s1_txt20">
+<text><![CDATA[Enterprise Branch]]></text>
+</component>
+
+<component id="ID_s1_txt21">
+<text><![CDATA[Enterprise Teleworker]]></text>
+</component>
+
+<component id="ID_s1_txt22">
+<text><![CDATA[Enterprise Data Center]]></text>
+</component>
+
+
+
+<component id="ID_s1_txt01_header">
+<text><![CDATA[<b>Remote</b>]]></text>
+</component>
+<component id="ID_s1_txt01_body">
+<text><![CDATA[Made up of three separate submodules:<textformat blockIndent="-14"><ul><li>Enterprise Branch - extends the applications and services of the campus to remote locations</li><li>Enterprise Teleworker - connects individuals to network resources remotely</li><li>Enterprise Data Center - manages and maintains centralized data systems</li></ul>]]></text>
+</component>
+</textcomponents>

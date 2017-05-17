@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.1 Confidentiality with Encryption</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Confidentiality with Encryption</h1>
+        <div>
+          <p>
+            <b>Confidentiality</b>
+          </p>
+          <p></p>
+          <p>VPN traffic is kept confidential with encryption. Plaintext data that is transported over the Internet can be intercepted and read. Encrypt the date to keep it private. Digitally encrypting the data renders it unreadable until it is unencrypted by the authorized receiver. </p>
+          <p></p>
+          <p>For encrypted communication to work, both the sender and the receiver must know the rules that are used to transform the original message into its coded form. Rules are based on algorithms and associated keys. In the context of encryption, an algorithm is a mathematical sequence of steps that combines a message, text, digits, or all three with a string of digits that are called a key. The output is an unreadable cipher string. The encryption algorithm also specifies how an encrypted message is decrypted. Decryption is extremely difficult or impossible without the correct key.</p>
+          <p></p>
+          <p>In the figure, Gail wants to send an electronic funds transfer (EFT) across the Internet to Jeremy. At the local end, the document is combined with a key and run through an encryption algorithm. The output is encrypted ciphertext. The ciphertext is then sent through the Internet. At the remote end, the message is recombined with a key and sent back through the encryption algorithm. The output is the original financial document.</p>
+          <p></p>
+          <p>Confidentiality is achieved through the encryption of traffic as it travels through a VPN. The degree of security depends on the key length of the encryption algorithm and the sophistication of the algorithm. If a hacker tries to hack the key through a brute-force attack, the number of possibilities to try is a function of the key length. The time to process all of the possibilities is a function of the computer power of the attacking device. The shorter the key, the easier it is to break. For example, where a relatively sophisticated computer may take approximately one year to break a 64-bit long key, the same computer may take anywhere from 10 to 19 years to decrypt a 128-bit long key.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

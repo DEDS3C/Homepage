@@ -1,0 +1,10 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>DOCSIS</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[DOCSIS defines the communications and operation support interface requirements for a data-over-cable system. 
+]]></text> 
+  </component>
+
+</textcomponents>

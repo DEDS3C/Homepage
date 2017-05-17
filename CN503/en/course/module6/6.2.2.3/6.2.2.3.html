@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.3 Separating Voice and Data in ADSL</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Separating Voice and Data in ADSL</h1>
+        <div>
+          <p>The major benefit of ADSL is the ability to provide data services along with POTS voice services. Transmissions of voice and data signals are propagated along the same wire pair, as shown in Figure 1. Data circuits are offloaded from the voice switch.</p>
+          <p></p>
+          <p>When the service provider puts analog voice and ADSL on the same wire pair, ADSL signals can distort voice transmission. For this reason, the provider splits the POTS channel from the ADSL modem at the customer premises using filters or splitters. This setup guarantees uninterrupted regular phone service even if ADSL fails. When filters or splitters are in place, the user can use the phone line and the ADSL connection simultaneously without adverse effects on either service. </p>
+          <p></p>
+          <p>Figure 1 shows the local loop terminating on the customer premises at the demarcation point. The demarcation point is the point where the phone line enters the customer premises. The actual device that marks the demarcation point is the Network Interface Device (NID). At this point, a splitter can be attached to the phone line. The splitter forks the phone line; one branch provides the original house telephone wiring for telephones, and the other branch connects to the ADSL modem. The splitter acts as a low-pass filter, allowing only the 0 to 4 kHz frequencies to pass to or from the telephone. </p>
+          <p></p>
+          <p>There are two ways to separate ADSL from voice at the customer premises: using a microfilter or using a splitter.</p>
+          <p></p>
+          <p>A microfilter is a passive low-pass filter with two ends, as shown in Figure 2. One end connects to the telephone, and the other end connects to the telephone wall jack. Click the highlight in Figure 2 to see an image of a microfilter.  This solution allows the user to use any jack in the house for voice or ADSL service.</p>
+          <p></p>
+          <p>A POTS splitter, shown in Figure 3, separates the DSL traffic from the POTS traffic. The POTS splitter is a passive device. Click the highlight in Figure 3 to see a diagram of a splitter. In the event of a power failure, the voice traffic still travels to the voice switch in the CO of the carrier. Splitters are located at the CO and, in some deployments, at the customer premises. At the CO, the POTS splitter separates the voice traffic, destined for POTS connections, and the data traffic destined for the DSLAM. Installing the POTS splitter at the NID usually means that a technician must go to the customer site.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

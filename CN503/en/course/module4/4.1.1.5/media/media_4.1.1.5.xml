@@ -1,0 +1,108 @@
+<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Identify Frame Relay Terminology and Concepts</b><br/>Match the Frame Relay term to its characteristic by dragging the term to the appropriate field. Not all terms will be used.]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[IP Address]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[DLCI]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[Physical Line]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[Bandwidth]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[Transport]]></text>
+</component>
+
+<component id='ID_drag06'>
+	<text><![CDATA[Network Access]]></text>
+</component>
+
+<component id='ID_drag07'>
+	<text><![CDATA[PPP]]></text>
+</component>
+
+<component id='ID_drag08'>
+	<text><![CDATA[X.25]]></text>
+</component>
+
+<component id='ID_drag09'>
+	<text><![CDATA[Load]]></text>
+</component>
+
+<component id='ID_drag10'>
+	<text><![CDATA[Cost Savings]]></text>
+</component>
+
+<component id='ID_drag11'>
+	<text><![CDATA[HDLC]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched Frame Relay terms and characteristics.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched Frame Relay terms and characteristics. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt01">
+	<text><![CDATA[<b>Term</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+	<text><![CDATA[<b>Frame Relay Characteristics</b>]]></text>
+</component>
+   
+<component id="ID_txt03">
+	<text><![CDATA[When compared to private leased lines, Frame Relay was popular for this reason.]]></text>
+</component>
+      
+<component id="ID_txt04">
+	<text><![CDATA[Frame Relay is more streamlined and efficient than this earlier protocol it replaced.]]></text>
+</component>
+      
+<component id="ID_txt05">
+	<text><![CDATA[Frame Relay is a WAN protocol that operates at this layer of the TCP/IP model.]]></text>
+</component>
+      
+<component id="ID_txt06">
+	<text><![CDATA[These are used to identify each Frame Relay circuit endpoint. ]]></text>
+</component>
+      
+<component id="ID_txt07">
+	<text><![CDATA[One of these connects each Frame Relay endpoint to the Frame Relay WAN.]]></text>
+</component>
+
+</textcomponents>

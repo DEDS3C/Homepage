@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.3.3 LCP Packet</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>LCP Packet</h1>
+        <div>
+          <p>Figure 1 shows the fields in an LCP packet: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Code </b>- The code field is 1 byte in length and identifies the type of LCP packet.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Identifier </b>- The identifier field is 1 byte in length and is used to match packet requests and replies.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Length </b>- The length field is 2 bytes in length and indicates the total length (including all fields) of the LCP packet.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Data </b>- The data field is 0 or more bytes as indicated by the length field. The format of this field is determined by the code.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Each LCP packet is a single LCP message consisting of an LCP code field identifying the type of LCP packet, an identifier field so that requests and replies can be matched, and a length field indicating the size of the LCP packet and LCP packet type-specific data.</p>
+          <p></p>
+          <p></p>
+          <p>Each LCP packet has a specific function in the exchange of configuration information depending on its packet type. The code field of the LCP packet identifies the packet type according to Figure 2.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Teleworker Connectivity Requirements</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[<b>Home Office Components</b>]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Corporate Components</b>]]></text> 
+  </component>
+  <component id="ID_txt03">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+    <component id="ID_txt04">
+  <text><![CDATA[Remote VPN Router]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[Broadband Modem]]></text> 
+  </component>
+   <component id="ID_txt06">
+  <text><![CDATA[Headend VPN Router]]></text> 
+  </component>
+   <component id="ID_txt07">
+  <text><![CDATA[<b>Teleworker</b>]]></text> 
+  </component>
+   <component id="ID_txt08">
+  <text><![CDATA[<b>Headquarters</b>]]></text> 
+  </component>
+   <component id="ID_txt09">
+  <text><![CDATA[Encrypted VPN Tunnel]]></text> 
+  </component>
+</textcomponents>

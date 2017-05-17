@@ -1,0 +1,111 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Match Frame Relay Reachability Terms to Descriptions</b><br><br>Match the Frame Relay Reachability term to the description by dragging the term to the appropriate space. Not all terms will be used.]]></text>
+</component>
+
+
+<component id='ID_header01'>
+	<text><![CDATA[<b>Terminology</b>]]></text>
+</component>
+
+
+<component id='ID_header02'>
+	<text><![CDATA[<b>Frame Relay Reachability Descriptions</b>]]></text>
+</component>
+
+
+
+
+<component id='ID_txt01'>
+	<text><![CDATA[This kind of topology is created because Frame Relay uses NBMA connections between sites by default.]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[This distance vector routing loop mechanism may not work properly in the Frame Relay NBMA topology.]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[This kind of topology can solve Frame Relay reachability issues, but is very expensive to implement.]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[A dedicated PVC connection between two Frame Relay devices.]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[Multiple endpoints defined for one interface or subinterface.]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[The command to enable Frame Relay on an interface.]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">encapsulation frame-relay</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">decreases</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">increases</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">subnets</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">multipoint</font>]]></text>
+</component>
+<component id='ID_drag06'>
+	<text><![CDATA[<font color="#393536">hub-and-spoke</font>]]></text>
+</component>
+
+<component id='ID_drag07'>
+	<text><![CDATA[<font color="#393536">point-to-point</font>]]></text>
+</component>
+
+<component id='ID_drag08'>
+	<text><![CDATA[<font color="#393536">star</font>]]></text>
+</component>
+
+<component id='ID_drag09'>
+	<text><![CDATA[<font color="#393536">full-mesh</font>]]></text>
+</component>
+
+<component id='ID_drag10'>
+	<text><![CDATA[<font color="#393536">split horizon</font>]]></text>
+</component>
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the Frame Relay Reachability term to its description.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the Frame Relay Reachability term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

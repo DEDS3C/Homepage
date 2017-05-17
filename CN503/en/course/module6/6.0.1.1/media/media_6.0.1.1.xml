@@ -1,0 +1,12 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[]]></text>
+</component>
+   
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>After completing this chapter, you will be able to:</b><br/><br/><textformat blockindent='-14'><ul><li>Describe the benefits of teleworking solutions.</li><li>Describe the requirements for supporting a teleworking solution using broadband.</li><li>Describe a cable system and cable broadband access.</li><li>Describe a DSL system and DSL broadband access.</li><li>Describe broadband wireless options.</li><li>Select an appropriate broadband solution for a given network requirement.</li><li>Describe the operation of Point-to-Point Protocol over Ethernet (PPPoE).</li><li>Configure a basic PPP over Ethernet connection on a client router.</li></ul></textformat><br/>]]></text>
+</component>
+
+
+
+</textcomponents>

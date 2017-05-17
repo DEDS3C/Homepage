@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.7 Demarcation Point</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Demarcation Point</h1>
+        <div>
+          <p>Prior to deregulation in North America and other countries, telephone companies owned the local loop, including the wiring and equipment on the premises of the customers. The local loop refers to the line from the premises of a telephone subscriber to the telephone company central office. Deregulation forced telephone companies to unbundle their local loop infrastructure to allow other suppliers to provide equipment and services. This led to a need to delineate which part of the network the telephone company owned and which part the customer owned. This point of delineation is the demarcation point, or demarc. The demarcation point marks the point where your network interfaces with a network that is owned by another organization. In telephone terminology, this is the interface between customer premises equipment (CPE) and network service provider equipment. The demarcation point is the point in the network where the responsibility of the service provider ends, as shown in Figure 1. </p>
+          <p></p>
+          <p>The differences in demarcation points can best be shown using ISDN. In the United States, a service provider provides the local loop into the customer premises, and the customer provides the active equipment such as the CSU/DSU on which the local loop is terminated. This termination often occurs in a telecommunications closet, and the customer is responsible for maintaining, replacing, or repairing the equipment. In other countries, the network terminating unit (NTU) is provided and managed by the service provider. This allows the service provider to actively manage and troubleshoot the local loop with the demarcation point occurring after the NTU. The customer connects a CPE device, such as a router or Frame Relay access device, to the NTU using a V.35 or RS-232 serial interface.</p>
+          <p></p>
+          <p>A router serial port is required for each leased-line connection. If the underlying network is based on the T-carrier or E-carrier technologies, the leased line connects to the network of the carrier through a CSU/DSU. The purpose of the CSU/DSU is to provide a clocking signal to the customer equipment interface from the DSU and terminate the channelized transport media of the carrier on the CSU. The CSU also provides diagnostic functions such as a loopback test. </p>
+          <p></p>
+          <p>As shown in Figure 2, most T1 or E1 TDM interfaces on current routers include CSU/DSU capabilities. A separate CSU/DSU is not required because this functionality is embedded in the interface. IOS commands are used to configure the CSU/DSU operations.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

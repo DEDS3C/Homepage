@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.5 Configuring PPP Authentication</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring PPP Authentication</h1>
+        <div>
+          <p>To specify the order in which the CHAP or PAP protocols are requested on the interface, use the<span class="cmd"><b> ppp authentication </b></span>interface configuration command, as shown in the figure. Use the<span class="cmd"><b> no </b></span>form of the command to disable this authentication. </p>
+          <p></p>
+          <p>After you have enabled CHAP or PAP authentication, or both, the local router requires the remote device to prove its identity before allowing data traffic to flow. This is done as follows:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>PAP authentication requires the remote device to send a name and password to be checked against a matching entry in the local username database or in the remote TACACS/TACACS+ database. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>CHAP authentication sends a challenge to the remote device. The remote device must encrypt the challenge value with a shared secret and return the encrypted value and its name to the local router in a response message. The local router uses the name of the remote device to look up the appropriate secret in the local username or remote TACACS/TACACS+ database. It uses the looked-up secret to encrypt the original challenge and verify that the encrypted values match.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Authentication, authorization and accounting (AAA)/TACACS is a dedicated server used to authenticate users. TACACS clients send a query to a TACACS authentication server. The server can authenticate the user, authorize what the user can do, and track what the user has done.</p>
+          <p></p>
+          <p>Either PAP or CHAP or both can be enabled. If both methods are enabled, the first method specified is requested during link negotiation. If the peer suggests using the second method or simply refuses the first method, the second method should be tried. Some remote devices support CHAP only and some PAP only. The order in which you specify the methods is based on your concerns about the ability of the remote device to correctly negotiate the appropriate method as well as your concern about data line security. PAP usernames and passwords are sent as plaintext strings and can be intercepted and reused. CHAP has eliminated most of the known security holes.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

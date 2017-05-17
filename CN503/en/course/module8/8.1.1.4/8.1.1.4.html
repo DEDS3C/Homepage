@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.4 Service Timestamp</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Service Timestamp</h1>
+        <div>
+          <p>Log messages can be time-stamped and the source address of syslog messages can be set. This enhances real-time debugging and management.</p>
+          <p></p>
+          <p>When the <span class="cmd"><b>service timestamps log uptime </b></span>global configuration mode command is entered, the amount of time since the switch last booted is displayed on logged events. A more useful version of this command applies the<span class="cmd"><b> datetime </b></span>keyword in place of the<span class="cmd"><b> uptime </b></span>keyword; this forces each logged event to display the date and time associated with the event. </p>
+          <p></p>
+          <p>When using the<span class="cmd"><b> datetime </b></span>keyword, the clock on the networking device must be set. This can be accomplished in one of two ways: </p>
+          <p>
+            <ul>
+              <li>Manually set, using the<span class="cmd"><b> clock set </b></span>command</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Automatically set, using the Network Time Protocol (NTP)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Recall that NTP is a protocol that is used to allow network devices to synchronize their time settings with an NTP server. </p>
+          <p></p>
+          <p>To allow the software clock to be synchronized by an NTP time server, use the<span class="cmd"><b> ntp server </b></span><span class="cmd"><i>ip-address </i></span>command in global configuration mode. A sample configuration is shown in the figure. R1 is configured as an NTP client, while router R2 serves as an authoritative NTP server. A network device can be configured as either an NTP server, thereby allowing other devices to synchronize off of its time, or as an NTP client.</p>
+          <p></p>
+          <p>For the remainder of the chapter, it is assumed that the clock has been set and the<span class="cmd"><b> service timestamps log datetime </b></span>command has been configured on all devices.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<textcomponents>
+	<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[<b>Troubleshooting a Serial Interface</b>]]></text>
+	</component>
+	<component id="ID_SC2" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font size="12" face="_sans"color="#FFFFFF">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b>
+]]></feedback>
+		<existingcommands><![CDATA[<font size="12" face="_sans"><b>Perform the troubleshooting steps as directed.<br>Router R1 should be configured with the following parameters:<ul><li>S0/0/0 is the DCE interface</li><li>Clock rate set to 64000</li><li>HDLC encapsulation</li></ul><br>Enter the show command to verify the cable type connected to S0/0/0.</b></font>]]></existingcommands>
+		<command prompt="R1#">
+			<correctresponse><![CDATA[show controllers s0/0/0]]></correctresponse>
+			<deviceresponse><![CDATA[Interface Serial0/0/0 <br>Hardware is PowerQUICC MPC860 <br>DCE V.35, clock rate 64000 <br>idb at 0x81081AC4, driver data structure at 0x81084AC0 <br>SCC Registers: <br>General [GSMR]=0x2:0x00000000, Protocol-specific [PSMR]=0x8 <br>Events [SCCE]=0x0000, Mask [SCCM]=0x0000, Status [SCCS]=0x00 <br>Transmit on Demand [TODR]=0x0, Data Sync [DSR]=0x7E7E <br>&lt; Output Omitted &gt;]]></deviceresponse>
+			<instruction><![CDATA[<font size="12" face="_sans"><b>Enter the show command to verify the encapsulation setting for S0/0/0.</font>]]></instruction>
+		</command>
+		<command prompt="R1#">
+			<correctresponse><![CDATA[show interfaces s0/0/0]]></correctresponse>
+			<deviceresponse><![CDATA[Serial0/0/0 is up, line protocol is down (disabled) <br> Hardware is HD64570 <br> Internet address is 172.16.0.1/30 <br> MTU 1500 bytes, BW 1544 Kbit, DLY 20000 usec, <br> reliability 255/255, txload 1/255, rxload 1/255 <br> Encapsulation PPP, loopback not set, keepalive set (10 sec) <br> LCP Closed <br> Closed: LEXCP, BRIDGECP, IPCP, CCP, CDPCP, LLC2, BACP <br> Last input never, output never, output hang never <br> Last clearing of "show interface" counters never <br>&lt; Output Omitted &gt;]]></deviceresponse>
+			<instruction><![CDATA[<font size="12" face="_sans"><b>Configure interface S0/0/0 to use the default encapsulation.</font>]]></instruction>
+		</command>
+		<command prompt="R1#">
+			<correctresponse><![CDATA[configure terminal]]></correctresponse>
+			<deviceresponse><![CDATA[Enter configuration commands, one per line. End with CNTL/Z.]]></deviceresponse>
+		</command>
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[interface s0/0/0]]></correctresponse>
+		</command>
+		<command prompt="R1(config-if)#">
+			<correctresponse><![CDATA[encapsulation hdlc]]></correctresponse>
+			<deviceresponse><![CDATA[%LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to down<br><br>%LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to up]]></deviceresponse>
+			<instruction><![CDATA[<font size="12" face="_sans"><b>Enter the ‘do show’ command to verify the encapsulation setting for S0/0/0.</b></font>]]></instruction>
+		</command>
+		<command prompt="R1(config-if)#">
+			<correctresponse><![CDATA[do show interfaces s0/0/0]]></correctresponse>
+			<deviceresponse><![CDATA[Serial0/0/0 is up, line protocol is up (connected) <br> Hardware is HD64570 <br> Internet address is 172.16.0.1/30 <br> MTU 1500 bytes, BW 1544 Kbit, DLY 20000 usec, <br> reliability 255/255, txload 1/255, rxload 1/255 <br> Encapsulation HDLC, loopback not set, keepalive set (10 sec) <br> Last input never, output never, output hang never <br> Last clearing of "show interface" counters never <br>&lt; Output Omitted &gt;]]></deviceresponse>
+			<instruction><![CDATA[<font size="12" face="_sans"><b>You successfully performed the troubleshooting steps for the serial interface.</font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

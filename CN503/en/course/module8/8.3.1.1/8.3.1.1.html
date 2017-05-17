@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.1.1 Introducing NetFlow</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Introducing NetFlow</h1>
+        <div>
+          <p>NetFlow is a Cisco IOS technology that provides statistics on packets flowing through a Cisco router or multilayer switch. NetFlow is the standard for collecting IP operational data from IP networks.</p>
+          <p></p>
+          <p>Historically, NetFlow technology was developed because networking professionals needed a simple and efficient method for tracking TCP/IP flows in the network, and SNMP was not sufficient for these purposes. While SNMP attempts to provide a very wide range of network management features and options, NetFlow is focused on providing statistics on IP packets flowing through network devices. </p>
+          <p></p>
+          <p>NetFlow provides data to enable network and security monitoring, network planning, traffic analysis to include identification of network bottlenecks, and IP accounting for billing purposes. For example, in the figure, PC 1 connects to PC 2 using an application such as HTTPS. NetFlow can monitor that application connection, tracking byte and packet counts for that individual application flow. It then pushes the statistics over to an external server called a NetFlow collector.</p>
+          <p></p>
+          <p>NetFlow has become a monitoring standard, and is now widely supported in the networking industry.</p>
+          <p></p>
+          <p>Flexible NetFlow is the latest NetFlow technology. Flexible NetFlow improves on “original NetFlow” by adding the capability to customize the traffic analysis parameters for the specific requirements of a network administrator. Flexible NetFlow facilitates the creation of more complex configurations for traffic analysis and data export through the use of reusable configuration components. </p>
+          <p></p>
+          <p>Flexible NetFlow uses the Version 9 export format. The distinguishing feature of the NetFlow Version 9 export format is that it is template-based. Templates provide an extensible design to the record format, a feature that allows future enhancements to NetFlow services without requiring concurrent changes to the basic flow-record format. It is important to note that many useful Flexible NetFlow commands were introduced with Cisco IOS Release 15.1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

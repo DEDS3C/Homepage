@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.1 Basic Frame Relay Configuration Commands</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Basic Frame Relay Configuration Commands</h1>
+        <div>
+          <p>Frame Relay is configured on a Cisco router from the Cisco IOS command-line interface (CLI). Figure 1 shows the required and optional steps for configuring Frame Relay. </p>
+          <p></p>
+          <p>Figure 2 shows the three router topology that will be used in this section, though initial focus will be on the Frame Relay link between R1 and R2, network 10.1.1.0/24. Notice that all routers have been configured with both IPv4 and IPv6 addresses. </p>
+          <p></p>
+          <p>
+            <b>Step 1. Set the IP Address on the Interface</b>
+          </p>
+          <p></p>
+          <p>On a Cisco router, Frame Relay is most commonly supported on synchronous serial interfaces. Use the<span class="cmd"><b> ip address </b></span>command to set the IPv4 address of the interface. </p>
+          <p></p>
+          <p>On the link between R1 and R2, R1 S0/0/1 has been assigned 10.1.1.1/24, and R2 S0/0/1 has been assigned IPv4 address 10.1.1.2/24. </p>
+          <p></p>
+          <p>Using the<span class="cmd"><b> ipv6 address </b></span>command, routers R1 and R2 have also both been configured with the following IPv6 addresses:</p>
+          <p>
+            <ul>
+              <li>R1 has been configured with the IPv6 global unicast address, 2001:DB8:CAFE:1::1/64 and the static link-local address FE80::1.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R2 has been configured with the IPv6 global unicast address, 2001:DB8:CAFE:1::2/64 and the static link-local address FE80::2.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: By default, Cisco IOS uses EUI-64 to automatically generate the IPv6 link-local address on an interface. Configuring static link-local addresses makes it easier to remember and identify the link-local addresses. IPv6 link-local addresses are used by IPv6 routing protocols for routing messages and next-hop addresses in the IPv6 routing table.</p>
+          <p></p>
+          <p>
+            <b>Step 2. Configure Encapsulation</b>
+          </p>
+          <p></p>
+          <p>The<span class="cmd"><b> encapsulation frame-relay </b></span><span class="cmd">[</span><span class="cmd"><b>cisco </b></span><span class="cmd">|</span><span class="cmd"><b> ietf</b></span><span class="cmd">] </span>interface configuration command enables Frame Relay encapsulation and allows Frame Relay processing on the supported interface. There are two encapsulation options to choose from,<span class="cmd"> cisco </span>and<span class="cmd"> ietf</span>. </p>
+          <p>
+            <ul>
+              <li>The<span class="cmd"> cisco </span>encapsulation type is the default Frame Relay encapsulation enabled on supported interfaces. Use this option if connecting to another Cisco router. Many non-Cisco devices also support this encapsulation type. It uses a 4-byte header, with 2 bytes to identify the DLCI and 2 bytes to identify the packet type.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The<span class="cmd"> ietf </span>encapsulation type complies with RFC 1490 and RFC 2427. Use this option if connecting to a non-Cisco router.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Step 3. Set the Bandwidth</b>
+          </p>
+          <p></p>
+          <p>Use the<span class="cmd"><b> bandwidth </b></span>command to set the bandwidth of the serial interface. Specify bandwidth in kb/s. This command notifies the routing protocol that bandwidth is statically configured on the link. The EIGRP and OSPF routing protocols use the bandwidth value to calculate and determine the metric of the link. </p>
+          <p></p>
+          <p>
+            <b>Step 4. Set the LMI Type (optional)</b>
+          </p>
+          <p>Manually setting the LMI type is optional, as Cisco routers autosense the LMI type by default. Recall that Cisco supports three LMI types: <span class="cmd">cisco</span>, <span class="cmd">ANSI Annex D</span>, and <span class="cmd">Q933-A Annex A</span>. The default LMI type for Cisco routers is <span class="cmd">cisco</span>. </p>
+          <p></p>
+          <p>Figure 3 shows the R1 and R2 configurations for enabling Frame Relay.</p>
+          <p></p>
+          <p>The<span class="cmd"><b> show interfaces serial </b></span>command verifies the configuration, including the Layer 2 encapsulation of Frame Relay and the default LMI type of<span class="cmd"> cisco</span>, as shown in Figure 4. Notice that this command shows the IPv4 address, but does not include any of the IPv6 addresses. Use the<span class="cmd"><b> show ipv6 interface </b></span>or the<span class="cmd"><b> show ipv6 interface brief </b></span>command to verify IPv6.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The<span class="cmd"><b> no encapsulation frame-relay </b></span>command removes the Frame Relay encapsulation on the interface and returns the interface to the default HDLC encapsulation.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

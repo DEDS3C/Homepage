@@ -1,0 +1,54 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Time-Division Multiplexing</b>]]></text>
+</component>
+<component id="mytable">
+<text><![CDATA[<textformat blockindent="-14"><ul><li>TDM shares available transmission time on a medium by assigning time slot to users.</li><li>The MUX accepts input from attached devices in an alternating sequence (round-robin) and transmits the data in a recurrent pattern.</li><li>T1/E1 and ISDN telephone lines are common examples of synchronous TDM.</li></ul></textformat>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[MUX]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[8 Bits per Time Slot]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[TS0]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[TS1]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[...]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[TS16]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[...]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[TS30]]></text> 
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[TS31]]></text> 
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[MUX]]></text> 
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[MUX]]></text> 
+</component>
+
+</textcomponents>

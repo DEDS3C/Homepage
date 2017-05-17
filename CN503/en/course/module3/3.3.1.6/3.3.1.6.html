@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.6 Verifying PPP Configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying PPP Configuration</h1>
+        <div>
+          <p>Use the<span class="cmd"><b> show interfaces serial </b></span>command to verify proper configuration of HDLC or PPP encapsulation. The command output in Figure 1 shows a PPP configuration. </p>
+          <p></p>
+          <p>When you configure HDLC, the output of the<span class="cmd"><b> show interfaces serial </b></span>command should display <span class="cmd">encapsulation HDL</span><span class="cmd">C</span>. When PPP is configured, the LCP and NCP states also display. Notice that NCPs IPCP and IPV6CP are open for IPv4 and IPv6 because R1 and R2 were configured with both IPv4 and IPv6 addresses.</p>
+          <p></p>
+          <p>Figure 2 summarizes commands used when verifying PPP. </p>
+          <p></p>
+          <p>The<span class="cmd"><b> show ppp multilink </b></span>command verifies that PPP multilink is enabled on R3, as shown in Figure 3. The output indicates the interface Multilink 1, the hostnames of both the local and remote endpoints, and the serial interfaces assigned to the multilink bundle. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

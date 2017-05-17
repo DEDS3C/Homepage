@@ -1,0 +1,211 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Enterprise Architecture</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Enterprise Campus</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Building Access]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[Building Distribution]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[Campus Core]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[Campus Infrastructure Module]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[Server Farm and Data Center]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[Network<br/>Management]]></text>
+</component>
+
+<component id="ID_s1_txt09">
+<text><![CDATA[<b>Enterprise Edge</b>]]></text>
+</component>
+
+<component id="ID_s1_txt10">
+<text><![CDATA[E-Commerce]]></text>
+</component>
+
+<component id="ID_s1_txt11">
+<text><![CDATA[Internet Connectivity]]></text>
+</component>
+
+<component id="ID_s1_txt12">
+<text><![CDATA[Remote Access and VPN]]></text>
+</component>
+
+<component id="ID_s1_txt13">
+<text><![CDATA[WAN Site-to-site VPN ]]></text>
+</component>
+
+<component id="ID_s1_txt14">
+<text><![CDATA[<b>Service Provider Edge</b>]]></text>
+</component>
+
+<component id="ID_s1_txt15">
+<text><![CDATA[ISP A]]></text>
+</component>
+
+<component id="ID_s1_txt16">
+<text><![CDATA[ISP B]]></text>
+</component>
+
+<component id="ID_s1_txt17">
+<text><![CDATA[PSTN]]></text>
+</component>
+
+<component id="ID_s1_txt18">
+<text><![CDATA[Frame Relay, ATM, MAN, ...]]></text>
+</component>
+
+<component id="ID_s1_txt19">
+<text><![CDATA[<b>Remote</b>]]></text>
+</component>
+
+<component id="ID_s1_txt20">
+<text><![CDATA[Enterprise Branch]]></text>
+</component>
+
+<component id="ID_s1_txt21">
+<text><![CDATA[Enterprise Teleworker]]></text>
+</component>
+
+<component id="ID_s1_txt22">
+<text><![CDATA[Enterprise Data Center]]></text>
+</component>
+
+
+<component id="ID_s1_txt01_header">
+<text><![CDATA[<b>Service Provider Edge</b>]]></text>
+</component>
+<component id="ID_s1_txt01_body">
+<text><![CDATA[Service Provider Environment]]></text>
+</component>
+
+
+
+
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Connecting to One ISP</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Single-homed</b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Company A]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[ISP]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[<b>Dual-homed</b>]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[<b>Option 1</b>]]></text>
+</component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[Company A]]></text>
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[ISP]]></text>
+</component>
+
+<component id="ID_s2_txt09">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_s2_txt10">
+<text><![CDATA[<b>Option 2</b>]]></text>
+</component>
+
+<component id="ID_s2_txt11">
+<text><![CDATA[Company A]]></text>
+</component>
+
+<component id="ID_s2_txt12">
+<text><![CDATA[ISP]]></text>
+</component>
+
+<component id="ID_s2_txt13">
+<text><![CDATA[Internet]]></text>
+</component>
+
+
+
+
+
+
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Connecting to Multiple ISPs</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>Multihomed</b>]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[Company A]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[ISP 1]]></text>
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[ISP 2]]></text>
+</component>
+
+
+<component id="ID_s3_txt06">
+<text><![CDATA[<b>Dual-multihomed</b>]]></text>
+</component>
+
+
+<component id="ID_s3_txt07">
+<text><![CDATA[Company A]]></text>
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[ISP 1]]></text>
+</component>
+
+<component id="ID_s3_txt09">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_s3_txt10">
+<text><![CDATA[ISP 2]]></text>
+</component>
+</textcomponents>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.3.3 Bursting</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Bursting</h1>
+        <div>
+          <p>A great advantage of Frame Relay is that any network capacity that is being unused is made available or shared with all customers, usually at no extra charge. This allows customers to burst over their CIR as a bonus. </p>
+          <p></p>
+          <p>Using the previous example, Figure 1 shows an access rate on serial port S0/0/1 of router R1 to be 64 kb/s. This is higher than the combined CIRs of the two PVCs. Under normal circumstances, the two PVCs should not transmit more than 32 kb/s and 16 kb/s, respectively. As long as the amount of data the two PVCs send does not exceed the CIR, it should get through the network. </p>
+          <p></p>
+          <p>Because the physical circuits of the Frame Relay network are shared between subscribers, there are often times where there is excess bandwidth available. Frame Relay can allow customers to dynamically access this extra bandwidth and burst over their CIR for free. </p>
+          <p></p>
+          <p>Bursting allows devices that temporarily need additional bandwidth to borrow it at no extra cost from other devices not using it. For example, if PVC 102 is transferring a large file, it could use any of the 16 kb/s not being used by PVC 103. A device can burst up to the access rate and still expect the data to get through. The duration of a burst transmission should be less than three or four seconds. </p>
+          <p></p>
+          <p>Various terms are used to describe burst rates, including the Committed Burst Size (Bc) and Excess Burst Size (Be). </p>
+          <p></p>
+          <p>The Bc is a negotiated rate above the CIR that the customer can use to transmit for short burst, and represents the maximum allowed traffic under normal working conditions. It allows traffic to burst to higher speeds, as available network bandwidth permits. However, it cannot exceed the access rate of the link. A device can burst up to the Bc and still expect the data to get through. If long bursts persist, then a higher CIR should be purchased.</p>
+          <p></p>
+          <p>For example, DLCI 102 has a CIR of 32 kb/s with an additional Bc of 16 kb/s for a total of up to 48 kb/s. DLCI 103 has a CIR of 16 kb/s. However, DLCI 103 does not have a Bc negotiated; therefore, the Bc is set to 0 kb/s. Frames within the negotiated CIR are not eligible for discard (DE = 0). Frames above the CIR have the DE bit set to 1, marking it as eligible to be discarded, should the network be congested. Frames submitted in the Bc level are marked as Discard Eligible (DE) in the frame header but will most likely be forwarded.</p>
+          <p></p>
+          <p>The Be describes the bandwidth available above the CIR up to the access rate of the link. Unlike the Bc, it is not negotiated. Frames may be transmitted at this level but are most likely dropped. </p>
+          <p></p>
+          <p>Figure 2 illustrates the relationship between the various bursting terms.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

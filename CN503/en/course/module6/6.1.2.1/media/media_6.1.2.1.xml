@@ -1,0 +1,68 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Remote Connection Options</b>]]></text> 
+</component>
+
+<component id="ID_header01">
+<text><![CDATA[<b>Headquarters<br>(Campus, Data Center)</b>]]></text> 
+</component>
+
+<component id="ID_header02">
+<text><![CDATA[<b>Branch Office(s)</b>]]></text> 
+</component>
+
+<component id="ID_header03">
+<text><![CDATA[<b>Teleworkers</b>]]></text> 
+</component>
+
+<component id="ID_header04">
+<text><![CDATA[<b>Partners and Suppliers</b>]]></text> 
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[Server Farm]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Enterprise Campus]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Enterprise Edge]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Broadband Networks, ISPs]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[WAN]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Mobile Worker]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Individual]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[SOHO]]></text> 
+</component>
+
+<component id='ID_legend01'>
+	<text><![CDATA[IPsec VPN]]></text>
+</component>
+
+<component id='ID_legend02'>
+	<text><![CDATA[Layer 2 VPN (Frame Relay, ATM, etc.)]]></text>
+</component>
+
+<component id='ID_legend03'>
+	<text><![CDATA[Broadband Networks, ISPs]]></text>
+</component>
+
+</textcomponents>

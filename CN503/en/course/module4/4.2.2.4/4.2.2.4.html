@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.4 Example: Configuring Point-to-Point Subinterfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Example: Configuring Point-to-Point Subinterfaces</h1>
+        <div>
+          <p>Figure 1 shows the previous topology but using point-to-point subinterfaces. Each PVC is a separate subnetwork. The router’s physical interfaces are divided into subinterfaces, with each subinterface on a separate subnetwork.</p>
+          <p></p>
+          <p>In Figure 2, R1 has two point-to-point subinterfaces. The s0/0/1.102 subinterface connects to R2, and the s0/0/1.103 subinterface connects to R3. Each subinterface is on a different subnet. </p>
+          <p></p>
+          <p>To configure subinterfaces on a physical interface, the following steps are required:</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>Remove any network layer address assigned to the physical interface. If the physical interface has an address, frames are not received by the local subinterfaces.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Configure Frame Relay encapsulation on the physical interface using the<span class="cmd"><b> encapsulation frame-relay </b></span>command.</p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>For each of the defined PVCs, create a logical subinterface. Specify the port number, followed by a period (.) and the subinterface number. To make troubleshooting easier, it is suggested that the subinterface number matches the DLCI number. </p>
+          <p></p>
+          <p>
+            <b>Step 4.</b> Configure an IP address for the interface and set the bandwidth.</p>
+          <p></p>
+          <p>
+            <b>Step 5. </b>Configure the local DLCI on the subinterface using the<span class="cmd"><b> frame-relay interface-dlci </b></span>command. Recall that the Frame Relay service provider assigns the DLCI numbers.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure router R2’s physical interface into point-to-point subinterfaces with the appropriate Frame Relay configuration.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

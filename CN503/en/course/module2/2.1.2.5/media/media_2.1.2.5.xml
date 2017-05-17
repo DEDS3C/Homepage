@@ -1,0 +1,48 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Packet-Switched Network</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Queue]]>
+</text></component>
+
+<component id="ID_txt02">
+<text><![CDATA[Labeled data is passed from switch to switch. It may have to wait its turn on a link.]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Sending Data to SRV2 . . .]]>
+</text></component>
+
+<component id="ID_txt04">
+<text><![CDATA[Receiving Data from SRV1 . . .]]>
+</text></component>
+
+
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+</textcomponents>

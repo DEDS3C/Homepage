@@ -1,0 +1,63 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Identify Evolving Network Architecture Terminology</b><br/>Drag the terms to the descriptions in the table.]]></text>
+</component>
+
+<component id='ID_header1'>
+	<text><![CDATA[<b>Terms</b>]]></text>
+</component>
+
+<component id='ID_header2'>
+	<text><![CDATA[<b>Network Architecture Description</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Network infrastructure and services are united via Cisco unified system services options.]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[WebEx Social, TelePresence, and Jabber applications.]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Cisco AnyConnect service software for smartphones and tablets.]]></text>
+</component>
+
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">Data Center and Virtualization Architecture</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">Collaboration Architecture</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">Borderless Network Architecture</font>]]></text>
+</component>
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[You have correctly identified the evolving network architecture terms based on their descriptions.]]></text>
+</component>
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[You have not correctly identified the evolving network architecture terms based on their descriptions. Please Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

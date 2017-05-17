@@ -1,0 +1,12 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[]]></text>
+</component>
+   
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>After completing this chapter, you will be able to:</b><br/><br/><textformat blockindent='-14'><ul><li>Explain the fundamentals of point-to-point serial communication across a WAN.</li><li>Configure HDLC encapsulation on a point-to-point serial link.</li><li>Describe the benefits of using PPP over HDLC in a WAN.</li><li>Describe the PPP layered architecture and the functions of LCP and NCP.</li><li>Explain how a PPP session is established.</li><li>Configure PPP encapsulation on a point-to-point serial link.</li><li>Configure PPP authentication protocols.</li><li>Use <font face="_typewriter"><b>show</b></font> and <font face="_typewriter"><b>debug</b></font> commands to troubleshoot PPP.</li></ul></textformat><br/>]]></text>
+</component>
+
+
+
+</textcomponents>

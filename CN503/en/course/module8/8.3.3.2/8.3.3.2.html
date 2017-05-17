@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.3.2 NetFlow Analysis with a NetFlow Collector</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>NetFlow Analysis with a NetFlow Collector</h1>
+        <div>
+          <p>Plixer International developed the Scrutinizer NetFlow Analyzer software. Scrutinizer is one of many options for capturing and analyzing NetFlow data on a NetFlow collector.</p>
+          <p></p>
+          <p>Recall the configuration from the previous topic:</p>
+          <p>
+            <ul>
+              <li>IP address 192.168.1.1/24 on G0/1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Ingress and egress traffic monitored for NetFlow</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NetFlow collector at 192.168.1.3/24</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NetFlow UDP capture port 2055</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NetFlow Version 5 export format </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The Scrutinizer software has been installed on the NetFlow collector at 192.168.1.3/24. </p>
+          <p></p>
+          <p>Figure 1 displays the software interface upon opening the Scrutinizer application. </p>
+          <p></p>
+          <p>Figure 2 displays the result of clicking the Status tab after the application is running. The software displays a message:<span class="cmd"> Flows detected, please wait while Scrutinizer prepares the initial reports</span>.</p>
+          <p></p>
+          <p>Figure 3 displays the Status screen after a few minutes. Router R1 has been configured with the cisco.com domain name. </p>
+          <p></p>
+          <p>The SNMP configuration from the previous section is still active on R1. The Scrutinizer software was configured with the SNMP community <i>batonaug</i> in the <b>Admin Settings</b> tab. When the SNMP link under R1.cisco.com in the left panel is clicked, the display in Figure 4 appears. This shows a basic traffic analysis for R1 communicated to the NetFlow collector via SNMPv2c. The Multi Router Traffic Grapher (MRTG) is free software that many network administrators use for basic traffic analysis. The Scrutinizer application integrates MRTG and the graphs in Figure 4 are produced by MRTG. The top graph reflects ingress traffic and the bottom graph reflects egress traffic for interface G0/1 on R1.</p>
+          <p></p>
+          <p>Finally, in Figure 5 the <b>Dashboard</b> tab displays actual NetFlow data reported for Top Hosts and Top Applications. The Scrutinizer software has dozens of these gadgets available for displaying various categorizations of data. In Figure 5, the top host is R1, with the greatest amount of traffic between R1 and the NetFlow collector. The top application is HTTPS, followed by SNMP, HTTP, SSH, ICMP, and NetBIOS.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+﻿<textcomponents>  
+
+
+<component id="ID_s1_inst">
+	<text><![CDATA[<b>Activity – Compare Cisco SSL VPN Solutions</b><br/>Drag the appropriate Cisco SSL VPN Solution type to the statement that it best matches.]]></text>
+</component>
+
+<component id='ID_s1_target_header'>
+	<text><![CDATA[<b>Solution Type</b>]]></text>
+</component>
+<component id='ID_s1_text_header'>
+	<text><![CDATA[<b>Cisco VPN SSL Statements</b>]]></text>
+</component>
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[<font color="#393536">Cisco AnyConnect Secure<br> Mobility Client with SSL</font>]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[<font color="#393536">Cisco Secure Mobility Clientless<br> SSL</font>]]></text>
+</component>
+
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[Adaptive security appliance (ASA) proxy devices and port-forwarding are used to access network resources.]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+	<text><![CDATA[A client application must be installed on the end-user device.]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+	<text><![CDATA[Non-corporate managed devices are provided VPN remote access.]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+	<text><![CDATA[A full-access SSL tunnel is established with a Cisco router, adaptive security appliance (ASA) or firewall.]]></text>
+</component>
+<component id="ID_s1_txt05">
+	<text><![CDATA[Clients must pass through ASA access lists to be granted use of applications and files.]]></text>
+</component>
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the Cisco SSL VPN Solution types to their statements.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the Cisco SSL VPN Solution types to their statements. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+</textcomponents>

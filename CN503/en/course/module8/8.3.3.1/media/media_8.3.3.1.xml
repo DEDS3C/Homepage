@@ -1,0 +1,79 @@
+<textcomponents>
+	<!-- Slide 01-->
+		<component id="ID_s1_title">
+			<text><![CDATA[<b>NetFlow Collector Functions</b>]]></text>
+		</component>
+		<component id="ID_s1_txt01">
+			<text><![CDATA[Workstation]]></text>
+		</component>
+		<component id="ID_s1_txt02">
+			<text><![CDATA[Filter]]></text> 
+		</component>
+		<component id="ID_s1_txt03">
+			<text><![CDATA[User Interface]]></text> 
+		</component>
+		<component id="ID_s1_txt04">
+			<text><![CDATA[Aggregate]]></text> 
+		</component>
+		<component id="ID_s1_txt05">
+			<text><![CDATA[Config Files]]></text> 
+		</component>
+		<component id="ID_s1_txt06">
+			<text><![CDATA[Storage]]></text> 
+		</component>
+		<component id="ID_s1_txt07">
+			<text><![CDATA[NetFlow Consumer Applications]]></text> 
+		</component>
+	
+		
+	<!-- Slide 02-->
+		<component id="ID_s2_title">
+			<text><![CDATA[<b>NetFlow Collector Top Talkers</b>]]></text>
+		</component>
+		<component id="ID_s2_txt01">
+			<text><![CDATA[<b>Top 10 Conversations</b>]]></text> 
+		</component>
+		<component id="ID_s2_txt02">
+			<text><![CDATA[BOTH, LAST HOUR]]></text> 
+		</component>
+		<component id="ID_s2_txt03">
+			<text><![CDATA[EXPORT]]></text> 
+		</component>
+		<component id="ID_s2_txt04">
+			<text><![CDATA[HELP]]></text> 
+		</component>
+		
+		
+		<component id="ID_table">
+			<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+				<tr class="liner">
+					<td colspan='6' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+				</tr>
+				<tr>
+					<td width="200" bgcolor='#077A77' valign="top"><font color='#ffffff'><b>CONVERSATION<font color='#077A77'>.................</font></b></font></td>
+					<td width="80" bgcolor='#077A77' valign="top"><font color='#ffffff'><b>INGRESS BYTES</b></font></td>	
+					<td width="80" bgcolor='#077A77' valign="top"><font color='#ffffff'><b>EGRESS BYTES</b></font></td>
+					<td width="80" bgcolor='#077A77' valign="top"><font color='#ffffff'><b>INGRESS PACKETS</b></font></td>	
+					<td width="80" bgcolor='#077A77' valign="top"><font color='#ffffff'><b>EGRESS PACKETS</b></font></td>
+					<td width="95" bgcolor='#077A77' valign="top"><font color='#ffffff'><b>PERCENT</b></font></td>	 
+				</tr>
+				<tr>
+					<td bgcolor='#EFF8F7' valign="top">Between KJOHNSTONXP and rapidshare.com (198.18.131.7)</td>
+					<td bgcolor='#EFF8F7' valign="top">354.4 Kbytes</td>	
+					<td  bgcolor='#EFF8F7' valign="top">10.7 Mbytes</td>
+					<td bgcolor='#EFF8F7' valign="top">621</td>	
+					<td bgcolor='#EFF8F7' valign="top">30.47 k</td>
+					<td bgcolor='#EFF8F7' valign="top">21.82%</td>			
+				</tr>
+				<tr>
+					<td bgcolor='#ffffff' valign="top">Between mbishopwks and rapidshare.com (198.18.131.7)</td>
+					<td bgcolor='#ffffff' valign="top">243.0 Kbytes</td>	
+					<td bgcolor='#ffffff' valign="top">9.0 Mbytes</td>
+					<td bgcolor='#ffffff' valign="top">445</td>	
+					<td bgcolor='#ffffff' valign="top">18.77 k</td>
+					<td bgcolor='#ffffff' valign="top">18.16%</td>				
+				</tr>		
+			</table>]]></text> 
+		</component>	
+		
+</textcomponents>

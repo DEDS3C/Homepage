@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.2 Configuring a Static Frame Relay Map</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring a Static Frame Relay Map</h1>
+        <div>
+          <p>
+            <b>Configuring a Static Frame Relay Map</b>
+          </p>
+          <p></p>
+          <p>Cisco routers support all network layer protocols over Frame Relay, such as IPv4, IPv6, IPX, and AppleTalk. The address-to-DLCI mapping can be accomplished either by dynamic or static address mapping. </p>
+          <p></p>
+          <p>Dynamic mapping is performed by the Inverse ARP feature. Because Inverse ARP is enabled by default, no additional command is required to configure dynamic mapping on an interface. Figure 1 shows the topology used for this topic.</p>
+          <p></p>
+          <p>Static mapping is manually configured on a router. Establishing static mapping depends on your network needs. To map between a next hop protocol address and a DLCI destination address, use the<span class="cmd"><b> frame-relay map </b></span><span class="cmd"><i>protocol protocol-address dlci </i></span><span class="cmd">[</span><span class="cmd"><b>broadcast</b></span><span class="cmd">] </span>command, as shown in Figure 2. Notice the<span class="cmd"><b> broadcast </b></span>keyword at the end of the command. </p>
+          <p></p>
+          <p>Frame Relay, ATM, and X.25 are non-broadcast multiaccess (NBMA) networks. NBMA networks allow only data transfer from one computer to another, over a VC, or across a switching device. NBMA networks do not support multicast or broadcast traffic, so a single packet cannot reach all destinations. This requires you to replicate the packets manually to all destinations. Using the<span class="cmd"><b> broadcast </b></span>keyword is a simplified way to forward routing updates. The<span class="cmd"><b> broadcast </b></span>keyword allows IPv4 broadcasts and multicasts to be propagated to all nodes. It also allows IPv6 multicasts over the PVC. When the keyword is enabled, the router converts the broadcast or multicast traffic into unicast traffic so that other nodes receive the routing updates.</p>
+          <p></p>
+          <p>Figure 3 shows how to use the keywords when configuring static address maps. Notice that the first IPv6 Frame Relay map to a global unicast address does not include the<span class="cmd"><b> broadcast </b></span>keyword. However, the<span class="cmd"><b> broadcast </b></span>keyword is used in the mapping to the link-local address. IPv6 routing protocols use link-local addresses for multicast routing updates; therefore, only the link-local address map requires the<span class="cmd"><b> broadcast </b></span>keyword to forward multicast packets. </p>
+          <p></p>
+          <p>The example only shows the configurations to map the VCs between R1 and R2.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Some routing protocols may require additional configuration options. For example, RIP, EIGRP, and OSPF require additional configurations to be supported on NBMA networks.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

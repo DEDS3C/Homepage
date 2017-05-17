@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.3.5 NCP Explained</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>NCP Explained</h1>
+        <div>
+          <p>
+            <b>NCP Process</b>
+          </p>
+          <p></p>
+          <p>After the link has been initiated, the LCP passes control to the appropriate NCP. </p>
+          <p></p>
+          <p>Although initially designed for IP packets, PPP can carry data from multiple network layer protocols by using a modular approach in its implementation. PPP’s modular model allows LCP to set up the link and then transfer the details of a network protocol to a specific NCP. Each network protocol has a corresponding NCP and each NCP has a corresponding RFC. </p>
+          <p></p>
+          <p>There are NCPs for IPv4, IPv6, IPX, AppleTalk, and many others. NCPs use the same packet format as the LCPs.</p>
+          <p></p>
+          <p>After the LCP has configured and authenticated the basic link, the appropriate NCP is invoked to complete the specific configuration of the network layer protocol being used. When the NCP has successfully configured the network layer protocol, the network protocol is in the open state on the established LCP link. At this point, PPP can carry the corresponding network layer protocol packets. </p>
+          <p></p>
+          <p>
+            <b>IPCP Example</b>
+          </p>
+          <p></p>
+          <p>As an example of how the NCP layer works, the NCP configuration of IPv4, which is the most common Layer 3 protocol, is shown in the figure. After LCP has established the link, the routers exchange IPCP messages, negotiating options specific to the IPv4 protocol. IPCP is responsible for configuring, enabling, and disabling the IPv4 modules on both ends of the link. IPV6CP is an NCP with the same responsibilities for IPv6.</p>
+          <p></p>
+          <p>IPCP negotiates two options:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Compression</b> - Allows devices to negotiate an algorithm to compress TCP and IP headers and save bandwidth. The Van Jacobson TCP/IP header compression reduces the size of the TCP/IP headers to as few as 3 bytes. This can be a significant improvement on slow serial lines, particularly for interactive traffic. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv4-Address</b> - Allows the initiating device to specify an IPv4 address to use for routing IP over the PPP link, or to request an IPv4 address for the responder. Prior to the advent of broadband technologies such as DSL and cable modem services, dialup network links commonly used the IPv4 address option.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>After the NCP process is complete, the link goes into the open state and LCP takes over again in a link maintenance phase. Link traffic consists of any possible combination of LCP, NCP, and network layer protocol packets. When data transfer is complete, NCP terminates the protocol link; LCP terminates the PPP connection.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.3 Diffie-Hellman Key Exchange</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Diffie-Hellman Key Exchange</h1>
+        <div>
+          <p>
+            <b>Data Integrity</b>
+          </p>
+          <p></p>
+          <p>Diffie-Hellman (DH) is not an encryption mechanism and is not typically used to encrypt data. Instead, it is a method to securely exchange the keys that encrypt data. (DH) algorithms allow two parties to establish a shared secret key that is used by encryption and hash algorithms. </p>
+          <p></p>
+          <p>Introduced by Whitfield Diffie and Martin Hellman in 1976, DH was the first system to utilize public key or asymmetric cryptographic keys. Today, DH is part of the IPsec standard. Also, a protocol known as OAKLEY uses a DH algorithm. OAKLEY is used by the IKE protocol, which is part of the overall framework called Internet Security Association and Key Management Protocol.</p>
+          <p></p>
+          <p>Encryption algorithms such as DES, 3DES, and AES, as well as the MD5 and SHA-1 hashing algorithms require a symmetric, shared secret key to perform encryption and decryption. How do the encrypting and decrypting devices get the shared secret key? The easiest key exchange method is a public key exchange method between the encrypting and decrypting devices.</p>
+          <p></p>
+          <p>The DH algorithm specifies a public key exchange method that provides a way for two peers to establish a shared secret key that only they know, although they are communicating over an insecure channel. Like all cryptographic algorithms, DH key exchange is based on a mathematical sequence of steps. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

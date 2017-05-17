@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.3 Frame Relay Encapsulation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Frame Relay Encapsulation</h1>
+        <div>
+          <p>Frame Relay takes data packets from a network layer protocol, such as IPv4 or IPv6, encapsulates them as the data portion of a Frame Relay frame, and then passes the frame to the physical layer for delivery on the wire. To understand how this works, it is helpful to understand how it relates to the lower levels of the OSI model. </p>
+          <p></p>
+          <p>Frame Relay encapsulates data for transport and moves it down to the physical layer for delivery, as shown in Figure 1.</p>
+          <p></p>
+          <p>First, Frame Relay accepts a packet from a network layer protocol, such as IPv4. It then wraps it with an address field that contains the DLCI and a checksum. Flag fields are added to indicate the beginning and end of the frame. The flag fields mark the start and end of the frame and are always the same. The flags are represented either as the hexadecimal number 7E or as the binary number 01111110. After the packet is encapsulated, Frame Relay passes the frame to the physical layer for transport.</p>
+          <p></p>
+          <p>The CPE router encapsulates each Layer 3 packet inside a Frame Relay header and trailer before sending it across the VC. The header and trailer are defined by the Link Access Procedure for Frame Relay (LAPF) Bearer Services specification, ITU Q.922-A. As shown in Figure 2, the Frame Relay header (address field) specifically contains the following:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>DLCI </b>- The 10-bit DLCI is one of the most important fields in the Frame Relay header. This value represents the virtual connection between the DTE device and the switch. Each virtual connection that is multiplexed on to the physical channel is represented by a unique DLCI. The DLCI values have local significance only, which means that they are unique only to the physical channel on which they reside. Therefore, devices at opposite ends of a connection can use different DLCI values to refer to the same virtual connection. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>C/R </b>- The bit that follows the most significant DLCI byte in the Address field. The C/R bit is not currently defined.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Extended Address (EA) </b>- If the value of the EA field is 1, the current byte is determined to be the last DLCI octet. Although current Frame Relay implementations all use a two-octet DLCI, this capability does allow longer DLCIs in the future. The eighth bit of each byte of the Address field indicates the EA. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Congestion Control </b>- Consists of three Frame Relay congestion-notification bits. These three bits are specifically referred to as the Forward Explicit Congestion Notification (FECN), Backward Explicit Congestion Notification (BECN), and Discard Eligible bits.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The physical layer is typically EIA/TIA-232, 449 or 530, V.35, or X.21. The Frame Relay frame is a subset of the HDLC frame type; therefore, it is delimited with flag fields. The 1-byte flag uses the bit pattern 01111110. The FCS determines whether any errors in the Layer 2 address field occurred during transmission. The FCS is calculated prior to transmission by the sending node, and the result is inserted in the FCS field. At the distant end, a second FCS value is calculated and compared to the FCS in the frame. If the results are the same, the frame is processed. If there is a difference, the frame is discarded. Frame Relay does not notify the source when a frame is discarded. Error control is left to the upper layers of the OSI model.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.3.1 Access Rate and Committed Information Rate</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Access Rate and Committed Information Rate</h1>
+        <div>
+          <p>Service providers build Frame Relay networks using very large and very powerful switches, but devices only see the switch interface of the service provider. Customers are usually not exposed to the inner workings of the network, which may be built on very high-speed technologies, such as SONET or SDH. </p>
+          <p></p>
+          <p>From a customer’s point of view, Frame Relay is a single interface configured with one or more PVCs. Customers buy Frame Relay services from a service provider. Before considering how to pay for Frame Relay services, there are some terms and concepts to learn, as shown in the figure:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Access rate </b>- Access rate refers to the port speed. From a customer’s point of view, the service provider provides a serial connection or access link to the Frame Relay network over a leased line. The access rate is the rate at which your access circuits join the Frame Relay network. These may be 56 kb/s, T1 (1.544 Mb/s), or Fractional T1 (a multiple of 56 kb/s or 64 kb/s). Access rates are clocked on the Frame Relay switch. It is not possible to send data at higher than the access rate.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Committed Information Rate (CIR) </b>- Customers negotiate CIRs with service providers for each PVC. The CIR is the amount of data that the network receives from the access circuit. The service provider guarantees that the customer can send data at the CIR. All frames received at or below the CIR are accepted. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The CIR specifies the maximum average data rate that the network undertakes to deliver under normal conditions. When subscribing to a Frame Relay service, the local access rate is specified, for example 56 kb/s or T1. Typically, the provider asks the customer to specify a CIR for each DLCI. </p>
+          <p></p>
+          <p>If the customer sends information faster than the CIR on a given DLCI, the network marks some frames with a Discard Eligibility (DE) bit. The network does its best to deliver all packets; however it discards DE packets first if there is congestion. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Many inexpensive Frame Relay services are based on a CIR of zero (0). A CIR of zero means that every frame is a DE frame and the network throws away any frame when it needs to. The DE bit is within the address field of the Frame Relay frame header.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

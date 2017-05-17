@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.6 Configuring PPP with Authentication</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring PPP with Authentication</h1>
+        <div>
+          <p>The procedure outlined in the table describes how to configure PPP encapsulation and PAP/CHAP authentication protocols. Correct configuration is essential, because PAP and CHAP use these parameters to authenticate. </p>
+          <p></p>
+          <p>
+            <b>Configuring PAP Authentication</b>
+          </p>
+          <p></p>
+          <p>Figure 1 is an example of a two-way PAP authentication configuration. Both routers authenticate and are authenticated, so the PAP authentication commands mirror each other. The PAP username and password that each router sends must match those specified with the<span class="cmd"><b> username </b></span><span class="cmd"><i>name</i></span><span class="cmd"><b> password </b></span><span class="cmd"><i>password </i></span>command of the other router.</p>
+          <p></p>
+          <p>PAP provides a simple method for a remote node to establish its identity using a two-way handshake. This is done only on initial link establishment. The hostname on one router must match the username the other router has configured for PPP. The passwords must also match. Specify the username and password parameters, use the following command: <span class="cmd"><b>ppp pap sent-username </b></span><span class="cmd"><i>name </i></span><span class="cmd"><b>password </b></span><span class="cmd"><i>password</i></span>.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure PAP authentication on router R1’s serial 0/0/1 interface.</p>
+          <p></p>
+          <p>
+            <b>Configuring CHAP Authentication</b>
+          </p>
+          <p></p>
+          <p>CHAP periodically verifies the identity of the remote node using a three-way handshake. The hostname on one router must match the username the other router has configured. The passwords must also match. This occurs on initial link establishment and can be repeated any time after the link has been established. Figure 3 is an example of a CHAP configuration.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure CHAP authentication on router R1’s serial 0/0/1 interface.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

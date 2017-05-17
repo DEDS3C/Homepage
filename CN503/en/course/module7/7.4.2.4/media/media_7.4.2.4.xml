@@ -1,0 +1,48 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Comparing IPsec and SSL</b>]]></text>
+	</component>
+	
+	<component id="ID_table">
+  	<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr><td colspan='3' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+	
+	<tr colspan='3'>
+		<td width="100" bgcolor='#077A77'   valign="top" ><font color='#ffffff' size="11"></font></td>
+		<td bgcolor='#077A77'  valign="top" id="tdspace"><font color='#ffffff' size="11"><b>SSL</b></font></td>
+		<td bgcolor='#077A77'  valign="top" ><font color='#ffffff' size="11"><b>IPsec</b></font></td>
+	</tr>
+
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">Applications</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">Web-enabled applications, file sharing, email</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">All IP-based applications</font></td>	
+	</tr>
+
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536' size="11">Encryption</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536' size="11"><b>Moderate to Strong</b><br/>Key lengths from 40 bits to 256 bits</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536' size="11"><b>Strong</b><br/>Key lengths from 56 bits to 256 bits</font></td>
+	</tr>
+
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">Authentication</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11"><b>Moderate</b><br/>One-way or two-way authentication</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11"><b>Strong</b><br/>Two-way authentication using shared secrets or digital certificates</font></td>
+	</tr>
+
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536' size="11">Connection Complexity</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536' size="11"><b>Low</b><br/>Requires only a web browser</font></td>
+		<td bgcolor='#FFFFFF' valign="top"><font color='#393536' size="11"><b>Medium</b><br/>Can be challenging to nontechnical users</font></td>
+	</tr>
+
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">Connection Options</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">Any device can connect</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">Only specific devices with specific configurations can connect</font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+</textcomponents>

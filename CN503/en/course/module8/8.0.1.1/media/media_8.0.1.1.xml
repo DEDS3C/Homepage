@@ -1,0 +1,7 @@
+<textcomponents>
+
+	<component id="ID_txt01">
+		<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br/><br/><textformat blockindent="-14"><ul><li>Explain syslog operation.</li><li>Configure syslog to compile messages on a small- to medium-sized business network management device.</li><li>Explain SNMP operation. </li><li>Configure SNMP to compile messages on a small- to medium-sized business network.</li><li>Describe NetFlow operation.</li><li>Configure NetFlow to monitor traffic in a small- to medium-sized business network.</li><li>Explain how NetFlow data is used to examine traffic patterns.</li></ul></textformat><br/>]]></text> 
+	</component>
+	
+</textcomponents>

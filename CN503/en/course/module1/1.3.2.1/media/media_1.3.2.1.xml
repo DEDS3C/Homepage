@@ -1,0 +1,62 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+   <text><![CDATA[<b>Borderless Network Architecture</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+   <text><![CDATA[<b>Services Supported in Borderless Networks</b>]]></text>
+</component>   
+   
+   
+<component id="ID_txt01">
+<text><![CDATA[<b>Borderless End-Point/User Services</br>]]></text>
+</component>
+<component id="ID_txt02">   
+  <text><![CDATA[Devices must connect securely, reliably, and seamlessly = <font color="#F26200"><br/>Cisco AnyConnect</font>]]></text> 
+  </component>
+
+
+
+  
+<component id="ID_txt04">
+  <text><![CDATA[<b>Borderless Network <br/>Services</b>]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Security:<br/><b><font color="#F26200">TrustSec</font></b>]]></text> 
+  </component>
+  <component id="ID_txt06">
+<text><![CDATA[Mobility:<br/><b><font color="#F26200">Motion</font></b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Application Performance:<br/><b><font color="#F26200">App Velocity</font></b>]]></text>
+</component>
+<component id="ID_txt08">
+  <text><![CDATA[Multimedia Optimization:<br/><b><font color="#F26200">Medianet</font></b>]]></text> 
+  </component>
+ <component id="ID_txt09">
+  <text><![CDATA[Energy Management:<br/><b><font color="#F26200">EnergyWise</font></b>]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[<b>Borderless Infrastructure</b>]]></text> 
+  </component>
+ <component id="ID_txt11">
+  <text><![CDATA[Wireless]]></text> 
+  </component>
+ <component id="ID_txt12">
+  <text><![CDATA[Routing]]></text> 
+  </component>
+ <component id="ID_txt13">
+  <text><![CDATA[Switching]]></text> 
+  </component>
+<component id="ID_txt14">
+  <text><![CDATA[Application Networking/<br/>Optimization]]></text> 
+  </component>
+
+  <component id="ID_txt15">
+  <text><![CDATA[Security]]></text> 
+  </component>
+  
+  
+</textcomponents>

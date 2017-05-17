@@ -1,0 +1,42 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Teleworking</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+   <text><![CDATA[VPN]]></text>
+</component>
+
+
+<component id="ID_txt02">
+   <text><![CDATA[HQ]]></text>
+</component>
+
+
+<component id="ID_txt03">
+   <text><![CDATA[Homeworker]]></text>
+</component>
+
+
+<component id="ID_txt04">
+   <text><![CDATA[Homeworker]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[Branch Office]]></text>
+</component>
+
+<component id="ID_txt06">
+   <text><![CDATA[Hotspot]]></text>
+</component>
+
+
+<component id="ID_txt07">
+   <text><![CDATA[Dialup user]]></text>
+</component>
+
+<component id="ID_txt08">
+   <text><![CDATA[Teleworker]]></text>
+</component>
+
+</textcomponents>

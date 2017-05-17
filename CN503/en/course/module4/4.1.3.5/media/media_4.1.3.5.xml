@@ -1,0 +1,103 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Match Frame Relay Bandwidth and Flow Control Terms to Descriptions</b><br/>Match the Frame Relay Bandwidth and Flow Control terms to the descriptions by dragging the term to the appropriate space. Not all answers will be used.]]></text>
+</component>
+
+
+<component id='ID_header01'>
+	<text><![CDATA[<b>Frame Relay Bandwidth and Flow Control Description</b>]]></text>
+</component>
+
+
+<component id='ID_header02'>
+	<text><![CDATA[<b>Term</b>]]></text>
+</component>
+
+
+
+
+<component id='ID_txt01'>
+	<text><![CDATA[Port bandwidth of the local loop.]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Bandwidth “borrowing” from other PVCs when available.]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Holding frames in a buffer before sending.]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[Guaranteed bandwidth for a specific PVC.]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[Downstream notification that there is congestion on a Frame Relay switch.]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[Identifies the frames to be dropped in times of congestion.]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">Queuing</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">Bursting</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">Access Rate</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">DE</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">ECN</font>]]></text>
+</component>
+<component id='ID_drag06'>
+	<text><![CDATA[<font color="#393536">FECN</font>]]></text>
+</component>
+
+<component id='ID_drag07'>
+	<text><![CDATA[<font color="#393536">BECN</font>]]></text>
+</component>
+
+<component id='ID_drag08'>
+	<text><![CDATA[<font color="#393536">CIR</font>]]></text>
+</component>
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the Frame Relay bandwidth and flow control terms.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the Frame Relay bandwidth and flow control terms. Please reset the activity and try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

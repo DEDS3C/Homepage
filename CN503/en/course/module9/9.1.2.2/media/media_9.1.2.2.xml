@@ -1,0 +1,62 @@
+﻿<textcomponents>
+
+<component id="ID_s2_title">
+	<text><![CDATA[<b>Commands for Gathering Symptoms</b>]]></text>
+</component>
+
+
+<component id="ID_table02">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+
+<tr>
+<td width="180" bgcolor='#077A77' class="mtitle"><font color='#ffffff'><b>Command</b></font></td>
+<td bgcolor='#077A77' class="mtitle"><font color='#ffffff'><b>Description</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7'><font face="_typewriter"><b>ping </b>{<i>host</i>|<i>ip-address</i>}</font></td>
+<td bgcolor='#eff8f7'>Sends an echo request packet to an address, then waits for a reply. The <font face="_typewriter"><i>host </i></font>| <font face="_typewriter"><i> ip-address </i></font>variable is the IP alias or IP address of the target system.</td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff'><font face="_typewriter"><b>traceroute </b>{<i>destination</i>}</font></td>
+<td bgcolor='#ffffff'>Identifies the path a packet takes through the networks. The destination variable is the hostname or IP address of the target system.</td>
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7'><font face="_typewriter"><b>telnet </b>{<i>host</i>|<i>ip-address</i>}</font></td>
+<td bgcolor='#eff8f7'>Connects to an IP address using the Telnet application.</td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff'><font face="_typewriter"><b>show ip interface brief show ipv6 interface brief</b></font></td>
+<td bgcolor='#ffffff'>Displays a summary of the status of all interfaces on a device.</td> 
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7'><font face="_typewriter"><b>show ip route<br/>show ipv6 route</b></font></td>
+<td bgcolor='#eff8f7'>Displays the current IPv4 and IPv6 routing tables, which contains the routes to all known network destinations.</td> 
+</tr>
+
+<tr>
+<td bgcolor='#eff8f7'><font face="_typewriter"><b>show running-config</b></font></td>
+<td bgcolor='#eff8f7'>Displays contents of currently running configuration file.</td> 
+</tr>
+
+<tr>
+<td bgcolor='#ffffff'><font face="_typewriter"><b>[no] debug ?</b></font></td>
+<td bgcolor='#ffffff'>Displays a list of options for enabling or disabling debugging events on a device.</td> 
+</tr>
+
+<tr>
+<td bgcolor='#ffffff'><font face="_typewriter"><b>show protocols</b></font></td>
+<td bgcolor='#ffffff'>Displays the configured protocols and shows the global and interface-specific status of any configured Layer 3 protocol.</td> 
+</tr>
+</table>]]></text> 
+</component>
+
+</textcomponents>

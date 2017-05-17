@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.3.2 Frame Relay Example</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Frame Relay Example</h1>
+        <div>
+          <p>Aside from any CPE costs, the customer pays for three Frame Relay cost components as follows:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Access rate </b>- The cost of the access line from the DTE to the DCE (customer to service provider). This line is charged based on the port speed that has been negotiated and installed. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PVC </b>- This cost component is based on the PVCs. After a PVC is established, the additional cost to increase CIR is typically small and can be done in small (4 kb/s) increments.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>CIR </b>- Customers normally choose a CIR lower than the access rate. This allows them to take advantage of bursts.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In the example in the figure, the customer is paying for the following:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>An access line with a rate of 64 kb/s connecting their DTE to the DCE of the service provider through serial port S0/0/1. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Two virtual ports, one at 32 kb/s and the other at 16 kb/s. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A CIR of 48 kb/s across the entire Frame Relay network. This is usually a flat charge and not connected to the distance.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The bandwidth values used throughout this chapter are for comparative purposes only. They do not necessarily reflect actual implementations.</p>
+          <p></p>
+          <p>
+            <b>Oversubscription</b>
+          </p>
+          <p>Service providers sometimes sell more capacity than they have on the assumption that not everyone will demand their entitled capacity all of the time. This oversubscription is analogous to airlines selling more seats than they have in the expectation that some of the booked customers will not show up. Because of oversubscription, there are instances when the sum of CIRs from multiple PVCs to a given location is higher than the port or access channel rate. This can cause congestion and dropped traffic.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.1 Reachability Issues</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Reachability Issues</h1>
+        <div>
+          <p>By default, most Frame Relay networks provide NBMA connectivity, using a hub-and-spoke topology, between remote sites. In an NBMA Frame Relay topology, when a single multipoint interface must be used to interconnect multiple sites, routing update reachability issues may result. With distance vector routing protocols, reachability issues may result from split horizon and multicast or broadcast replication. With link state routing protocols, issues with the DR/BDR election may result in reachability issues.</p>
+          <p></p>
+          <p>
+            <b>Split Horizon </b>
+          </p>
+          <p>The split horizon rule is a loop prevention mechanism for distance vector routing protocols such as EIGRP and RIP. It is not applicable to link-state routing protocols. Split horizon rule reduces routing loops by preventing a routing update that is received on an interface from being forwarded out the same interface. </p>
+          <p></p>
+          <p>For example, in Figure 1, which is a hub-and-spoke Frame Relay topology, a remote router R2 (a spoke router) sends an update to the headquarters router R1 (the hub router). R1 is connecting multiple PVCs over a single physical interface. R1 receives the multicast on its physical interface; however, split horizon cannot forward that routing update through the same interface to other remote (spoke) routers.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Split horizon is not an issue if only one PVC (a single remote connection) is configured on a physical interface. This type of connection is point-to-point.</p>
+          <p></p>
+          <p>Figure 2 displays a similar example using the reference topology used throughout this chapter. R2, a spoke router, sends a routing update to R1, a hub router. R1 has multiple PVCs on a single physical interface. The split horizon rule prevents R1 from forwarding that routing update through the same physical interface to the other remote spoke router (R3). </p>
+          <p></p>
+          <p>
+            <b>Multicast and Broadcast Replication</b>
+          </p>
+          <p></p>
+          <p>As shown in Figure 3, due to split horizon, when a router supports multipoint connections over a single interface, the router must replicate broadcast or multicast packets. In the case of routing updates, the updates must be replicated and sent on each PVC to the remote routers. These replicated packets consume bandwidth and cause significant latency variations in user traffic. The amount of broadcast traffic and the number of VCs terminating at each router should be evaluated during the design phase of a Frame Relay network. Overhead traffic, such as routing updates, can affect the delivery of critical user data, especially when the delivery path contains low-bandwidth (56 kb/s) links.</p>
+          <p></p>
+          <p>
+            <b>Neighbor Discovery: DR and BDR</b>
+          </p>
+          <p></p>
+          <p>Link-state routing protocols, such as OSPF, does not use the split horizon rule for loop prevention. However, reachability issues can arise with the DR/BDR. OSPF over NBMA networks works in non-broadcast network mode, by default, and neighbors are not automatically discovered. Neighbors can be statically configured. However, ensure that the hub router becomes a DR, as shown in Figure 4. Recall that a NBMA network behaves like Ethernet, and on Ethernet, a DR is needed to exchange routing information between all routers on a segment. Therefore, only the hub router can act as a DR, because it is the only router that has PVCs with all other routers.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

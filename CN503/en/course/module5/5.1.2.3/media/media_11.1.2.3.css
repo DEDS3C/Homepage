@@ -1,0 +1,19 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;	
+}
+#flashContent {
+	width:98%;
+	height:98%; 
+	position: absolute;
+	overflow: hidden;
+}
+#text_9, #text_19{
+	letter-spacing:-0.5px !important;
+	margin-left:11px !important;
+	}

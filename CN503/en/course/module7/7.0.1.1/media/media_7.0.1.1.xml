@@ -1,0 +1,12 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[]]></text>
+</component>
+   
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>After completing this chapter, you will be able to:</b><br/><br/><textformat blockindent='-14'><ul><li>Describe benefits of VPN technology.</li><li>Describe site-to-site and remote access VPNs.</li><li>Describe the purpose and benefits GRE tunnels.</li><li>Configure a site-to-site GRE tunnel.</li><li>Describe the characteristics of IPsec.</li><li>Explain how IPsec is implemented using the IPsec protocol framework.</li><li>Explain how the AnyConnect client and clientless SSL remote access VPN implementations support business requirements.</li><li>Compare IPsec and SSL remote access VPNs.</li></ul></textformat><br/>]]></text>
+</component>
+
+
+
+</textcomponents>

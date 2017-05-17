@@ -1,0 +1,156 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Separating Data from Voice in ADSL</b>]]></text>
+</component>
+
+<component id="ID_test_title">
+<text><![CDATA[<b><!-- Separating Data from Voice in ADSL --></b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+  <text><![CDATA[<b>Customer Premises</b>]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>Central Office</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt03">
+  <text><![CDATA[Analog Voice]]></text> 
+  </component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[Microfilter]]></text> 
+  </component>
+  <component id="ID_s1_txt05">
+  <text><![CDATA[Analog Phone]]></text> 
+  </component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[Demarcation Point]]></text> 
+  </component>
+  <component id="ID_s1_txt07">
+  <text><![CDATA[Class 5 Switch]]></text> 
+  </component>
+<component id="ID_s1_txt08">
+  <text><![CDATA[PC]]></text> 
+  </component>
+  <component id="ID_s1_txt09">
+  <text><![CDATA[ADSL CPE]]></text> 
+  </component>
+<component id="ID_s1_txt10">
+  <text><![CDATA[NID]]></text> 
+  </component>
+  <component id="ID_s1_txt11">
+  <text><![CDATA[POTS]]></text> 
+  </component>
+    <component id="ID_s1_txt11B">
+  <text><![CDATA[ADSL</span>]]></text> 
+  </component>
+    <component id="ID_s1_txt12">
+  <text><![CDATA[POTS Splitter]]></text> 
+  </component>
+      <component id="ID_s1_txt13">
+  <text><![CDATA[ADSL]]></text> 
+  </component>
+        <component id="ID_s1_txt14">
+  <text><![CDATA[DSLAM]]></text> 
+  </component>
+  <component id="ID_s1_txt15">
+  <text><![CDATA[Wall]]></text> 
+  </component>
+  
+  
+ <component id="ID_s2_title">
+<text><![CDATA[<b>Microfilters</b>]]></text>
+</component> 
+<component id="ID_s2_txt01">
+  <text><![CDATA[Telephone NID]]></text> 
+  </component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[Telephone Line]]></text> 
+  </component>
+<component id="ID_s2_txt03">
+  <text><![CDATA[Microfilter]]></text> 
+  </component>
+<component id="ID_s2_txt03B">
+  <text><![CDATA[Microfilter]]></text> 
+  </component>
+<component id="ID_s2_txt04">
+  <text><![CDATA[Microfilter]]></text> 
+  </component> 
+<component id="ID_s2_txt04B">
+  <text><![CDATA[Microfilter]]></text> 
+  </component>
+  
+  <component id="ID_s2_txt05">
+  <text><![CDATA[<b>NID</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt06">
+  <text><![CDATA[Line]]></text> 
+  </component>
+  <component id="ID_s2_txt07">
+  <text><![CDATA[GRN]]></text> 
+  </component>
+  <component id="ID_s2_txt08">
+  <text><![CDATA[RED]]></text> 
+  </component>
+  <component id="ID_s2_txt09">
+  <text><![CDATA[<b>DSL SPLITTER</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt10">
+  <text><![CDATA[Network]]></text> 
+  </component>
+  <component id="ID_s2_txt11">
+  <text><![CDATA[WHT/<br/>GRN]]></text> 
+  </component>
+  <component id="ID_s2_txt12">
+  <text><![CDATA[WHT/<br/>RED]]></text> 
+  </component>
+    <component id="ID_s2_txt13">
+  <text><![CDATA[Voice]]></text> 
+  </component>
+  
+    <component id="ID_s2_txt14">
+  <text><![CDATA[GRN]]></text> 
+  </component>
+      <component id="ID_s2_txt15">
+  <text><![CDATA[RED]]></text> 
+  </component>
+      <component id="ID_s2_txt16">
+  <text><![CDATA[Data (DSL)]]></text> 
+  </component>
+  
+    <component id="ID_s2_txt17">
+  <text><![CDATA[BLK]]></text> 
+  </component>
+      <component id="ID_s2_txt18">
+  <text><![CDATA[YLW]]></text> 
+  </component>
+        <component id="ID_s2_txt19">
+  <text><![CDATA[Using a splitter to separate voice and data (DSL)]]></text> 
+  </component>
+  
+    <component id="ID_s2_txt20">
+  <text><![CDATA[To Phone Jacks]]></text> 
+  </component>
+      <component id="ID_s2_txt21">
+  <text><![CDATA[To DSL Data Jack ]]></text> 
+  </component>
+    <component id="ID_s2_txt22">
+  <text><![CDATA[Wall]]></text> 
+  </component>
+  
+  
+   <component id="ID_s3_title">
+<text><![CDATA[<b>Splitter</b>]]></text>
+</component> 
+<component id="ID_s3_txt01">
+  <text><![CDATA[Splitter Box]]></text> 
+  </component>
+  <component id="ID_s3_txt02">
+  <text><![CDATA[Telephone Line]]></text> 
+  </component>
+  <component id="ID_s3_txt03">
+  <text><![CDATA[Data Line]]></text> 
+  </component>
+    <component id="ID_s3_txt04">
+  <text><![CDATA[Wall]]></text> 
+  </component>
+</textcomponents>

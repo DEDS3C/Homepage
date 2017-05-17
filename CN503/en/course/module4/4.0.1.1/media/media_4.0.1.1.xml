@@ -1,0 +1,12 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[]]></text>
+</component>
+   
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>Upon completion of this chapter, you will be able to:</b><br/><br/><textformat blockindent='-14'><ul><li>Describe the benefits of Frame Relay.</li><li>Explain Frame Relay operation.</li><li>Explain bandwidth control mechanisms in Frame Relay.</li><li>Configure a basic Frame Relay PVC on a router serial interface.</li><li>Configure point-to-point subinterfaces.</li><li>Use<font face="_typewriter">&nbsp;<b>show</b><font> and<font face="_typewriter"> <b>debug</b></font> <font face="Arial">commands to troubleshoot Frame Relay.</font></li></ul></textformat><br/>]]></text>
+</component>
+
+
+
+</textcomponents>

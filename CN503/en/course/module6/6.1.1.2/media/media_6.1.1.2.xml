@@ -1,0 +1,10 @@
+<textcomponents>
+<component id="ID_txtTitle">
+<text><![CDATA[<b>Employer Benefits of Teleworking:</b>]]></text>
+</component>
+
+<component id='ID_txtBody'>
+	<text><![CDATA[<textformat blockindent='-14' ><ul><li>Improved employee productivity</li><li>Reduced costs and expenses</li><li>Easier recruitment and retention</li><li>Reduced absenteeism</li><li>Improved morale</li><li>Improved corporate citizenship</li><li>Improved customer service</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

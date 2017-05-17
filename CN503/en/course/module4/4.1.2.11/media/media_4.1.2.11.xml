@@ -1,0 +1,135 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Order Frame Relay Fields in Frame Relay Frame</b><br>Order the fields in the Frame Relay frame by dragging the field name labels to the appropriate space provided. Some labels may be used more than once.]]></text>
+</component>
+
+<component id='ID_header01'>
+	<text><![CDATA[<b>Field Name</b>]]></text>
+</component>
+
+<component id='ID_header02'>
+	<text><![CDATA[<b>Definition</b>]]></text>
+</component>
+
+<component id='ID_header03'>
+	<text><![CDATA[8 Bits]]></text>
+</component>
+
+<component id='ID_header04'>
+	<text><![CDATA[16 Bits]]></text>
+</component>
+
+<component id='ID_header05'>
+	<text><![CDATA[Variable]]></text>
+</component>
+
+<component id='ID_header06'>
+	<text><![CDATA[16 Bits]]></text>
+</component>
+
+<component id='ID_header07'>
+	<text><![CDATA[8 Bits]]></text>
+</component>
+
+<component id='ID_header08'>
+	<text><![CDATA[First 8 bits]]></text>
+</component>
+
+<component id='ID_header09'>
+	<text><![CDATA[Second 8 bits]]></text>
+</component>
+
+<component id='ID_header10'>
+	<text><![CDATA[Bits]]></text>
+</component>
+
+<component id='ID_header11'>
+	<text><![CDATA[Bits]]></text>
+</component>
+
+
+
+
+<component id='ID_txt01'>
+	<text><![CDATA[Packets]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Calculated value to check for transmission errors]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[A special numerical binary value 01111110]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[Includes DLCI, FECN, BECN, DE, and EA values]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[Includes DLCI, C/R, and EA values]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[Frame Relay control values]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">Data</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">FCS</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">Flag</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">Address Byte 2</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">Address Byte 1</font>]]></text>
+</component>
+
+
+<component id='ID_drag06'>
+	<text><![CDATA[<font color="#393536">Address</font>]]></text>
+</component>
+
+
+
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully ordered the Frame Relay fields.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully ordered the Frame Relay fields. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

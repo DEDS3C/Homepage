@@ -1,0 +1,28 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;	
+}
+#flashContent {
+	width:98%;
+	height:98%; 
+	position: absolute;
+	overflow: hidden;
+}
+
+#SADiv1, #DADiv{
+	letter-spacing:-0.7px ;
+	}
+
+@media only screen and (device-width: 768px) {
+#SADiv, #DADiv1{
+	letter-spacing:-1px !important;
+	}
+#SADiv1, #DADiv{
+	letter-spacing:-1.5px !important;
+	}
+}

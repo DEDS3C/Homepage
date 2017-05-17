@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.4 PPP Encapsulation and Authentication Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PPP Encapsulation and Authentication Process</h1>
+        <div>
+          <p>The flowchart in Figure 1 can be used to help understand the PPP authentication process when configuring PPP. The flowchart provides a visual example of the logic decisions made by PPP. </p>
+          <p></p>
+          <p>For example, if an incoming PPP request requires no authentication, then PPP progresses to the next level. If an incoming PPP request requires authentication, then it can be authenticated using either the local database or a security server. As illustrated in the flowchart, successful authentication progresses to the next level, while an authentication failure disconnects and drops the incoming PPP request.</p>
+          <p></p>
+          <p></p>
+          <p>Follow the steps as the animation progresses in Figure 2 to view R1 establishing an authenticated PPP CHAP connection with R2.</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>R1 initially negotiates the link connection using LCP with router R2 and the two systems agree to use CHAP authentication during the PPP LCP negotiation. </p>
+          <p></p>
+          <p>
+            <b>Step 2.</b> R2 generates an ID and a random number, and sends that and its username as a CHAP challenge packet to R1. </p>
+          <p></p>
+          <p>
+            <b>Step 3.</b> R1 uses the username of the challenger (R2) and cross references it with its local database to find its associated password. R1 then generates a unique MD5 hash number using the R2's username, ID, random number and the shared secret password. In this example, the shared secret password is boardwalk.</p>
+          <p></p>
+          <p>
+            <b>Step 4.</b> Router R1 then sends the challenge ID, the hashed value, and its username (R1) to R2.</p>
+          <p></p>
+          <p>
+            <b>Step 5.</b> R2 generates its own hash value using the ID, the shared secret password, and the random number it originally sent to R1.</p>
+          <p></p>
+          <p>
+            <b>Step 6.</b> R2 compares its hash value with the hash value sent by R1. If the values are the same, R2 sends a link established response to R1.</p>
+          <p></p>
+          <p>If the authentication failed, a CHAP failure packet is built from the following components:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>04 = CHAP failure message type</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>id = copied from the response packet</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>"Authentication failure" or some similar text message, which is meant to be a user-readable explanation</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The shared secret password must be identical on R1 and R2.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

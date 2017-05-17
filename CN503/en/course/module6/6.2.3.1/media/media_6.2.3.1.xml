@@ -1,0 +1,88 @@
+<textcomponents>
+
+<!--SLIDE 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Types of Broadband Wireless Access</b>]]></text>
+</component>
+
+<component id="ID_s1_table">
+  <text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' >
+	<tr>
+		<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77'  valign="top"><font color='#ffffff' ></font></td>
+		<td bgcolor='#077A77'  valign="top"><font color='#ffffff' ></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' width="150" valign="top"><img src="6_2_3_1_s1_A.jpg" width="106" height="150" class="pics1"/></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536'><font color='#393536' ><textformat blockIndent="-14"><ul class="bulletIndent20"><li>IEEE 802.11 standards commonly called Wi-Fi</li><li>Municipal Wi-Fi implementations employ a mesh topology, with an access point at each node</li><li>Variations include 802.11a/b/g/n/ac/ad</li><li>Supports speeds of up to 7 Gb/s</li></ul></textformat></font></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#ffffff' valign="top"><img src="6_2_3_1_s1_B.jpg" width="150" height="113" class="pics" /></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536'><font color='#393536' ><textformat blockIndent="-14"><ul class="bulletIndent20"><li>IEEE 802.16 standard commonly called WiMAX</li><li>Uses a point-to-multipoint topology to provide wireless cellular broadband access</li><li>Supports speeds up to 1 Gb/s</li></ul></textformat></font></font>
+		</td>
+	</tr>
+	<tr>
+	    <td bgcolor='#EFF8F7' valign="top"><img src="6_2_3_1_s1_C.jpg" width="150" height="111" class="pics3" /></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536'><textformat blockIndent="-14"><ul class="bulletIndent20"><li>Cellular/Mobile broadband access consisting of various standards supporting speeds of up to 5 Mb/s</li><li>Variations include 2G (using GSM, CDMA, or TDMA), 3G (using UMTS, CDMA2000, EDGE, or HSPA+) and 4G (using WiMAX or LTE)</li></ul></textformat></font></td>
+	</tr>
+	
+		<tr>
+	    <td bgcolor='#ffffff' valign="top"><img src="6_2_3_1_s1_D.jpg" width="160" height="100" class="pics4" /></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536'><textformat blockIndent="-14"><ul class="bulletIndent20"><li>Satellite communication using a directional satellite dish aligned with GEO satellite</li><li>Ideal in situations such as remote areas where no other wireless access is available</li><li>Support download speeds of up to 10 Mb/s</li></ul></textformat></font></td>
+	</tr>
+		
+	</table>]]></text>
+  </component>  
+  
+
+<!--SLIDE 2-->
+<component id="ID_s2_title">
+	<text><![CDATA[<b>Municipal WiFi (Mesh) Implementation</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+	<text><![CDATA[<b>Access Point</b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+	<text><![CDATA[<b>Backhaul Node</b>]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+	<text><![CDATA[<b>To the Internet</b>]]></text>
+</component>
+
+
+  
+<!--SLIDE 3-->
+<component id="ID_s3_title">
+	<text><![CDATA[<b>WiMax Implementation</b>]]></text>
+</component>
+	
+<component id="ID_s3_txt01">
+	<text><![CDATA[ISP Network]]></text>
+</component>
+	
+<component id="ID_s3_txt02">
+	<text><![CDATA[Internet Backbone]]></text>
+</component>
+	
+<component id="ID_s3_txt03">
+	<text><![CDATA[WiMAX 802.16 Transmitter]]></text>
+</component>
+	
+<component id="ID_s3_txt04">
+	<text><![CDATA[Home Local Area Network]]></text>
+</component>
+	
+<component id="ID_s3_txt05">
+	<text><![CDATA[Non Line of Sight Transmission]]></text>
+</component>
+
+<component id="ID_s3_txt06">
+	<text><![CDATA[Line of Sight Backhaul]]></text>
+</component>
+	  
+</textcomponents>

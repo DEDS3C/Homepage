@@ -1,0 +1,34 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[<b>Cisco SSL VPN Solutions</b>]]></text>
+   </component>
+   
+<component id="ID_txt01">
+   <text><![CDATA[User Computer<br>with Browser]]></text>
+</component>
+
+<component id="ID_txt02">
+   <text><![CDATA[Cisco AnyConnect Secure Mobility Client]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[SSL VPN Tunnel]]></text>
+</component>
+
+<component id="ID_txt04">
+   <text><![CDATA[Workplace Resources]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[SSL VPN]]></text>
+</component>
+
+<component id="ID_txt06">
+   <text><![CDATA[Headquarters]]></text>
+</component>
+
+<component id="ID_txt07">
+   <text><![CDATA[Internet]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.2.2 Verifying NetFlow</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying NetFlow</h1>
+        <div>
+          <p>After it is verified that NetFlow is working properly, data collection can begin on the NetFlow collector. Netflow verification is done by examining the information stored on the NetFlow collector. At a minimum, check the local NetFlow cache on a router to ensure that the router is collecting the data. </p>
+          <p></p>
+          <p>NetFlow was configured on router R1 as follows:</p>
+          <p>
+            <ul>
+              <li>IP address 192.168.1.1/24 on G0/1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Ingress and egress traffic monitored by NetFlow</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NetFlow collector at 192.168.1.3/24</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NetFlow UDP capture port 2055</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NetFlow Version 5 export format </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To display a summary of the NetFlow accounting statistics, as well as which protocol uses the highest volume of the traffic, and to see between which hosts this traffic flows, use the<span class="cmd"><b> show ip cache flow </b></span>command in user EXEC or privileged EXEC mode. This command is entered on R1 to verify the NetFlow configuration, as seen in Figure 1. The command output details which protocol uses the highest volume of the traffic and between which hosts this traffic flows. The table in Figure 1 describes the significant fields shown in the flow switching cache lines of the display.</p>
+          <p></p>
+          <p>The output at the top of the display confirms that the router is collecting data. The first highlighted entry lists a count of 178,617 packets monitored by NetFlow. The end of the output shows statistics about three flows, the highlighted one corresponding to an active HTTPS connection between the NetFlow collector and R1. It also shows the source port (SrcP) and destination port (DstP) in hexadecimal. </p>
+          <p></p>
+          <p>
+            <b>Note</b>:  Hexadecimal 01BB is equal to decimal 443, the well-known TCP port for HTTPS. </p>
+          <p></p>
+          <p>Figure 2 describes the significant fields in the flow switching cache lines of the<span class="cmd"><b> show ip cache flow </b></span>command output.</p>
+          <p></p>
+          <p>Figure 3 describes the significant fields in the activity by protocol lines of the<span class="cmd"><b> show ip cache flow </b></span>command output.</p>
+          <p></p>
+          <p>Figure 4 describes the significant fields in the NetFlow record lines of the<span class="cmd"><b> show ip cache flow </b></span>command output.</p>
+          <p></p>
+          <p>Although the output of the<span class="cmd"><b> show ip cache flow </b></span>command confirms that the router is collecting data, to ensure that NetFlow is configured on the correct interfaces in the correct directions, use the<span class="cmd"><b> show ip flow interface </b></span>command, as shown in Figure 5. </p>
+          <p></p>
+          <p>To check the configuration of the export parameters, use the<span class="cmd"><b> show ip flow export </b></span>command, shown in Figure 5. The first highlighted line shows that NetFlow is enabled with Version 5 export format. The last highlighted lines in Figure 5 show that 1764 flows have been exported in the form of 532 UDP datagrams to the NetFlow collector at 192.168.1.3 via port 2055.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 6 to configure and verify NetFlow on R1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

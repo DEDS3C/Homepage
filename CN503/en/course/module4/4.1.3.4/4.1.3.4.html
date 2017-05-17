@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.3.4 Frame Relay Flow Control</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Frame Relay Flow Control</h1>
+        <div>
+          <p>Frame Relay reduces network overhead by implementing simple congestion-notification mechanisms, rather than explicit, per-VC flow control. These congestion-notification mechanisms are the Forward Explicit Congestion Notification (FECN) and the Backward Explicit Congestion Notification (BECN). </p>
+          <p></p>
+          <p>To help understand the mechanisms, Figure 1 shows the structure of the Standard Frame Relay frame for review. FECN and BECN are each controlled by a single bit contained in the frame header. They let the router know that there is congestion and that the router should stop transmission until the condition is reversed. When the DCE sets the BECN bit to 1, it notifies devices in the direction of the source (upstream) that there is congestion on the network. When the DCE sets the FECN bit to 1, it notifies devices in the direction of the destination (downstream) that there is congestion on the network. </p>
+          <p></p>
+          <p>The frame header also contains the DE bit, which identifies less important traffic that can be dropped during periods of congestion. DTE devices can set the value of the DE bit to 1 to indicate that the frame has lower importance than other frames. When the network becomes congested, DCE devices discard the frames with the DE bit set to 1 before discarding those that do not. This reduces the likelihood of critical data being dropped during periods of congestion.</p>
+          <p></p>
+          <p>In periods of congestion, the service provider’s Frame Relay switch applies the following logic rules to each incoming frame based on whether the CIR is exceeded:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>If the incoming frame does not exceed the Bc, the frame is passed.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If an incoming frame exceeds the Bc, it is marked as DE. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If an incoming frame exceeds the Bc and the Be, it is discarded. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Click the play button in the Figure 2 animation to view how the FECN and BECN are used.</p>
+          <p></p>
+          <p>Frames arriving at a switch are queued or buffered prior to forwarding. As in any queuing system, it is possible that there will be an excessive buildup of frames at a switch. This causes delays, which lead to unnecessary retransmissions that occur when higher level protocols receive no acknowledgment within a set time. In severe cases, this can cause a serious drop in network throughput. To avoid this problem, Frame Relay incorporates a flow control feature. </p>
+          <p></p>
+          <p>The animation shows a switch with a filling queue. To reduce the flow of frames to the queue, the switch notifies DTEs of the problem using the Explicit Congestion Notification bits in the frame address field. </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The FECN bit, indicated by F, is set on every frame that the switch receives on the congested link. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The BECN bit, indicated by B, is set on every frame that the switch places onto the congested link. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>DTEs receiving frames with the ECN bits set are expected to try to reduce the flow of frames until the congestion clears. If the congestion occurs on an internal trunk, DTEs may receive notification even though they are not the cause of the congestion.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

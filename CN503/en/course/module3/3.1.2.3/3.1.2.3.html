@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.3 HDLC Frame Types</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>HDLC Frame Types</h1>
+        <div>
+          <p>HDLC defines three types of frames, each with a different control field format. </p>
+          <p></p>
+          <p>
+            <b>Flag</b>
+          </p>
+          <p>The flag field initiates and terminates error checking. The frame always starts and ends with an 8-bit flag field. The bit pattern is 01111110. Because there is a likelihood that this pattern occurs in the actual data, the sending HDLC system always inserts a 0 bit after every five consecutive 1s in the data field, so in practice the flag sequence can only occur at the frame ends. The receiving system strips out the inserted bits. When frames are transmitted consecutively, the end flag of the first frame is used as the start flag of the next frame. </p>
+          <p></p>
+          <p>
+            <b>Address</b>
+          </p>
+          <p>The address field contains the HDLC address of the secondary station. This address can contain a specific address, a group address, or a broadcast address. A primary address is either a communication source or a destination, which eliminates the need to include the address of the primary. </p>
+          <p></p>
+          <p>
+            <b>Control</b>
+          </p>
+          <p>The control field uses three different formats, depending on the type of HDLC frame used:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Information (I) Frame -</b> I-frames carry upper layer information and some control information. This frame sends and receives sequence numbers, and the poll final (P/F) bit performs flow and error control. The send sequence number refers to the number of the frame to be sent next. The receive sequence number provides the number of the frame to be received next. Both sender and receiver maintain send and receive sequence numbers. A primary station uses the P/F bit to tell the secondary whether it requires an immediate response. A secondary station uses the P/F bit to tell the primary whether the current frame is the last in its current response. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Supervisory (S) Frame -</b> S-frames provide control information. An S-frame can request and suspend transmission, report on status, and acknowledge receipt of I-frames. S-frames do not have an information field. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Unnumbered (U) Frame -</b> U-frames support control purposes and are not sequenced. Depending on the function of the U-frame, its control field is 1 or 2 bytes. Some U-frames have an information field.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Protocol</b>
+          </p>
+          <p>Only used in Cisco HDLC. This field specifies the protocol type encapsulated within the frame (e.g. 0x0800 for IP). </p>
+          <p></p>
+          <p>
+            <b>Data</b>
+          </p>
+          <p>The data field contains a Path Information Unit (PIU) or Exchange Identification (XID) information. </p>
+          <p></p>
+          <p>
+            <b>Frame Check Sequence (FCS)</b>
+          </p>
+          <p>The FCS precedes the ending flag delimiter and is usually a Cyclic Redundancy Check (CRC) calculation remainder. The CRC calculation is redone in the receiver. If the result differs from the value in the original frame, an error is assumed.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

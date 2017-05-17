@@ -1,0 +1,24 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Cisco Easy VPN</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[EasyVPN]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Corporate Router]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Corporate Headquarters]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>IPsec Tunnel</b>]]></text>
+	</component>
+	<component id="ID_Title_txt01">
+		<text><![CDATA[<b>Cisco Easy VPN</b>]]></text>
+	</component>
+	
+	<component id="ID_Body_txt01">
+		<text><![CDATA[<textformat blockindent='-14' ><ul><li>Negotiates tunnel parameters</li><li>Establishes tunnels according to set parameters</li><li>Authenticates users by usernames, group names, and passwords</li><li>Manages security keys for encryption and decryption</li><li>Authenticates, encrypts, and decrypts data through the tunnel</li></ul></textformat>]]></text>
+	</component>
+</textcomponents>

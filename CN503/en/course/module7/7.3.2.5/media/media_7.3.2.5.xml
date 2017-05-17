@@ -1,0 +1,26 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[<b>IPsec Authentication</b>]]></text>
+   </component>
+   
+<component id="ID_txt01">
+   <text><![CDATA[Remote Office]]></text>
+</component>
+
+<component id="ID_txt02">
+   <text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[Peer Authentication]]></text>
+</component>
+
+<component id="ID_txt04">
+   <text><![CDATA[Corporate Office]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[HR Servers]]></text>
+</component>
+
+</textcomponents>

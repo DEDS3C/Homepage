@@ -1,0 +1,93 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>User Experience</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Applications and Devices</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[WebEx Social]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Cisco Jabber]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[TelePresence]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[WebEx Meetings]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Desktop and Mobile Device applications]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Collaboration Services</b>]]></text>
+</component>
+
+
+
+
+
+<component id="ID_txt09">
+<text><![CDATA[Call Control]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Messaging]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[Content Mgmt]]></text>
+</component>
+<component id="ID_txt12">
+<text><![CDATA[Edge Services]]></text>
+</component>
+ 
+
+
+<component id="ID_txt13">
+<text><![CDATA[Conferencing]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[Directory]]></text>
+</component>
+<component id="ID_txt15">
+<text><![CDATA[Media Services]]></text>
+</component>
+<component id="ID_txt16">
+<text><![CDATA[Scheduling]]></text>
+</component>
+
+
+<component id="ID_txt17">
+<text><![CDATA[<b>Network and Computer Infrastructure</b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[<b>Virtualization</b>]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[Network]]></text>
+</component>
+
+
+
+<component id="ID_txt20">
+<text><![CDATA[Computers]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[Storage]]></text>
+</component>
+
+</textcomponents>

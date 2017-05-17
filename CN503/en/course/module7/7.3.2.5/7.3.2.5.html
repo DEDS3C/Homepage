@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.5 IPsec Authentication</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPsec Authentication</h1>
+        <div>
+          <p>
+            <b>Authentication</b>
+          </p>
+          <p></p>
+          <p>IPsec VPNs support authentication. When conducting business long distance, it is necessary to know who is at the other end of the phone, email, or fax. The same is true of VPN networks. The device on the other end of the VPN tunnel must be authenticated before the communication path is considered secure, as indicated in the figure. There are two peer authentication methods:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>PSK </b>- A secret key that is shared between the two parties using a secure channel before it needs to be used. Pre-shared keys (PSKs) use symmetric key cryptographic algorithms. A PSK is entered into each peer manually and is used to authenticate the peer. At each end, the PSK is combined with other information to form the authentication key.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>RSA signatures </b>- Digital certificates are exchanged to authenticate peers. The local device derives a hash and encrypts it with its private key. The encrypted hash, or digital signature, is attached to the message and forwarded to the remote end. At the remote end, the encrypted hash is decrypted using the public key of the local end. If the decrypted hash matches the recomputed hash, the signature is genuine.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>IPsec uses RSA (public-key cryptosystem) for authentication in the context of IKE. The RSA signature method uses a digital signature setup in which each device digitally signs a set of data and sends it to the other party. RSA signatures use a certificate authority (CA) to generate a unique-identity digital certificate that is assigned to each peer for authentication. The identity digital certificate is similar in function to a PSK, but provides much stronger security. Each initiator and responder to an IKE session using RSA signatures sends its own ID value, its identity digital certificate, and an RSA signature value consisting of a variety of IKE values, all encrypted by the negotiated IKE encryption method (such as AES).</p>
+          <p></p>
+          <p>The Digital Signature Algorithm (DSA) is another option for authentication.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

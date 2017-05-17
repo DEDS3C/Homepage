@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.5 Troubleshooting a Serial Interface</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting a Serial Interface</h1>
+        <div>
+          <p>The output of the<span class="cmd"><b> show interfaces serial </b></span>command displays information specific to serial interfaces. When HDLC is configured, <span class="cmd">encapsulation HDLC</span> should be reflected in the output, as highlighted in Figure 1. <span class="cmd">Serial 0/0/0 is up, line protocol is up</span>, indicates that the line is up and functioning; <span class="cmd">encapsulation HDLC</span>, indicates that the default serial encapsulation (HDLC) is enabled.</p>
+          <p></p>
+          <p>The<span class="cmd"><b> show interfaces serial</b></span> command returns one of six possible states: </p>
+          <p>
+            <ul>
+              <li>Serial x is up, line protocol is up </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is down, line protocol is down </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is up, line protocol is down </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is up, line protocol is up (looped) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is up, line protocol is down (disabled) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is administratively down, line protocol is down</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Of the six possible states, there are five problem states. Figure 2 lists the five problem states, the issues associated with that state, and how to troubleshoot the issue.</p>
+          <p></p>
+          <p>The<span class="cmd"><b> show controllers </b></span>command is another important diagnostic tool when troubleshooting serial lines, as shown in Figure 3. The output indicates the state of the interface channels and whether a cable is attached to the interface. In the figure, interface serial 0/0/0 has a V.35 DCE cable attached. The command syntax varies, depending on the platform. Cisco 7000 series routers use a cBus controller card for connecting serial links. With these routers, use the<span class="cmd"><b> show controllers cbus </b></span>command. </p>
+          <p></p>
+          <p>If the electrical interface output displays as <span class="cmd">UNKNOWN</span> instead of <span class="cmd">V.35, EIA/TIA-449</span>, or some other electrical interface type, the likely problem is an improperly connected cable. A problem with the internal wiring of the card is also possible. If the electrical interface is unknown, the corresponding display for the<span class="cmd"><b> show interfaces serial <x></b></span> command shows that the interface and line protocol are down.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

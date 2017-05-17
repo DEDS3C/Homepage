@@ -1,0 +1,18 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Configuring NTP</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<b>NTP Client</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[<b>NTP Server</b>]]></text>
+</component>
+
+
+</textcomponents>

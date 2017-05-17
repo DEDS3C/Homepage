@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.3 Configuring Point-to-Point Subinterfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring Point-to-Point Subinterfaces</h1>
+        <div>
+          <p>Subinterfaces address the limitations of Frame Relay networks by providing a way to subdivide a partially meshed Frame Relay network into a number of smaller, fully meshed, or point-to-point, subnetworks. Each subnetwork is assigned its own network number and appears to the protocols as if it were reachable through a separate interface. </p>
+          <p></p>
+          <p></p>
+          <p>To create a subinterface, in global configuration mode, use the<span class="cmd"><b> interface serial </b></span>command followed by the physical port number, a period (.), and the subinterface number. To make troubleshooting easier, use the DLCI as the subinterface number. You must also specify whether the interface is point-to-multipoint or point-to-point using either the<span class="cmd"><b> multipoint </b></span>or<span class="cmd"><b> point-to-point </b></span>keyword because there is no default. These keywords are defined in Figure 1.</p>
+          <p></p>
+          <p>The following command creates a point-to-point subinterface for PVC 103 to R3: </p>
+          <p>
+            <span class="cmd">R1(config-if)# </span>
+            <span class="cmd">
+              <b>interface serial 0/0/0.103 point-to-point</b>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: For simplicity, only IPv4 addresses are used in this section to illustrate subinterfaces. The same concepts and commands also apply when using IPv6 addressing. </p>
+          <p></p>
+          <p>If the subinterface is configured as point-to-point, the local DLCI for the subinterface must also be configured to distinguish it from the physical interface. The DLCI is also required for multipoint subinterfaces for which Inverse ARP is enabled for IPv4. It is not required for multipoint subinterfaces configured with static route maps. </p>
+          <p></p>
+          <p>The Frame Relay service provider assigns the DLCI numbers. These numbers range from 16 to 992, and usually have only local significance. The range varies depending on the LMI used. </p>
+          <p></p>
+          <p>The <span class="cmd"><b>frame-relay interface-dlci</b></span> command configures the local DLCI on the subinterface, as shown in Figure 2:<span class="cmd"><b></b></span></p>
+          <p>
+            <span class="cmd">R1(config-subif)# </span>
+            <span class="cmd">
+              <b>frame-relay interface-dlci 103</b>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Unfortunately, altering an existing Frame Relay subinterface configuration may fail to provide the expected result. In these situations, shut down the physical interface, make the appropriate changes to the subinterfaces and then re-enable the physical interface.  If the corrected configuration produces unexpected results, then it may be necessary to save the configuration and reload the router.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

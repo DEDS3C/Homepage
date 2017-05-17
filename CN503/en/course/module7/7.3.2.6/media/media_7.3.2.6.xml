@@ -1,0 +1,147 @@
+﻿<textcomponents>
+
+<!--SLIDE 1-->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>IPsec Protocol Framework</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>Authentication Header</b>]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[All data is in plaintext.]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[AH provides the following:<br/><textformat blockindent="-14"><ul><li>Authentication</li><li>Integrity</li></ul></textformat>]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[<b>Encapsulating Security Payload</b>]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[Data payload is encrypted.]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[ESP provides the following:<br/><textformat blockindent="-14"><ul><li>Encryption</li><li>Authentication</li><li>Integrity</li></ul></textformat>]]></text>
+	</component>
+	
+	
+<!--SLIDE 2-->
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>IPsec Protocol Framework</b>]]></text>
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[IPsec Framework]]></text>
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[IPsec Protocol]]></text>
+	</component>
+	<component id="ID_s2_txt03">
+		<text><![CDATA[Confidentiality]]></text>
+	</component>
+	<component id="ID_s2_txt04">
+		<text><![CDATA[Integrity]]></text>
+	</component>
+	<component id="ID_s2_txt05">
+		<text><![CDATA[Authentication]]></text>
+	</component>
+	<component id="ID_s2_txt06">
+		<text><![CDATA[Diffie-Hellman]]></text>
+	</component>
+	<component id="ID_s2_txt07">
+		<text><![CDATA[Choices]]></text>
+	</component>
+	<component id="ID_s2_txt08">
+		<text><![CDATA[AH]]></text>
+	</component>
+	<component id="ID_s2_txt09">
+		<text><![CDATA[ESP]]></text>
+	</component>
+	<component id="ID_s2_txt10">
+		<text><![CDATA[ESP + AH]]></text>
+	</component>
+	<component id="ID_s2_txt11">
+		<text><![CDATA[DES]]></text>
+	</component>
+	<component id="ID_s2_txt12">
+		<text><![CDATA[3DES]]></text>
+	</component>
+	<component id="ID_s2_txt13">
+		<text><![CDATA[AES]]></text>
+	</component>
+	<component id="ID_s2_txt14">
+		<text><![CDATA[SEAL]]></text>
+	</component>
+	<component id="ID_s2_txt15">
+		<text><![CDATA[MD5]]></text>
+	</component>
+	<component id="ID_s2_txt16">
+		<text><![CDATA[SHA]]></text>
+	</component>
+	<component id="ID_s2_txt17">
+		<text><![CDATA[PSK]]></text>
+	</component>
+	<component id="ID_s2_txt18">
+		<text><![CDATA[RSA]]></text>
+	</component>
+	<component id="ID_s2_txt19">
+		<text><![CDATA[DH1]]></text>
+	</component>
+	<component id="ID_s2_txt20">
+		<text><![CDATA[DH2]]></text>
+	</component>
+	<component id="ID_s2_txt21">
+		<text><![CDATA[DH5]]></text>
+	</component>
+	<component id="ID_s2_txt22">
+		<text><![CDATA[DH...]]></text>
+	</component>
+	
+
+<!--SLIDE 3-->
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>IPsec Implementation</b>]]></text>
+	</component>
+	<component id="ID_s3_txt01">
+		<text><![CDATA[IPsec Protocol]]></text>
+	</component>
+	<component id="ID_s3_txt02">
+		<text><![CDATA[Confidentiality]]></text>
+	</component>
+	<component id="ID_s3_txt03">
+		<text><![CDATA[Integrity]]></text>
+	</component>
+	<component id="ID_s3_txt04">
+		<text><![CDATA[Authentication]]></text>
+	</component>
+	<component id="ID_s3_txt05">
+		<text><![CDATA[Diffie-Hellman]]></text>
+	</component>
+	<component id="ID_s3_txt06">
+		<text><![CDATA[AH]]></text>
+	</component>
+	<component id="ID_s3_txt07">
+		<text><![CDATA[SHA]]></text>
+	</component>
+	<component id="ID_s3_txt08">
+		<text><![CDATA[PSK]]></text>
+	</component>
+	<component id="ID_s3_txt09">
+		<text><![CDATA[DH2]]></text>
+	</component>
+	<component id="ID_s3_txt10">
+		<text><![CDATA[ESP + AH]]></text>
+	</component>
+	<component id="ID_s3_txt11">
+		<text><![CDATA[DES]]></text>
+	</component>
+	<component id="ID_s3_txt12">
+		<text><![CDATA[SHA]]></text>
+	</component>
+	<component id="ID_s3_txt13">
+		<text><![CDATA[RSA]]></text>
+	</component>
+	<component id="ID_s3_txt14">
+		<text><![CDATA[DH2]]></text>
+	</component>
+
+
+</textcomponents>

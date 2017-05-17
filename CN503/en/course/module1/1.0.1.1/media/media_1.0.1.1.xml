@@ -1,0 +1,12 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[]]></text>
+</component>
+   
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>After completing this chapter, you will be able to:</b><br/><br/><textformat blockindent='-14'><ul><li>Describe the structured engineering principles for network design.</li><li>Describe the three layers of a hierarchical network and how they are used in network design.</li><li>Describe the various modules in network design.</li><li>Describe the Cisco Enterprise Architecture Model.</li><li>Describe the need for business network architectures that are designed to address emerging trends in IT.</li><li>Describe three business network architectures: borderless network architecture, collaboration network architecture, and the data center/virtualization network architecture.</li></ul></textformat><br/>]]></text>
+</component>
+
+
+
+</textcomponents>

@@ -1,0 +1,202 @@
+<textcomponents>
+
+<component id="ID_s1_inst">
+<text><![CDATA[<b>Activity: Part 1 – Identify the Serial Communications Terminology</b><br/>Drag the serial communications term to the appropriate description. Click Button 2 to continue this activity.]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[The OSI layer where Time Division Multiplexing (TDM) operates.]]></text>
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[The way that STDM divides bandwidth into multiple slots for data transmission.]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[A WAN technology that uses TDM.]]></text> 
+  </component>
+  <component id="ID_s1_txt04">
+<text><![CDATA[The point at the customer site where the ISP network ends.]]></text>
+</component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[A technique that reassembles multiple data transmissions.]]></text> 
+  </component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[A WAN connection that interconnects two LANs directly.]]></text> 
+  </component>
+  <component id="ID_s1_txt07">
+  <text><![CDATA[Transmission signals split between multiple wires concurrently.]]></text> 
+  </component>
+  
+  
+  
+  <component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the serial communications terms. Click Button 2 to continue this activity.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the serial communications terms. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_check'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_reset'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+  <component id="ID_s1_drag01">
+  <text><![CDATA[Leased Line]]></text> 
+  </component>
+    <component id="ID_s1_drag02">
+  <text><![CDATA[DTE]]></text> 
+  </component>
+    <component id="ID_s1_drag03">
+  <text><![CDATA[CSU/DSU]]></text> 
+  </component>
+    <component id="ID_s1_drag04">
+  <text><![CDATA[Bit Interleaving]]></text> 
+  </component>
+    <component id="ID_s1_drag05">
+  <text><![CDATA[Data Link]]></text> 
+  </component>
+    <component id="ID_s1_drag06">
+  <text><![CDATA[Null Modem]]></text> 
+  </component>
+    <component id="ID_s1_drag07">
+  <text><![CDATA[Parallel]]></text> 
+  </component>
+    <component id="ID_s1_drag08">
+  <text><![CDATA[ISDN]]></text> 
+  </component>
+     <component id="ID_s1_drag09">
+  <text><![CDATA[Physical]]></text> 
+  </component>
+     <component id="ID_s1_drag10">
+  <text><![CDATA[CPE]]></text> 
+  </component>
+     <component id="ID_s1_drag11">
+  <text><![CDATA[Variable]]></text> 
+  </component>
+     <component id="ID_s1_drag12">
+  <text><![CDATA[DCE]]></text> 
+  </component>
+     <component id="ID_s1_drag13">
+  <text><![CDATA[Demarc]]></text> 
+  </component>
+     <component id="ID_s1_drag14">
+  <text><![CDATA[USB]]></text> 
+  </component>
+
+
+
+
+
+
+
+
+<component id="ID_s2_inst">
+<text><![CDATA[<b>Activity: Part 2 – Identify the Serial Communications Terminology</b><br/>Drag the serial communications term to the appropriate description.]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[The network equipment that is connected to the WAN circuit at the customer location.]]></text>
+</component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[Provides a clocking signal for the WAN circuit.]]></text> 
+  </component>
+<component id="ID_s2_txt03">
+  <text><![CDATA[Signals are sent sequentially one bit after another.]]></text> 
+  </component>
+  <component id="ID_s2_txt04">
+<text><![CDATA[Two WAN end devices can be directly connected together with this special cable.]]></text>
+</component>
+<component id="ID_s2_txt05">
+  <text><![CDATA[On newer PCs these universal ports have replaced both RS-232 and parallel ports.]]></text> 
+  </component>
+<component id="ID_s2_txt06">
+  <text><![CDATA[LAN/WAN routers at the customer location are this type of device.]]></text> 
+  </component>
+  <component id="ID_s2_txt07">
+  <text><![CDATA[A networking device which converts signals into an ISP WAN circuit format.]]></text> 
+  </component>
+  
+  
+  
+  <component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the serial communications terms.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the serial communications terms. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_check'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_reset'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+  <component id="ID_s2_drag01">
+  <text><![CDATA[Data Link]]></text> 
+  </component>
+    <component id="ID_s2_drag02">
+  <text><![CDATA[DTE]]></text> 
+  </component>
+    <component id="ID_s2_drag03">
+  <text><![CDATA[CSU/DSU]]></text> 
+  </component>
+    <component id="ID_s2_drag04">
+  <text><![CDATA[NIC]]></text> 
+  </component>
+    <component id="ID_s2_drag05">
+  <text><![CDATA[Serial]]></text> 
+  </component>
+    <component id="ID_s2_drag06">
+  <text><![CDATA[Null Modem]]></text> 
+  </component>
+    <component id="ID_s2_drag07">
+  <text><![CDATA[POP]]></text> 
+  </component>
+    <component id="ID_s2_drag08">
+  <text><![CDATA[T1]]></text> 
+  </component>
+     <component id="ID_s2_drag09">
+  <text><![CDATA[Physical]]></text> 
+  </component>
+     <component id="ID_s2_drag10">
+  <text><![CDATA[CPE]]></text> 
+  </component>
+     <component id="ID_s2_drag11">
+  <text><![CDATA[Fixed Length]]></text> 
+  </component>
+     <component id="ID_s2_drag12">
+  <text><![CDATA[DCE]]></text> 
+  </component>
+     <component id="ID_s2_drag13">
+  <text><![CDATA[LAN Switch]]></text> 
+  </component>
+     <component id="ID_s2_drag14">
+  <text><![CDATA[USB]]></text> 
+  </component>
+
+</textcomponents>

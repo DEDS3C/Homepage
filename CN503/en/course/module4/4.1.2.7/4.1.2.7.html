@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.7 Local Management Interface (LMI)</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Local Management Interface (LMI)</h1>
+        <div>
+          <p>Another important concept in Frame Relay is the Local Management Interface (LMI). The Frame Relay design provides packet-switched data transfer with minimum end-to-end delays. The original design omits anything that might contribute to delay. </p>
+          <p></p>
+          <p>When vendors implemented Frame Relay as a separate technology rather than as one component of ISDN, they decided that there was a need for DTEs to dynamically acquire information about the status of the network. However, the original design did not include this feature. A consortium of Cisco, Digital Equipment Corporation (DEC), Northern Telecom, and StrataCom extended the Frame Relay protocol to provide additional capabilities for complex internetworking environments. These extensions are referred to collectively as the LMI. </p>
+          <p></p>
+          <p>Refer to the Frame Relay topology in Figure 1. Basically, the LMI is a keepalive mechanism that provides status information about Frame Relay connections between the router (DTE) and the Frame Relay switch (DCE). Every 10 seconds or so, the end device polls the network, either requesting a dumb sequenced response or channel status information. If the network does not respond with the requested information, the user device may consider the connection to be down. When the network responds with a FULL STATUS response, it includes status information about DLCIs that are allocated to that line. The end device can use this information to determine whether the logical connections are able to pass data.</p>
+          <p></p>
+          <p>Figure 2 shows the output of the<span class="cmd"><b> show frame-relay lmi </b></span>command. The output shows the LMI type used by the Frame Relay interface and the counters for the LMI status exchange sequence, including errors such as LMI timeouts.</p>
+          <p></p>
+          <p>It is easy to confuse the LMI and encapsulation. The LMI is a definition of the messages used between the DTE (R1) and the DCE (the Frame Relay switch owned by the service provider). Encapsulation defines the headers used by a DTE to communicate information to the DTE at the other end of a VC. The switch and its connected router care about using the same LMI. The switch does not care about the encapsulation. The endpoint routers (DTEs) do care about the encapsulation.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

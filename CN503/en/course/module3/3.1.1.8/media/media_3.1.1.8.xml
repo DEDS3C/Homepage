@@ -1,0 +1,39 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Serial DCE and DTE WAN Connections</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[DTE]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[DCE]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[DCE]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[DTE]]></text>
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Data Terminal Equipment</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[End of the user's device on the WAN Link]]></text>
+</component>
+
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Data Communications Equipment</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<textformat blockindent="-14"><ul><li>End of the WAN provider's side of the communication facility</li><li>Responsible for providing clocking signal</li></ul><textformat>]]></text>
+</component>
+</textcomponents>

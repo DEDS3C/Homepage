@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.1.1 Verifying Frame Relay Operation: Frame Relay Interface</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Frame Relay Operation: Frame Relay Interface</h1>
+        <div>
+          <p>Frame Relay is generally a very reliable service. Nonetheless, there are times when the network performs at less than expected levels and troubleshooting is necessary. For example, users may report slow and intermittent connections across the circuit, or circuits may go down altogether. Regardless of the reason, network outages are very expensive in terms of lost productivity. A recommended best practice is to verify the configuration before problems appear. </p>
+          <p></p>
+          <p>In this topic, you will step though a verification procedure to ensure everything is working correctly before a configuration is launched on a live network. </p>
+          <p></p>
+          <p>
+            <b>Verify Frame Relay Interfaces</b>
+          </p>
+          <p></p>
+          <p>After configuring a Frame Relay PVC and when troubleshooting an issue, verify that Frame Relay is operating correctly on that interface using the<span class="cmd"><b> show interfaces </b></span>command. </p>
+          <p></p>
+          <p>Recall that with Frame Relay, the router is normally considered a DTE device. However, for testing purposes, a Cisco router can be configured as a DCE device to simulate a Frame Relay switch. In such cases, the router becomes a DCE device when it is configured as a Frame Relay switch.</p>
+          <p></p>
+          <p>As shown in the figure, the<span class="cmd"><b> show interfaces </b></span>command displays how the encapsulation is set up, along with useful Layer 1 and Layer 2 status information, including:</p>
+          <p>
+            <ul>
+              <li>LMI DLCI </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>LMI type </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Frame Relay DTE/DCE type </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The first step is always to confirm that the interfaces are properly configured. In the figure, among other things, you can see details about the encapsulation, the DLCI on the Frame Relay-configured serial interface, and the DLCI used for the LMI. Confirm that these values are the expected values; if not, changes may be required.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

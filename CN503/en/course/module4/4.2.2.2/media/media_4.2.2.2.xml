@@ -1,0 +1,60 @@
+<textcomponents>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[<b>Single Physical Interface</b>]]></text>
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>Multiple Subinterfaces</b><br/>PVC 1<br/>PVC 2<br/>PVC 3<br/>•<br/>•<br/>•]]></text> 
+</component>
+  
+  
+<component id="ID_s2_title">
+<text><![CDATA[<b>Point-to-Point Subinterface</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+<text><![CDATA[DLCI 18]]></text> 
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[DLCI 19]]></text> 
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[DLCI 20]]></text> 
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[Frame Relay]]></text> 
+</component>
+
+<component id="ID_s2_titleTxt01">
+<text><![CDATA[<b>Point-to-Point Subinterface</b>]]></text> 
+</component>
+<component id="ID_s2_bodyTxt01">
+<text><![CDATA[Point-to-Point Subinterfaces - In hub and spoke topologies:<br/><textformat blockindent="-14"><ul><li>Subinterfaces act as leased lines</li><li>Each point-to-point subinterface requires its own subnet</li></ul></textformat>]]></text> 
+</component>
+
+
+
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Multipoint Subinterface</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+<text><![CDATA[DLCI 18]]></text> 
+</component>
+<component id="ID_s3_txt02">
+<text><![CDATA[DLCI 19]]></text> 
+</component>
+<component id="ID_s3_txt03">
+<text><![CDATA[DLCI 20]]></text> 
+</component>
+<component id="ID_s3_txt04">
+<text><![CDATA[Frame Relay]]></text> 
+</component>
+
+<component id="ID_s3_titleTxt01">
+<text><![CDATA[<b>Multipoint Subinterface</b>]]></text> 
+</component>
+<component id="ID_s3_bodyTxt01">
+<text><![CDATA[Multipoint Subinterfaces – In partial-mesh and full-mesh topologies:<br/><textformat blockindent="-14"><ul><li>Subinterfaces act as NBMA so they do not resolve the split horizon issue</li><li>Can save address space because it uses a single subnet</li></ul></textformat>]]></text> 
+</component>
+
+</textcomponents>

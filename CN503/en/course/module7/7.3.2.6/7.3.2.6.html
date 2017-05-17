@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.6 IPsec Protocol Framework</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPsec Protocol Framework</h1>
+        <div>
+          <p>As stated earlier, the IPsec protocol framework describes the messaging to secure the communications, but it relies on existing algorithms.</p>
+          <p></p>
+          <p>There are two main IPsec protocols depicted in Figure 1:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Authentication Header (AH) </b>- AH is the appropriate protocol to use when confidentiality is not required or permitted. It provides data authentication and integrity for IP packets that are passed between two systems. However, AH does not provide data confidentiality (encryption) of packets. All text is transported in plaintext. Used alone, the AH protocol provides weak protection. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Encapsulating Security Payload (ESP) </b>- A security protocol that provides confidentiality and authentication by encrypting the IP packet. IP packet encryption conceals the data and the identities of the source and destination. ESP authenticates the inner IP packet and ESP header. Authentication provides data origin authentication and data integrity. Although both encryption and authentication are optional in ESP, at a minimum, one of them must be selected.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 illustrates the components of IPsec configuration. There are four basic building blocks of the IPsec framework that must be selected. </p>
+          <p>
+            <ul>
+              <li>
+                <b>IPsec framework protocol </b>- When configuring an IPsec gateway to provide security services, an IPsec protocol must be selected. The choices are some combination of ESP and AH. Realistically, the ESP or ESP+AH options are almost always selected because AH itself does not provide encryption, as shown in Figure 3.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Confidentiality (If IPsec is implemented with ESP) </b>- The encryption algorithm chosen should best meet the desired level of security: DES, 3DES, or AES. AES is strongly recommended, with AES-GCM providing the greatest security.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Integrity </b>- Guarantees that the content has not been altered in transit. Implemented through the use of hash algorithms. Choices include MD5 and SHA. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Authentication </b>- Represents how devices on either end of the VPN tunnel are authenticated. The two methods are PSK or RSA.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DH algorithm group </b>- Represents how a shared secret key is established between peers. There are several options, but DH24 provides the greatest security. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>It is the combination of these building blocks that provides the confidentiality, integrity, and authentication options for IPsec VPNs. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: This section introduced IPsec to provide an understanding of how IPsec secures VPN tunnels. Configuring IPsec VPNs are beyond the scope of this course.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

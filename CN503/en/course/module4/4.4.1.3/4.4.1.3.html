@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.1.3 Summary</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Summary</h1>
+        <div>
+          <p>Frame Relay is a reliable, packet switching, connection-oriented technology that is widely used to interconnect remote sites. This is more cost effective than leased lines, because the bandwidth in the service provider’s network is shared, and an endpoint only needs one physical circuit to the circuit provider to support multiple VCs. Each VC is identified by a DLCI.</p>
+          <p></p>
+          <p>Layer 3 data is encapsulated into a Frame Relay frame that has both a Frame Relay header and trailer. It is then passed to the physical layer, which is typically EIA/TIA-232, 449 or 530, V.35, or X.21.</p>
+          <p>Typical Frame Relay topologies include the star topology (hub-and-spoke), a full mesh, and a partial mesh topology. </p>
+          <p>Mapping between Layer 2 DLCI addresses and Layer 3 addresses can be achieved dynamically by using Inverse ARP or by manually configuring static maps.</p>
+          <p>LMI is a protocol for messages sent between the DCE and DTE devices to maintain the status information of the Frame Relay between these devices. The LMI type configured on the router must match that of the service provider.</p>
+          <p>The Frame Relay circuit cost includes the access rate, the number of PVCs, and the CIR. Some bursting above the CIR is normally allowed without an additional cost. A Bc rate can be negotiated to provide some dependable bursting ability for short-term conditions.</p>
+          <p>Frame Relay uses BECN and FECN bits in the Frame Relay header for congestion control.</p>
+          <p>The use of subinterfaces in Frame Relay configurations helps to alleviate routing protocol split horizon issues.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

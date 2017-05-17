@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.4.1.2 Debug PPP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.4.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Debug PPP</h1>
+        <div>
+          <p>In addition to the<span class="cmd"><b> debug ppp </b></span>command, there are other commands that are available for troubleshooting a PPP connection.</p>
+          <p></p>
+          <p>A good command to use when troubleshooting serial interface encapsulation is the<span class="cmd"><b> debug ppp packet </b></span>command, as shown in Figure 1. The figure example depicts packet exchanges under normal PPP operation, including LCP state, LQM procedures, and the LCP magic number.  </p>
+          <p></p>
+          <p>Figure 2 displays the output of the<span class="cmd"><b> debug ppp negotiation </b></span>command in a normal negotiation, where both sides agree on NCP parameters. In this case, protocol types IPv4 and IPv6 are proposed and acknowledged. The<span class="cmd"><b> debug ppp negotiation </b></span>command enables the network administrator to view the PPP negotiation transactions, identify the problem or stage when the error occurs, and develop a resolution.  The output includes the LCP negotiation, authentication, and NCP negotiation. </p>
+          <p></p>
+          <p>The<span class="cmd"><b> debug ppp error </b></span>command is used to display protocol errors and error statistics associated with PPP connection negotiation and operation, as shown in Figure 3. These messages might appear when the Quality Protocol option is enabled on an interface that is already running PPP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

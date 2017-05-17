@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.2 Serial Communication</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Serial Communication</h1>
+        <div>
+          <p>The figure shows a simple representation of a serial communication across a WAN. Data is encapsulated by the communications protocol used by the sending router. The encapsulated frame is sent on a physical medium to the WAN. There are various ways to traverse the WAN, but the receiving router uses the same communications protocol to de-encapsulate the frame when it arrives.</p>
+          <p></p>
+          <p>There are many different serial communication standards, each one using a different signaling method. There are three important serial communication standards affecting LAN-to-WAN connections:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>RS-232 </b>- Most serial ports on personal computers conform to the RS-232C or newer RS-422 and RS-423 standards. Both 9-pin and 25-pin connectors are used. A serial port is a general-purpose interface that can be used for almost any type of device, including modems, mice, and printers. These types of peripheral devices for computers have been replaced by new and faster standards such as USB but many network devices use RJ-45 connectors that conform to the original RS-232 standard. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>V.35</b> - Typically used for modem-to-multiplexer communication, this ITU standard for high-speed, synchronous data exchange combines the bandwidth of several telephone circuits. In the U.S., V.35 is the interface standard used by most routers and DSUs that connect to T1 carriers. V.35 cables are high-speed serial assemblies designed to support higher data rates and connectivity between DTEs and DCEs over digital lines. There is more on DTEs and DCEs later in this section.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>HSSI </b>- A High-Speed Serial Interface (HSSI) supports transmission rates up to 52 Mb/s. Engineers use HSSI to connect routers on LANs with WANs over high-speed lines, such as T3 lines. Engineers also use HSSI to provide high-speed connectivity between LANs, using Token Ring or Ethernet. HSSI is a DTE/DCE interface developed by Cisco Systems and T3 plus Networking to address the need for high-speed communication over WAN links.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

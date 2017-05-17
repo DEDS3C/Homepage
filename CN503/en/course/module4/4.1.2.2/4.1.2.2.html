@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.2 Multiple Virtual Circuits</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Multiple Virtual Circuits</h1>
+        <div>
+          <p>
+            <b>Multiple VCs</b>
+          </p>
+          <p></p>
+          <p>Frame Relay is statistically multiplexed, meaning that it transmits only one frame at a time, but that many logical connections can co-exist on a single physical line. The Frame Relay Access Device (FRAD), or router connected to the Frame Relay network, may have multiple VCs connecting it to various endpoints. Multiple VCs on a single physical line are distinguished because each VC has its own DLCI. Keep in mind that the DLCI has only local significance and may be different at each end of a VC.</p>
+          <p></p>
+          <p>Figure 1 shows an example of two VCs on a single access line, each with its own DLCI, attaching to a router (R1). </p>
+          <p></p>
+          <p>This capability often reduces the equipment and network complexity required to connect multiple devices, making it a very cost-effective replacement for a mesh of access lines. With this configuration, each endpoint needs only a single access line and interface. More savings arise as the capacity of the access line is based on the average bandwidth requirement of the VCs, rather than on the maximum bandwidth requirement. </p>
+          <p></p>
+          <p>In the example in Figure 2, SPAN Engineering Co. has five remote locations, with its headquarters in Chicago. Chicago is connected to the network using five VCs and each VC is given a DLCI. To see Chicago’s respective DLCI mappings, click on the location in the table. Notice that SPAN has grown and recently opened an office in San Jose. Using Frame Relay made this expansion relatively easy.</p>
+          <p></p>
+          <p>
+            <b>Cost Benefits of Multiple VCs</b>
+          </p>
+          <p></p>
+          <p>With Frame Relay, customers pay for the bandwidth they use. In effect, they pay for a Frame Relay port. When the customer increases the number of ports, as described above, they pay for more bandwidth, but they do not pay for more equipment because the ports are virtual. There is no change to the physical infrastructure. Compare this to purchasing more bandwidth using dedicated lines.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

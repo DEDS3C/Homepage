@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.3.1 Identifying NetFlow Collector Functions</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Identifying NetFlow Collector Functions</h1>
+        <div>
+          <p>A NetFlow collector is a host that is running application software. This software is specialized for handling raw NetFlow data. This collector can be configured to receive NetFlow information from many networking devices. NetFlow collectors aggregate and organize NetFlow data as prescribed by the network administrator within the constraints of the software.</p>
+          <p></p>
+          <p>On a NetFlow collector, the NetFlow data is written to a drive, at specified intervals. The administrator may run multiple collection schemes or threads concurrently. For example, different cuts of data can be stored to support planning versus billing; a NetFlow collector can easily produce the appropriate aggregation schemes.</p>
+          <p></p>
+          <p>Figure 1 illustrates a NetFlow collector passively listening for exported NetFlow datagrams. A NetFlow collector application provides a high-performance, easy-to-use, scalable solution to accommodate consumption of NetFlow export data from multiple devices. The intended use by an organization varies, but often the purpose is to support critical flows associated with consumer applications. These include accounting, billing, and network planning and monitoring.</p>
+          <p></p>
+          <p>There are several NetFlow collectors on the market. These tools enable traffic analysis on the network by showing the top (or most active) hosts, most used applications, and other means of measuring the traffic data, as shown in Figure 2. A NetFlow collector displays the kinds of traffic (web, mail, FTP, peer-to-peer, etc.) on the network, as well as the devices that send and receive most of the traffic. Collecting data provides a network administrator with data on top talkers, top hosts, and top listeners. Because data is preserved over time, after-the-fact network traffic analyses can determine network use trends.</p>
+          <p></p>
+          <p>Based on usage of NetFlow analyzers, a network administrator is able to identify:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Who are the top talkers and to whom are they talking?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>What websites are routinely visited and what is downloaded?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Who is generating the most traffic?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is there enough bandwidth to support mission-critical activity?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Who is monopolizing the bandwidth?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The amount of information that can be analyzed by a NetFlow collector varies based on the NetFlow version used, because different NetFlow export formats consist of distinct NetFlow record types. A NetFlow record contains the specific information about the actual traffic that makes up a NetFlow flow. </p>
+          <p></p>
+          <p>A NetFlow collector provides real-time visualization and analysis of recorded and aggregated flow data. The routers and supported switches can be specified, as well as the aggregation scheme and the time interval to store data prior to the next periodic analysis. One can sort and visualize the data in a manner which makes sense for the users: bar charts, pie charts, or histograms of the sorted reports. The data can then be exported to spreadsheets, such as Microsoft Excel, for more detailed analysis, trending, and reporting.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

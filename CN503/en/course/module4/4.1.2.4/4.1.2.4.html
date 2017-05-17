@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.4 Frame Relay Topologies</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Frame Relay Topologies</h1>
+        <div>
+          <p>When more than two sites must be connected, the Frame Relay topology, or map, of the connections between the sites must be planned. A network designer must consider the topology from several perspectives to understand the network and the equipment used to build the network. Complete topologies for design, implementation, operation, and maintenance include overview maps, logical connection maps, functional maps, and address maps showing the detailed equipment and channel links.</p>
+          <p></p>
+          <p>Cost-effective Frame Relay networks link dozens and even hundreds of sites. Considering that a corporate network might span any number of service providers and include networks from acquired businesses differing in basic design, documenting topologies can be a very complicated process. However, every network or network segment can be viewed as being one of three topology types: star, full mesh, or partial mesh.</p>
+          <p></p>
+          <p>
+            <b>Star Topology (Hub and Spoke)</b>
+          </p>
+          <p></p>
+          <p>The simplest WAN topology is a star, as shown in Figure 1. In this topology, SPAN Engineering Company has a central site in Chicago that acts as a hub and hosts the primary services. </p>
+          <p></p>
+          <p>Connections to each of the five remote sites act as spokes. In a star topology, the location of the hub is usually chosen by the lowest leased-line cost. When implementing a star topology with Frame Relay, each remote site has an access link to the Frame Relay cloud with a single VC.</p>
+          <p></p>
+          <p>Figure 2 shows the star topology in the context of a Frame Relay cloud. The hub at Chicago has an access link with multiple VCs, one for each remote site. The lines going out from the cloud represent the connections from the Frame Relay service provider and terminate at the customer premises. These are typically lines ranging in speed from 56 kb/s to a T1 (1.544 Mb/s) and faster. One or more DLCI numbers are assigned to each line endpoint. Because Frame Relay costs are not distance-related, the hub does not need to be in the geographical center of the network.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

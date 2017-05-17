@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.1.4 Verifying Frame Relay Operation: Inverse ARP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Frame Relay Operation: Inverse ARP</h1>
+        <div>
+          <p>To clear dynamically created Frame Relay maps that are created using Inverse ARP, use the<span class="cmd"><b> clear frame-relay inarp </b></span>command, as shown in Figure 1. </p>
+          <p></p>
+          <p>A final task is to confirm whether the<span class="cmd"><b> frame-relay inverse-arp </b></span>command resolved a remote IPv4 address to a local DLCI. Use the<span class="cmd"><b> show frame-relay map </b></span>command to display the current map entries and information about the connections. Figure 2 shows output from router R3 with a previous Frame Relay configuration on the physical interface, without the use of subinterfaces. Inverse ARP is enabled by default for IPv4. Frame Relay for IPv6 uses Inverse Neighbor Discovery (IND) to obtain a Layer 3 IPv6 address from a Layer 2 DLCI.</p>
+          <p></p>
+          <p>The output shows the following information:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>10.1.1.9</b> is the IPv4 address of the remote router, dynamically learned via the Inverse ARP process. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>302 </b>is the decimal value of the local DLCI number. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>0x12E </b>is the hex conversion of the DLCI number, 0x12E = 302 decimal. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>0x48E0 </b>is the value as it would appear on the wire because of the way the DLCI bits are spread out in the address field of the Frame Relay frame. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Broadcast/multicast</b> is enabled on the PVC. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>LMI type is <b>cisco</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>PVC status is <b>active</b>. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When an Inverse ARP request is made, the router updates its map table with three possible PVC connection states. These states are: </p>
+          <p>
+            <ul>
+              <li>
+                <b>ACTIVE </b>- Indicates a successful end-to-end (DTE to DTE) circuit. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>INACTIVE </b>- Indicates a successful connection to the switch (DTE to DCE) without a DTE detected on the other end of the PVC. This can occur due to incorrect configuration on the switch. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DELETED </b>- Indicates that the DTE is configured for a DLCI that the switch does not recognize as valid for that interface.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Match LMI Terms to Descriptions</b><br><br>Match the LMI terms to the descriptions by dragging the term to the appropriate field provided. Not all terms will be used.]]></text>
+</component>
+
+
+<component id='ID_header01'>
+	<text><![CDATA[<b>Term</b>]]></text>
+</component>
+
+
+<component id='ID_header02'>
+	<text><![CDATA[<b>LMI Description</b>]]></text>
+</component>
+
+
+
+
+<component id='ID_txt01'>
+	<text><![CDATA[A PVC that no longer exists.]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[One of the three LMI types other than Cisco and q933a.]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Manual configuration will do this to the autosensing of LMI type features on Cisco routers.]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[LMI provides these updates about Frame Relay connectivity.]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[The frequency with which LMI update requests on Cisco router serial interfaces usually occur.]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[The end of the Frame Relay connection that initiates requests about the status of its Frame Relay links.]]></text>
+</component>
+
+
+<component id='ID_txt07'>
+	<text><![CDATA[LMI uses this process to associate network layer addresses to data link layer addresses.]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">DCE</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">Disable</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">qwmp</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">SVC</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">10</font>]]></text>
+</component>
+<component id='ID_drag06'>
+	<text><![CDATA[<font color="#393536">Black Hole</font>]]></text>
+</component>
+
+<component id='ID_drag07'>
+	<text><![CDATA[<font color="#393536">ansi</font>]]></text>
+</component>
+
+<component id='ID_drag08'>
+	<text><![CDATA[<font color="#393536">3</font>]]></text>
+</component>
+
+<component id='ID_drag09'>
+	<text><![CDATA[<font color="#393536">VC</font>]]></text>
+</component>
+
+<component id='ID_drag10'>
+	<text><![CDATA[<font color="#393536">DTE</font>]]></text>
+</component>
+
+<component id='ID_drag11'>
+	<text><![CDATA[<font color="#393536">Converse ARP</font>]]></text>
+</component>
+
+<component id='ID_drag12'>
+	<text><![CDATA[<font color="#393536">Enable</font>]]></text>
+</component>
+
+<component id='ID_drag13'>
+	<text><![CDATA[<font color="#393536">Inverse ARP</font>]]></text>
+</component>
+
+<component id='ID_drag14'>
+	<text><![CDATA[<font color="#393536">Status</font>]]></text>
+</component>
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the LMI terms to the descriptions.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the LMI terms to the descriptions. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

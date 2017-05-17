@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.1 Virtual Circuits</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Virtual Circuits</h1>
+        <div>
+          <p>The connection through a Frame Relay network between two DTEs is a VC. The circuits are virtual because there is no direct electrical connection from end to end. The connection is logical, and data moves from end to end, without a direct electrical circuit. With VCs, Frame Relay shares the bandwidth among multiple users and any single site can communicate with any other single site without using multiple dedicated physical lines.</p>
+          <p></p>
+          <p>There are two ways to establish VCs:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Switched Virtual Circuits (SVC) </b>- Established dynamically by sending signaling messages to the network (CALL SETUP, DATA TRANSFER, IDLE, CALL TERMINATION).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Permanent Virtual Circuits (PVCs) </b>- preconfigured by the carrier, and after they are set up, only operate in DATA TRANSFER and IDLE modes. Note that some publications refer to PVCs as private VCs.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: PVCs are more commonly implemented than SVCs.</p>
+          <p></p>
+          <p>Click Play in Figure 1 to view an animation on a VC between the sending and receiving nodes. The VC follows the path A, B, C, and D. Frame Relay creates a VC by storing input-port to output-port mapping in the memory of each switch and thus links one switch to another until a continuous path from one end of the circuit to the other is identified. A VC can pass through any number of intermediate devices (switches) located within the Frame Relay network.</p>
+          <p></p>
+          <p>VCs provide a bidirectional communication path from one device to another. VCs are identified by DLCIs, as shown in Figure 2. DLCI values typically are assigned by the Frame Relay service provider. Frame Relay DLCIs have local significance, which means that the values themselves are not unique in the Frame Relay WAN. A DLCI identifies a VC to the equipment at an endpoint. A DLCI has no significance beyond the single link. Two devices connected by a VC may use a different DLCI value to refer to the same connection.</p>
+          <p></p>
+          <p>Locally significant DLCIs have become the primary method of addressing, because the same address can be used in several different locations while still referring to different connections. Local addressing prevents a customer from running out of DLCIs as the network grows.</p>
+          <p></p>
+          <p>Click Play in Figure 3. This is the same network as presented in the previous figure, but this time, as the frame moves across the network, Frame Relay labels each VC with a DLCI. The DLCI is stored in the address field of every frame transmitted to tell the network how the frame should be routed. The Frame Relay service provider assigns DLCI numbers. Usually, DLCIs 0 to 15 and 1,008 to 1,023 are reserved. Therefore, service providers typically assign DLCIs in the range of 16 to 1,007. </p>
+          <p></p>
+          <p>In this example, the frame uses DLCI 102. It leaves the router (R1) using Port 0 and VC 102. At switch A, the frame exits Port 1 using VC 432. This process of VC-port mapping continues through the WAN until the frame reaches its destination at DLCI 201. The DLCI is stored in the address field of every frame transmitted.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

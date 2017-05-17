@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.1.4 Cost Effectiveness and Flexibility of Frame Relay</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Cost Effectiveness and Flexibility of Frame Relay</h1>
+        <div>
+          <p>SPAN’s Frame Relay network uses Permanent Virtual Circuits (PVCs), as shown in the figure. A PVC is the logical path along an originating Frame Relay link, through the network, and along a terminating Frame Relay link to its ultimate destination. Compare this to the physical path used by a dedicated connection. In a network with Frame Relay access, a PVC uniquely defines the path between two endpoints. The concept of virtual circuits (VCs) is discussed in more detail later in this section.</p>
+          <p></p>
+          <p>SPAN’s Frame Relay solution provides both cost effectiveness and flexibility.</p>
+          <p></p>
+          <p>
+            <b>Cost Effectiveness of Frame Relay</b>
+          </p>
+          <p></p>
+          <p>Frame Relay is a more cost-effective option for two reasons. First, with dedicated lines, customers pay for an end-to-end connection, which includes the local loop and the network link. With Frame Relay, customers only pay for the local loop, and for the bandwidth they purchase from the network provider. Distance between nodes is not important. While in a dedicated-line model, customers use dedicated lines provided in increments of 64 kb/s, and Frame Relay customers can define their virtual circuit needs in far greater granularity, often in increments as small as 4 kb/s.</p>
+          <p></p>
+          <p>The second reason for Frame Relay’s cost effectiveness is that it shares bandwidth across a larger base of customers. Typically, a network provider can service 40 or more 56 kb/s customers over one T1 circuit. Using dedicated lines would require more CSU/DSUs (one for each line) and more complicated routing and switching. Network providers save because there is less equipment to purchase and maintain.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Cost can vary significantly depending on location. </p>
+          <p></p>
+          <p>
+            <b>The Flexibility of Frame Relay</b>
+          </p>
+          <p></p>
+          <p>A virtual circuit provides considerable flexibility in network design. Examining the figure, you can see that SPAN’s offices all connect to the Frame Relay cloud over their respective local loops. What happens in the cloud is really of no concern at this time. All that matters is that when any SPAN office wants to communicate with any other SPAN office, all it needs to do is connect to a virtual circuit leading to the other office. In Frame Relay, the end of each connection has a number to identify it called a data link connection identifier (DLCI). Any station can connect with any other simply by stating the address of that station and DLCI number of the line it must use. In a later section, you will learn that when Frame Relay is configured, all data from all configured DLCIs flows through the same port of the router. Imagine the same flexibility using dedicated lines. Not only is it complicated, but it also requires considerably more equipment. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id='ID_txtTitle'>
+	<text><![CDATA[<b>Community benefits of teleworking:</b>]]></text>
+</component>
+
+<component id='ID_txtBody'>
+	<text><![CDATA[<textformat blockindent='-14' ><ul><li>Helps reduce traffic and infrastructure requirements</li><li>Helps reduce urban drift</li><li>Improved rural and suburban amenities</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

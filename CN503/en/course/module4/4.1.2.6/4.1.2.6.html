@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.6 Frame Relay Address Mapping</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Frame Relay Address Mapping</h1>
+        <div>
+          <p>Before a Cisco router is able to transmit data over Frame Relay, it needs to know which local DLCI maps to the Layer 3 address of the remote destination. Cisco routers support all network layer protocols over Frame Relay, such as IPv4, IPv6, IPX, and AppleTalk. This address-to-DLCI mapping can be accomplished either by static or dynamic mapping. Figure 1 shows an example topology with DLCI mapping.</p>
+          <p></p>
+          <p>
+            <b>Inverse ARP</b>
+          </p>
+          <p></p>
+          <p>A primary tool of Frame Relay is Inverse Address Resolution Protocol (ARP). Whereas ARP translates Layer 3 IPv4 addresses to Layer 2 MAC addresses, Inverse ARP does the opposite. The corresponding Layer 3 IPv4 addresses must be available before VCs can be used. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Frame Relay for IPv6 uses Inverse Neighbor Discovery (IND) to obtain a Layer 3 IPv6 address from a Layer 2 DLCI. A Frame Relay router sends an IND Solicitation message to request a Layer 3 IPv6 address corresponding to a Layer 2 DLCI address of the remote Frame Relay router. At the same time the IND Solicitation message provides the sender’s Layer 2 DLCI address to the remote Frame Relay router.</p>
+          <p></p>
+          <p>
+            <b>Dynamic Mapping</b>
+          </p>
+          <p></p>
+          <p>Dynamic address mapping relies on Inverse ARP to resolve a next-hop network layer IPv4 address to a local DLCI value. The Frame Relay router sends out Inverse ARP requests on its PVC to discover the protocol address of the remote device connected to the Frame Relay network. The router uses the responses to populate an address-to-DLCI mapping table on the Frame Relay router or access server. The router builds and maintains this mapping table, which contains all resolved Inverse ARP requests, including both dynamic and static mapping entries. </p>
+          <p></p>
+          <p>On Cisco routers, Inverse ARP is enabled, by default, for all protocols enabled on the physical interface. Inverse ARP packets are not sent out for protocols that are not enabled on the interface. </p>
+          <p></p>
+          <p>
+            <b>Static Frame Relay Mapping</b>
+          </p>
+          <p></p>
+          <p>The user can choose to override dynamic Inverse ARP mapping by supplying a manual static map for the next-hop protocol address to a local DLCI. A static map works similarly to dynamic Inverse ARP by associating a specified next-hop protocol address to a local Frame Relay DLCI. You cannot use Inverse ARP and a map statement for the same DLCI and protocol.</p>
+          <p></p>
+          <p>An example of using static address mapping is a situation in which the router at the other side of the Frame Relay network does not support dynamic Inverse ARP for a specific network protocol. To provide connectivity, a static mapping is required to complete the remote network layer address to local DLCI resolution.</p>
+          <p></p>
+          <p>Another example is on a hub-and-spoke Frame Relay network. Use static address mapping on the spoke routers to provide spoke-to-spoke reachability. Because the spoke routers do not have direct connectivity with each other, dynamic Inverse ARP would not work between them. Dynamic Inverse ARP relies on the presence of a direct point-to-point connection between two ends. In this case, dynamic Inverse ARP only works between hub and spoke, and the spokes require static mapping to provide reachability to each other.</p>
+          <p></p>
+          <p>
+            <b>Configuring Static Mapping</b>
+          </p>
+          <p></p>
+          <p>Establishing static mapping depends on your network needs. To map between a next hop protocol address and DLCI destination address, use this command:<span class="cmd"><b> frame-relay map </b></span><span class="cmd"><i>protocol protocol-address dlci </i></span><span class="cmd">[</span><span class="cmd"><b>broadcast</b></span><span class="cmd">] [</span><span class="cmd"><b>ietf</b></span><span class="cmd">] [</span><span class="cmd"><b>cisco</b></span><span class="cmd">]</span>.</p>
+          <p></p>
+          <p>Use the keyword<span class="cmd"><b> ietf </b></span>when connecting to a non-Cisco router.</p>
+          <p></p>
+          <p>The configuration of Open Shortest Path First (OSPF) protocol can be greatly simplified by adding the optional<span class="cmd"><b> broadcast </b></span>keyword when doing this task. The<span class="cmd"><b> broadcast </b></span>keyword specifies that broadcast and multicast traffic is allowed over the VC. This configuration permits the use of dynamic routing protocols over the VC.</p>
+          <p></p>
+          <p>Figure 2 provides an example of static mapping on a Cisco router. In this example, static address mapping is performed on interface serial 0/0/1. The Frame Relay encapsulation used on DLCI 102 is CISCO. As seen in the configuration steps, static mapping of the address using the<span class="cmd"><b> frame-relay map </b></span>command allows users to select the type of Frame Relay encapsulation used on a per-VC basis. </p>
+          <p></p>
+          <p>Figure 3 shows the output of the<span class="cmd"><b> show frame-relay map </b></span>command. Notice that the interface is up and the destination IPv4 address is 10.1.1.2. The DLCI identifies the logical connection being used to reach this interface. This value is displayed in decimal value (102), in hexadecimal value (0x66), and as its value as it would appear on the wire (0x1860). This is a static entry, not a dynamic entry. The link is using Cisco encapsulation as opposed to IETF encapsulation.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.2 Encryption Algorithms</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Encryption Algorithms</h1>
+        <div>
+          <p>The degree of security depends on the key length of the encryption algorithm. As key length increases, it becomes more difficult to break the encryption.  However, a longer key requires more processor resources when encrypting and decrypting data.</p>
+          <p></p>
+          <p>DES and 3DES are no longer considered secure; therefore, it is recommended that AES be used for IPsec encryption. The greatest security for IPsec encryption of VPNs between Cisco devices is provided by the 256-bit option of AES. In addition, 512-bit and 768-bit Rivest-Shamir-Adleman (RSA) keys have been cracked and Cisco recommends using 2048-bit keys with the RSA option, if used during the authentication phase of IKE.</p>
+          <p></p>
+          <p>
+            <b>Symmetric Encryption</b>
+          </p>
+          <p></p>
+          <p>Encryption algorithms, such as AES, require a shared secret key to perform encryption and decryption. Each of the two networking devices must know the key to decode the information. With symmetric key encryption, also called secret-key encryption, each device encrypts the information before sending it over the network to the other device. Symmetric key encryption requires knowledge of which devices talk to each other so that the same key can be configured on each device, as depicted in Figure 1.</p>
+          <p></p>
+          <p>For example, a sender creates a coded message where each letter is substituted with the letter that is two letters down in the alphabet; A becomes C, B becomes D, and so on. In this case, the word SECRET becomes UGETGV. The sender has already told the recipient that the secret key is shift by 2. When the recipient receives the message UGETGV, the recipient computer decodes the message by shifting back two letters and calculating SECRET. Anyone else who sees the message sees only the encrypted message, which looks like nonsense, unless the person knows the secret key. </p>
+          <p></p>
+          <p>Here is a synopsis for symmetric algorithms:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Uses symmetric key cryptography</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Encryption and decryption use the same key</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Typically used to encrypt the content of the message</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Examples: DES, 3DES, and AES</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>How do the encrypting and decrypting devices both have a shared secret key? One could use email, courier, or overnight express to send the shared secret keys to the administrators of the devices. Another, more secure method is asymmetric encryption.</p>
+          <p></p>
+          <p>
+            <b>Asymmetric Encryption</b>
+          </p>
+          <p></p>
+          <p>Asymmetric encryption uses different keys for encryption and decryption. Knowing one of the keys does not allow a hacker to deduce the second key and decode the information. One key encrypts the message, while a second key decrypts the message, as depicted in Figure 2. It is not possible to encrypt and decrypt with the same key.</p>
+          <p></p>
+          <p>Public key encryption is a variant of asymmetric encryption that uses a combination of a private key and a public key. The recipient gives a public key to any sender with whom the recipient wants to communicate. The sender uses a private key that is combined with the public key of the recipient to encrypt the message. Also, the sender must share its public key with the recipient. To decrypt a message, the recipient will use the public key of the sender with its own private key.</p>
+          <p></p>
+          <p>Here is a synopsis for asymmetric algorithms:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Uses public key cryptography</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Encryption and decryption use a different key</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Typically used in digital certification and key management</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Examples: RSA</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.1.5 Troubleshooting Frame Relay Operation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting Frame Relay Operation</h1>
+        <div>
+          <p>If the verification procedure indicates that your Frame Relay configuration is not working properly, the next step is to troubleshoot the configuration.</p>
+          <p></p>
+          <p>Use the<span class="cmd"><b> debug frame-relay lmi </b></span>command to determine whether the router and the Frame Relay switch are sending and receiving LMI packets properly. </p>
+          <p></p>
+          <p>Look at the figure to examine the output of an LMI exchange. </p>
+          <p>
+            <ul>
+              <li>
+                <b>out </b>is an LMI status message sent by the router. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>in </b>is a message received from the Frame Relay switch. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A full LMI status message is a <b>type 0</b>. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>An LMI exchange is a <b>type 1</b>. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>dlci 102, status 0x2</b> means that the status of DLCI 102 is active. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The possible values of the status field are as follows: </p>
+          <p>
+            <ul>
+              <li>
+                <b>0x0 </b>- The switch has this DLCI programmed, but for some reason it is not usable. The reason could possibly be the other end of the PVC is down. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>0x2 </b>- The Frame Relay switch has the DLCI and everything is operational. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>0x4 </b>- The Frame Relay switch does not have this DLCI programmed for the router, but that it was programmed at some point in the past. This could also be caused by the DLCIs being reversed on the router, or by the PVC being deleted by the service provider in the Frame Relay cloud.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Wireshark Protocol Analyzer</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[Wireshark Protocol Analyzer]]></text>
+	</component>
+</textcomponents>

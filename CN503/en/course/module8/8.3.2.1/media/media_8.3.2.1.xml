@@ -1,0 +1,11 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>NetFlow Router Configuration</b>]]></text>
+</component>
+<component id="ID_label1">
+<text><![CDATA[NetFlow collector installed.]]></text>
+</component>
+<component id="ID_label2">
+<text><![CDATA[NetFlow]]></text>
+</component>
+</textcomponents>

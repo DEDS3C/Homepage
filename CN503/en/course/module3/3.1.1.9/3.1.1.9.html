@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.9 Serial Cables</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.9_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Serial Cables</h1>
+        <div>
+          <p>Originally, the concept of DCEs and DTEs was based on two types of equipment: terminal equipment that generated or received data, and the communication equipment that only relayed data. In the development of the RS-232 standard, there were reasons why 25-pin RS-232 connectors on these two types of equipment must be wired differently. These reasons are no longer significant, but there are two different types of cables remaining: one for connecting a DTE to a DCE, and another for connecting two DTEs directly to each other.</p>
+          <p></p>
+          <p>The DTE/DCE interface for a particular standard defines the following specifications:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Mechanical/physical</b> - Number of pins and connector type </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Electrical </b>- Defines voltage levels for 0 and 1 </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Functional </b>- Specifies the functions that are performed by assigning meanings to each of the signaling lines in the interface </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Procedural </b>- Specifies the sequence of events for transmitting data</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The original RS-232 standard only defined the connection of DTEs with DCEs, which were modems. However, to connect two DTEs, such as two computers or two routers in a lab, a special cable called a null modem eliminates the need for a DCE. In other words, the two devices can be connected without a modem. A null modem is a communication method to directly connect two DTEs using a RS-232 serial cable. With a null modem connection, the transmit (Tx) and receive (Rx) lines are cross-linked as shown in Figure 1.</p>
+          <p></p>
+          <p>The cable for the DTE to DCE connection is a shielded serial transition cable. The router end of the shielded serial transition cable may be a DB-60 connector, which connects to the DB-60 port on a serial WAN interface card, as shown in Figure 2. The other end of the serial transition cable is available with the connector appropriate for the standard that is to be used. The WAN provider or the CSU/DSU usually dictates this cable type. Cisco devices support the EIA/TIA-232, EIA/TIA-449, V.35, X.21, and EIA/TIA-530 serial standards, as shown in Figure 3.</p>
+          <p></p>
+          <p>To support higher port densities in a smaller form factor, Cisco has introduced a Smart Serial cable, as shown in Figure 4. The router interface end of the Smart Serial cable is a 26-pin connector that is significantly more compact than the DB-60 connector.</p>
+          <p></p>
+          <p>When using a null modem, synchronous connections require a clock signal. An external device can generate the signal, or one of the DTEs can generate the clock signal. When a DTE and DCE are connected, the serial port on a router is the DTE end of the connection, by default, and the clock signal is typically provided by a CSU/DSU, or similar DCE device. However, when using a null modem cable in a router-to-router connection, one of the serial interfaces must be configured as the DCE end to provide the clock signal for the connection, as shown in Figure 5.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

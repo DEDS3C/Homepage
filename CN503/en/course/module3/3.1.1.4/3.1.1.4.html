@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.4 Time-Division Multiplexing</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Time-Division Multiplexing</h1>
+        <div>
+          <p>With a leased line, despite the fact that customers are paying for dedicated services, and dedicated bandwidth is provided to the customer, the carrier still uses multiplexing technologies within the network. Multiplexing refers to a scheme that allows multiple logical signals to share a single physical channel. Two common types of multiplexing are time-division multiplexing (TDM) and statistical time-division multiplexing (STDM).</p>
+          <p></p>
+          <p>
+            <b>TDM</b>
+          </p>
+          <p></p>
+          <p>Bell Laboratories originally invented TDM to maximize the amount of voice traffic carried over a medium. Before multiplexing, each telephone call required its own physical link. This was an expensive and unscalable solution. TDM divides the bandwidth of a single link into separate time slots. TDM transmits two or more channels (data stream) over the same link by allocating a different time slot for the transmission of each channel. In effect, the channels take turns using the link. </p>
+          <p></p>
+          <p>TDM is a physical layer concept. It has no regard for the nature of the information that is multiplexed on to the output channel. TDM is independent of the Layer 2 protocol that has been used by the input channels.</p>
+          <p></p>
+          <p>TDM can be explained by an analogy to highway traffic. To transport traffic from four roads to another city, all traffic can be sent on one lane if the roads are equally serviced and the traffic is synchronized. If each of the four roads puts a car on to the main highway every four seconds, the highway gets a car at the rate of one each second. As long as the speed of all the cars is synchronized, there is no collision. At the destination, the reverse happens and the cars are taken off the highway and fed to the local roads by the same synchronous mechanism.</p>
+          <p></p>
+          <p>This is the principle used in synchronous TDM when sending data over a link. TDM allows the transmission of multiple streams of data across a link by dividing transmission time into smaller, equal intervals so that the link carries the bits from multiple input sources. </p>
+          <p></p>
+          <p>In the figure, a multiplexer (MUX) at the transmitter accepts three separate signals. The MUX breaks each signal into segments. The MUX puts each segment into a single channel by inserting each segment into a time slot. </p>
+          <p></p>
+          <p>A MUX at the receiving end reassembles the TDM stream into the three separate data streams based only on the timing of the arrival of each bit. A technique called bit interleaving keeps track of the number and sequence of the bits from each specific transmission so that they can be quickly and efficiently reassembled into their original form upon receipt. Byte interleaving performs the same functions, but because there are eight bits in each byte, the process needs a bigger or longer time slot.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

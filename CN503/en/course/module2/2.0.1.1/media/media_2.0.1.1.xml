@@ -1,0 +1,10 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[]]></text>
+</component>
+   
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>After completing this chapter, you will be able to:</b><br/><br/><textformat blockindent='-14'><ul><li>Describe the purpose of a WAN.</li><li>Describe WAN operations.</li><li>Describe WAN services available.</li><li>Compare various private WAN technologies.</li><li>Compare various public WAN technologies.</li><li>Select the appropriate WAN protocol and service for a specific network requirement.</li></ul></textformat><br/>]]></text>
+</component>
+
+</textcomponents>

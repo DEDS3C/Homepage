@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.5 Frame Relay Topologies (Cont.)</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Frame Relay Topologies (Cont.)</h1>
+        <div>
+          <p>
+            <b>Full Mesh Topology</b>
+          </p>
+          <p></p>
+          <p>Figure 1 represents a full mesh topology using dedicated lines. A full mesh topology suits a situation in which the services to be accessed are geographically dispersed and highly reliable access to them is required. A full mesh topology connects every site to every other site. Using leased-line interconnections, additional serial interfaces and lines add costs. In this example, 10 dedicated lines are required to interconnect each site in a full mesh topology.</p>
+          <p></p>
+          <p>Using Frame Relay Mesh, a network designer can build multiple connections simply by configuring additional VCs on each existing link, as shown in Figure 2. This software upgrade grows the star topology to a full mesh topology without the expense of additional hardware or dedicated lines. Because VCs use statistical multiplexing, multiple VCs on an access link generally make better use of Frame Relay than single VCs. Figure 2 shows how SPAN has used four VCs on each link to scale its network without adding new hardware. Service providers will charge for the additional bandwidth, but this solution is usually more cost effective than using dedicated lines.</p>
+          <p></p>
+          <p>
+            <b>Partial Mesh Topology</b>
+          </p>
+          <p></p>
+          <p>For large networks, a full mesh topology is seldom affordable because the number of links required increases exponentially. The issue is not with the cost of the hardware, but because there is a theoretical limit of less than 1,000 VCs per link. In practice, the limit is less than that.</p>
+          <p></p>
+          <p>For this reason, larger networks are generally configured in a partial mesh topology. With partial mesh, there are more interconnections than required for a star arrangement, but not as many as for a full mesh. The actual pattern is dependent on the data flow requirements.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

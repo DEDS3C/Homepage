@@ -1,0 +1,76 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Identify the Benefits of VPNs</b><br/>Match each VPN benefit to its description. Not all choices will be used.]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">Scalability</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">Security</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">Compatibility with Broadband Technology</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">Cost Savings</font>]]></text>
+</component>
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each VPN benefit to its description.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each VPN benefit to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+<component id='ID_target_header'>
+	<text><![CDATA[<b>VPN Benefit</b>]]></text>
+</component>
+<component id='ID_text_header'>
+	<text><![CDATA[<b>Description</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+	<text><![CDATA[More users can easily be added to the network.]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[Remote-connection bandwidth can be increased, while also decreasing expensive WAN links and modem banks.]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[Advanced encryption and authentication protocols are used for data protection and access.]]></text> 
+</component>
+
+
+
+
+   
+</textcomponents>

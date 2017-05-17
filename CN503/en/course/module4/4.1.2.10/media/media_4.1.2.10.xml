@@ -1,0 +1,176 @@
+<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Map the Virtual Circuit to the Port Number</b><br/>Data is flowing from R1 to R2. Drag the virtual circuit and port numbers to the table provided, to create an end-to-end Frame Relay path for the traffic shown.]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[DLCI 152]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[DLCI 432]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<b>VC Numbers</b>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<b>Port Numbers</b>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<b>Ingress</b>]]></text>
+</component>
+
+<component id='ID_drag06'>
+	<text><![CDATA[<b>Egress</b>]]></text>
+</component>
+
+<component id='ID_drag07'>
+	<text><![CDATA[<b>Leg</b>]]></text>
+</component>
+
+<component id='ID_drag08'>
+	<text><![CDATA[<b>VC</b>]]></text>
+</component>
+
+<component id='ID_drag09'>
+	<text><![CDATA[<b>Port</b>]]></text>
+</component>
+
+<component id='ID_drag10'>
+	<text><![CDATA[<b>VC</b>]]></text>
+</component>
+
+<component id='ID_drag11'>
+	<text><![CDATA[<b>Port</b>]]></text>
+</component>
+
+<component id='ID_drag12'>
+	<text><![CDATA[A]]></text>
+</component>
+
+<component id='ID_drag13'>
+	<text><![CDATA[C]]></text>
+</component>
+
+<component id='ID_drag14'>
+	<text><![CDATA[D]]></text>
+</component>
+<component id='ID_drag15'>
+	<text><![CDATA[A]]></text>
+</component>
+<component id='ID_drag16'>
+	<text><![CDATA[B]]></text>
+</component>
+<component id='ID_drag17'>
+	<text><![CDATA[C]]></text>
+</component>
+<component id='ID_drag18'>
+	<text><![CDATA[D]]></text>
+</component>
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully mapped the Frame Relay ports and virtual circuits for the data traffic shown.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully mapped the Frame Relay ports and virtual circuits for the data traffic shown. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt01">
+	<text><![CDATA[<b>Term</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+	<text><![CDATA[<b>Frame Relay Characteristics</b>]]></text>
+</component>
+   
+<component id="ID_txt03">
+	<text><![CDATA[Frame Relay is popular with enterprises, governments, ISPs, and small businesses for this reason.]]></text>
+</component>
+      
+<component id="ID_txt04">
+	<text><![CDATA[Frame Relay is more streamlined and efficient than this earlier protocol it replaced.]]></text>
+</component>
+      
+<component id="ID_txt05">
+	<text><![CDATA[Frame Relay is a WAN protocol that operates at this layer of the TCP/IP model.]]></text>
+</component>
+      
+<component id="ID_txt06">
+	<text><![CDATA[These are used to identify each Frame Relay circuit endpoint. ]]></text>
+</component>
+      
+<component id="ID_txt07">
+	<text><![CDATA[One of these connects each Frame Relay endpoint to the Frame Relay WAN.]]></text>
+</component>
+
+<component id="ID_txt08">
+	<text><![CDATA[152]]></text>
+</component>
+
+<component id="ID_txt09">
+	<text><![CDATA[233]]></text>
+</component>
+
+<component id="ID_txt10">
+	<text><![CDATA[305]]></text>
+</component>
+
+<component id="ID_txt11">
+	<text><![CDATA[432]]></text>
+</component>
+
+<component id="ID_txt12">
+	<text><![CDATA[0]]></text>
+</component>
+
+<component id="ID_txt13">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="ID_txt14">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="ID_txt15">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="ID_txt16">
+	<text><![CDATA[4]]></text>
+</component>
+
+
+
+
+
+
+
+
+</textcomponents>

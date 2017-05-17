@@ -1,0 +1,38 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Confidentiality with Encryption</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[Gail]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Jeremy]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Pay to Jeremy                     <span class="space_1">$100</span><br><br>One Hundred Dollars]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[Encryption Algorithm]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[Decryption Algorithm]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[Pay to Jeremy                      <span class="space_2">$100</span><br><br>One Hundred Dollars]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[4ehiDx67NMop9eR<br>U781OPotVBn45TR]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[Internet]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[4ehiDx67NMop9eR<br>U781OPotVBn45TR]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[Hmmm... I cannot read a thing]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[Unauthorized User]]></text>
+	</component>
+</textcomponents>

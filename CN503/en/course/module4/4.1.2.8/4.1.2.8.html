@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.8 LMI Extensions</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.8_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>LMI Extensions</h1>
+        <div>
+          <p>In addition to the Frame Relay protocol functions for transferring data, the Frame Relay specification includes optional LMI extensions. Some of the extensions include: </p>
+          <p>
+            <ul>
+              <li>
+                <b>VC status messages </b>- Provide information about PVC integrity by communicating and synchronizing between devices, periodically reporting the existence of new PVCs and the deletion of already existing PVCs. VC status messages prevent data from being sent into black holes (PVCs that no longer exist). </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Multicasting </b>- Allows a sender to transmit a single frame that is delivered to multiple recipients. Multicasting supports the efficient delivery of routing protocol messages and address resolution procedures that are typically sent to many destinations simultaneously. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Global addressing </b>- Provides connection IDs with global rather than local significance, allowing them to be used to identify a specific interface to the Frame Relay network. Global addressing makes the Frame Relay network resemble a LAN in terms of addressing, and ARPs are used as on a LAN. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Simple flow control </b>- Provides for an XON/XOFF flow control mechanism that applies to the entire Frame Relay interface. It is intended for devices that cannot use the congestion notification bits (i.e., FECN and BECN) that would be leveraged by higher layers, but still require some level of flow control.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>LMI is used to manage Frame Relay links. Each LMI message is classified by a DLCI appearing in the LMI frame. The 10-bit DLCI field supports 1,024 VC IDs: 0 to 1,023, as shown in Figure 1. The LMI extensions reserve some of these VC IDs, thereby reducing the number of permitted VCs. LMI messages are exchanged between the DTE and DCE using these reserved DLCIs.</p>
+          <p></p>
+          <p>There are several LMI types, each of which is incompatible with the others. The LMI type configured on the router must match the type used by the service provider. Three types of LMIs are supported by Cisco routers: </p>
+          <p>
+            <ul>
+              <li>
+                <b>CISCO </b>- Original LMI extension </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ANSI </b>- Corresponding to the ANSI standard T1.617 Annex D </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Q933A</b>
+                <span class="cmd">
+                  <b></b>
+                </span>- Corresponding to the ITU standard Q933 Annex A</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To display the LMI message information and the associated DLCI numbers, use the<span class="cmd"><b> show interfaces </b></span><span class="cmd">[</span><span class="cmd"><i>type number</i></span><span class="cmd">] </span>command, as shown in Figure 2. Cisco uses DLCI 1023 to identify LMI messages used for Frame Relay link management.</p>
+          <p></p>
+          <p>Starting with the Cisco IOS software Release 11.2, the default LMI autosense feature detects the LMI type supported by the directly connected Frame Relay switch. Based on the LMI status messages it receives from the Frame Relay switch, the router automatically configures its interface with the supported LMI type acknowledged by the Frame Relay switch. If it is necessary to set the LMI type, use the<span class="cmd"><b> frame-relay lmi-type </b></span><span class="cmd">[</span><span class="cmd"><b>cisco </b></span><span class="cmd">|</span><span class="cmd"><b> ansi </b></span><span class="cmd">|</span><span class="cmd"><b> q933a</b></span><span class="cmd">]</span> interface configuration command. Configuring the LMI type disables the autosense feature.</p>
+          <p></p>
+          <p>In cases where a Frame Relay switch uses non-default timeout settings, the keepalive interval must also be configured on the Frame Relay interface to prevent status exchange messages from timing out. The LMI status exchange messages determine the status of the PVC connection. A large mismatch in the keepalive interval on the router and the switch can cause the switch to declare the router dead. It is important to consult the Frame Relay service provider for information on how to modify the keepalive setting. By default, the keepalive time interval is 10 seconds on Cisco serial interfaces. You can change the keepalive interval with the<span class="cmd"><b> keepalive </b></span>interface configuration command. </p>
+          <p></p>
+          <p>Status messages help verify the integrity of logical and physical links. This information is critical in a routing environment because routing protocols make decisions based on link integrity.</p>
+          <p></p>
+          <p>As shown in Figure 3, LMI status messages are similar to the Frame Relay frame. In place of the Address field of a Frame Relay frame that is used for data transmission, is an LMI DLCI field. Following the DLCI field are the Control, Protocol Discriminator, and Call Reference fields. These are the same as with standard Frame Relay data frames. The fourth field indicates the LMI message type and includes one of the three LMI message types supported by Cisco. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

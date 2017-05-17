@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.2 IPsec Security Services</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPsec Security Services</h1>
+        <div>
+          <p>IPsec security services provide four critical functions, as shown in the figure:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Confidentiality (encryption) </b>- In a VPN implementation, private data travels over a public network. For this reason, data confidentiality is vital. It can be attained by encrypting the data before transmitting it across the network. This is the process of taking all the data that one computer is sending to another and encoding it into a form that only the other computer will be able to decode. If the communication is intercepted, it cannot be read by a hacker. IPsec provides enhanced security features, such as strong encryption algorithms.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Data Integrity </b>- The receiver can verify that the data was transmitted through the Internet without being changed or altered in any way. While it is important that data is encrypted over a public network, it is just as important to verify that it has not been changed while in transit. IPsec has a mechanism to ensure that the encrypted portion of the packet, or the entire header and data portion of the packet, has not been changed. IPsec ensures data integrity by using checksums, which is a simple redundancy check. If tampering is detected, the packet is dropped. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Authentication </b>- Verify the identity of the source of the data that is sent. This is necessary to guard against a number of attacks that depend on spoofing the identity of the sender. Authentication ensures that the connection is made with the desired communication partner. The receiver can authenticate the source of the packet by certifying the source of the information. IPsec uses Internet Key Exchange (IKE) to authenticate users and devices that can carry out communication independently. IKE uses several types of authentication, including username and password, one-time password, biometrics, pre-shared key (PSK), and digital certificates.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Anti-Replay Protection </b>- This is the ability to detect and reject replayed packets and helps prevent spoofing. Anti-replay protection verifies that each packet is unique and not duplicated. IPsec packets are protected by comparing the sequence number of the received packets with a sliding window on the destination host or security gateway. A packet that has a sequence number that is before the sliding window is considered to be late or a duplicate packet. Late and duplicate packets are dropped.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The acronym CIA is often used to help remember the first three of these functions: confidentiality, integrity, and authentication. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

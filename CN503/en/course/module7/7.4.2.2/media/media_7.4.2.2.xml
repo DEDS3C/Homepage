@@ -1,0 +1,21 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Cisco Easy VPN</b>]]></text>
+	</component>
+		<component id="ID_txt01">
+		<text><![CDATA[PC with Cisco VPN Client]]></text>
+	</component>
+		<component id="ID_txt02">
+		<text><![CDATA[Cisco Router]]></text>
+	</component>
+		<component id="ID_txt03">
+		<text><![CDATA[Cisco ASA]]></text>
+	</component>
+		<component id="ID_txt04">
+		<text><![CDATA[Cisco PIX Firewall]]></text>
+	</component>
+			<component id="ID_txt05">
+		<text><![CDATA[Cisco IOS software Easy VPN Server]]></text>
+	</component>
+	
+</textcomponents>

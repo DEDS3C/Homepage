@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.2.3 Security Best Practices</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Security Best Practices</h1>
+        <div>
+          <p>While SNMP is very useful for monitoring and troubleshooting, like the one shown in the figure, it can also create security vulnerabilities. For this reason, prior to implementing SNMP, be mindful of security best practices. </p>
+          <p></p>
+          <p>Both SNMPv1 and SNMPv2c rely on SNMP community strings in plaintext to authenticate access to MIB objects. These community strings, as with all passwords, should be carefully chosen to ensure that they are not too easy to crack. Additionally, community strings should be changed at regular intervals and in accordance with network security policies. For example, the strings should be changed when a network administrator changes roles or leaves the company. If SNMP is used only to monitor devices, use read-only communities. </p>
+          <p></p>
+          <p>Ensure that SNMP messages do not spread beyond the management consoles. ACLs should be used to prevent SNMP messages from going beyond the required devices. ACL should also be used on the monitored devices to limit access for management systems only. </p>
+          <p></p>
+          <p>SNMPv3 is recommended because it provides security authentication and encryption. There are a number of other global configuration mode commands that a network administrator can implement to take advantage of the authentication and encryption support in SNMPv3:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The<span class="cmd"><b> snmp-server group </b></span><span class="cmd"><i>groupname </i></span><span class="cmd">{</span><span class="cmd"><b>v1 </b></span><span class="cmd">|</span><span class="cmd"><b> v2c </b></span><span class="cmd">|</span><span class="cmd"><b> v3 </b></span><span class="cmd">{</span><span class="cmd"><b>auth </b></span><span class="cmd">|</span><span class="cmd"><b> noauth </b></span><span class="cmd">|</span><span class="cmd"><b> priv</b></span><span class="cmd">}}</span> command creates a new SNMP group on the device. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The<span class="cmd"><b> snmp-server user </b></span><span class="cmd"><i>username groupname </i></span><span class="cmd"><b>v3 </b></span><span class="cmd">[</span><span class="cmd"><b>encrypted</b></span><span class="cmd">] </span><span class="cmd">[</span><span class="cmd"><b>auth</b></span><span class="cmd"> {</span><span class="cmd"><b>md5</b></span><span class="cmd"> | </span><span class="cmd"><b>sha</b></span><span class="cmd">} </span><span class="cmd">auth-password</span><span class="cmd">] [</span><span class="cmd"><b><i>priv</i></b></span><span class="cmd"> {</span><span class="cmd"><b>des</b></span><span class="cmd"> | </span><span class="cmd"><b>3des</b></span><span class="cmd"> | </span><span class="cmd"><b>aes</b></span><span class="cmd"> {</span><span class="cmd"><b>128</b></span><span class="cmd"> | </span><span class="cmd"><b>192</b></span><span class="cmd"> | </span><span class="cmd"><b>256</b></span><span class="cmd">}} </span><span class="cmd">priv-password</span><span class="cmd">]</span> command is used to add a new user to the SNMP group specified in the<span class="cmd"><b> snmp-server group </b></span><span class="cmd"><i>groupname </i></span>command.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: SNMPv3 configuration is beyond the scope of the CCNA curricula.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

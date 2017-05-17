@@ -1,0 +1,91 @@
+<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Identify DSL Terminology</b><br/>Drag each DSL term to the appropriate definition.]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">ADSL</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">Transceiver</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">DSL</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">SDSL</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">DSLAM</font>]]></text>
+</component>
+
+<component id='ID_drag06'>
+	<text><![CDATA[<font color="#393536">Microfilter</font>]]></text>
+</component>
+
+
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each DSL term to its definition.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each DSL term to its definition. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+<component id="ID_txt01">
+	<text><![CDATA[One end connects to a telephone device and the other end connects to the telephone wall jack.]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[This category of DSL technology provides equal high-speed downstream and upstream data capacities.]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[Located at the CO, this device combines individual DSL connections from subscribers into one high-capacity link to an ISP.]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[This category of DSL technology provides high-speed downstream data capacity value with a lower upstream capacity value.]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[A means of providing high-speed connections over pre-existing installed copper wire infrastructure.]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[Sometimes referred to as the DSL modem, it connects the subscriber to the DSL network.]]></text> 
+</component>
+
+
+   
+</textcomponents>

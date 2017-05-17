@@ -1,0 +1,91 @@
+<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Identify Cable Terminology</b><br/>Drag each cable term to the appropriate definition.]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">Downstream</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">Frequency</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">CMTS</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">HFC</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">DOCSIS</font>]]></text>
+</component>
+
+<component id='ID_drag06'>
+	<text><![CDATA[<font color="#393536">Upstream</font>]]></text>
+</component>
+
+
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each cable term to its definition.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each cable term to its definition. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+<component id="ID_txt01">
+	<text><![CDATA[Defines the communications and operation support interface that permits the addition of high-speed data transfer to a traditional cable TV system.]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[Located in the headend. This device communicates with CMs located in subscriber homes.]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[The direction of a signal transmission from subscribers to the headend.]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[The rate at which the current (voltage) cycles. Computed as the number of waves per second.]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[Combining both fiber optic and coax cabling together into a hybrid cabling infrastructure.]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[The direction of a signal transmission from the headend to subscribers.]]></text> 
+</component>
+
+
+   
+</textcomponents>

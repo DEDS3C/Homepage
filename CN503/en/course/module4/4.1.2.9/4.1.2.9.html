@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.9 Using LMI and Inverse ARP to Map Addresses</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.9_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Using LMI and Inverse ARP to Map Addresses</h1>
+        <div>
+          <p>LMI status messages combined with Inverse ARP messages allow a router to associate network layer and data link layer addresses. </p>
+          <p></p>
+          <p>Play the animation in Figure 1 to watch how the LMI process begins. </p>
+          <p></p>
+          <p>In this example, when R1 connects to the Frame Relay network, it sends an LMI status inquiry message to the network. The network replies with an LMI status message containing details of every VC configured on the access link. </p>
+          <p></p>
+          <p>Periodically, the router repeats the status inquiry, but subsequent responses include only status changes. After a set number of these abbreviated responses, the network sends a full status message.</p>
+          <p></p>
+          <p>If the router needs to map VCs to network layer addresses, it sends an Inverse ARP message on each VC. Inverse ARP operates similarly to ARP on an Ethernet local network, with the exception that Inverse ARP does not broadcast requests. With ARP, the sending device knows the Layer 3 IP address and sends a broadcast to learn the destination Layer 2 MAC address. With Inverse ARP, the router knows the Layer 2 address, which is the local DLCI, and sends a request for the destination Layer 3 IP address. </p>
+          <p></p>
+          <p>
+            <b>Inverse ARP operation</b>
+          </p>
+          <p></p>
+          <p>When an interface supporting Inverse ARP becomes active, it initiates the Inverse ARP protocol and formats an Inverse ARP request for the active VC.  The Inverse ARP request includes the source hardware, source Layer 3 protocol address, and the known target hardware address.  It then fills the target Layer 3 protocol address field with all zeroes.  It encapsulates the packet for the specific network and sends it directly to the destination device using the VC.</p>
+          <p></p>
+          <p>Upon receiving an Inverse ARP request, the destination device will use the address of the source device to create its own DLCI-to-Layer 3 map. It will then send an Inverse ARP response that includes its Layer 3 address information. When the source device receives the Inverse ARP response, it completes the DLCI-to-Layer 3 map using the provided information.</p>
+          <p></p>
+          <p>When an interface on a Cisco router is configured to use Frame Relay encapsulation, Inverse ARP is enabled by default.</p>
+          <p></p>
+          <p>Play the animation in Figure 2 to see Inverse ARP operation. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

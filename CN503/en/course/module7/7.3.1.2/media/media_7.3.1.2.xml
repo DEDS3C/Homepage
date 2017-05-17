@@ -1,0 +1,54 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>IPsec Functions</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[Confidentiality]]></text>
+	</component>
+
+	<component id="ID_txt02">
+		<text><![CDATA[Data Integrity]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Authentication]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[Anti-Replay Protection]]></text>
+	</component>
+
+	<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td colspan='2' bgcolor='#077A77' valign="top" class="msubtitle" id="value16"><font color='#ffffff'><p align='center'><b>16</b></p></font></td>
+<td  bgcolor='#077A77' valign="top" class="subTitle"><font color='#ffffff'><p align='center'><b>24</b></p></font></td>
+<td  bgcolor='#077A77' valign="top" class="subTitle"><font color='#ffffff'><p align='center'><b>32 bit</b></p></font></td>
+</tr>
+<tr>
+<td colspan='4' bgcolor='#eff8f7' valign="top" style="height:8px !important"><font color='#393536'><p align='center'>Security Association Identifier（SPI）</p></font></td>
+</tr>
+
+<tr>
+<td colspan='4' bgcolor='#FACCA8' valign="top" style="height:8px !important"><font color='#393536'><p align='center'>Sequence Number</p></font></td>
+</tr>
+
+<tr>
+<td colspan='4' bgcolor='#eff8f7' valign="top" style="height:8px !important"><font color='#393536'><p align='center'>Payload Data (Variable Length)</p></font></td>
+</tr>
+
+<tr>
+<td colspan='4' bgcolor='#ffffff' valign="top" style="height:8px !important"><font color='#393536'><p align='center'>Padding (0-255 Bytes)</p></font></td>
+</tr>
+
+<tr>
+<td colspan='2' bgcolor='#eff8f7' valign="top" style="height:22px !important"><font color='#393536'></font></td>
+<td  bgcolor='#eff8f7' valign="top" style="height:22px !important"><font color='#393536'><p align='center'>Pad Length</p></font></td>
+<td  bgcolor='#eff8f7' valign="top" style="height:22px !important"><font color='#393536'><p align='center'>Next Header</p></font></td>
+</tr>
+
+<tr>
+<td colspan='4' bgcolor='#ffffff' valign="top" style="height:8px !important"><font color='#393536'><p align='center'>Authentication Data (Variable)</p></font></td>
+</tr>
+
+</table>]]></text> 
+</component>
+</textcomponents>
