@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.1.1 Interpreting Ping Results</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Interpreting Ping Results</h1>
+        <div>
+          <p>Using the <b>ping </b>command is an effective way to test connectivity. The <b>ping</b> command uses the Internet Control Message Protocol (ICMP) and verifies Layer 3 connectivity. The <b>ping</b> command will not always pinpoint the nature of a problem, but it can help to identify the source of the problem, an important first step in troubleshooting a network failure.</p>
+          <p></p>
+          <p>
+            <b>IOS Ping Indicators</b>
+          </p>
+          <p></p>
+          <p>A ping issued from the IOS will yield one of several indications for each ICMP echo request that was sent. The most common indicators are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>!</b> - indicates receipt of an ICMP echo reply message, as shown in Figure 1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.</b> - indicates a time expired while waiting for an ICMP echo reply message</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>U</b> - an ICMP unreachable message was received </li>
+            </ul>
+          </p>
+          <p>The "<b>.</b>" (period) may indicate that a connectivity problem occurred somewhere along the path. It may also indicate that a router along the path did not have a route to the destination and did not send an ICMP destination unreachable message. It also may indicate that the ping was blocked by device security. When sending a ping on an Ethernet LAN, it is common for the first echo request to timeout if the ARP process is required.</p>
+          <p>The "<b>U</b>" indicates that a router along the path responded with an ICMP unreachable message. The router either did not have a route to the destination address, or that the ping request was blocked.  </p>
+          <p>
+            <b>Testing the Loopback</b>
+          </p>
+          <p>The ping command can also be used to verify the internal IP configuration on the local host by pinging the loopback address, 127.0.0.1, as shown in Figure 2. This verifies the proper operation of the protocol stack from the network layer to the physical layer, and back, without actually putting a signal on the media.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1 and 2 show the same topology. R1 and R2 are connected through a WAN link. Each router has two LANs with a PC and a switch connected to each LAN. In Figure 1, output is shown for a successful ping from R1 to R2. In Figure 2, output is shown for a successful ping from PC2 to its loopback address, 127.0.0.1.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

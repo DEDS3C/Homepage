@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.4.1 Subnetting Based on Host Requirements</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Subnetting Based on Host Requirements</h1>
+        <div>
+          <p>There are two considerations when planning subnets: </p>
+          <p>
+            <ul>
+              <li>the number of host addresses required for each network </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>the number of individual subnets needed </li>
+            </ul>
+          </p>
+          <p>The table in the figure displays the specifics for subnetting a /24 network. Notice how there is an inverse relationship between the number of subnets and the number of hosts. The more bits borrowed to create subnets, the fewer host bits available. If more host addresses are needed, more host bits are required, resulting in fewer subnets.</p>
+          <p>The number of host addresses required in the largest subnet will determine how many bits must be left in the host portion. Recall that two of the addresses cannot be used, so the usable number of addresses can be calculated as 2^n-2. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table. The first column lists the six prefix lengths from /25 to /30. The second column lists the six subnet masks from 255.255.255.128 to 255.255.255.252. The third column shows the subnet mask in binary with the letter “n” above one bits and the letter “h” above zero bits. The effect is to show the borrowing of bits into the fourth octet from borrowing one bit in the first row (/25) to borrowing six bits in the last row (/30). The fourth and fifth columns show the number of subnets and hosts respectively. For example, borrowing 3 bits gets you 8 subnets with 30 hosts per subnet.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

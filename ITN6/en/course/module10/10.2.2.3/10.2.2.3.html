@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.3 DNS Hierarchy</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DNS Hierarchy</h1>
+        <div>
+          <p>The DNS protocol uses a hierarchical system to create a database to provide name resolution. The hierarchy looks like an inverted tree with the root at the top and branches below (see the figure). DNS uses domain names to form the hierarchy.</p>
+          <p>The naming structure is broken down into small, manageable zones. Each DNS server maintains a specific database file and is only responsible for managing name-to-IP mappings for that small portion of the entire DNS structure. When a DNS server receives a request for a name translation that is not within its DNS zone, the DNS server forwards the request to another DNS server within the proper zone for translation. </p>
+          <p>
+            <b>Note</b>: DNS is scalable because hostname resolution is spread across multiple servers.</p>
+          <p>The different top-level domains represent either the type of organization or the country of origin. Examples of top-level domains are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>.com</b> - a business or industry</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.org</b> - a non-profit organization</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.au</b> - Australia</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.co</b> - Colombia</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.4 TCP Flow Control - Window Size and Acknowledgments</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP Flow Control - Window Size and Acknowledgments</h1>
+        <div>
+          <p>TCP also provides mechanisms for flow control, the amount of data that the destination can receive and process reliably. Flow control helps maintain the reliability of TCP transmission by adjusting the rate of data flow between source and destination for a given session. To accomplish this, the TCP header includes a 16-bit field called the window size.</p>
+          <p></p>
+          <p>The figure shows an example of window size and acknowledgments. The window size is the number of bytes that the destination device of a TCP session can accept and process at one time. In this example, PC B’s initial window size for the TCP session is 10,000 bytes. Starting with the first byte, byte number 1, the last byte PC A can send without receiving an acknowledgment is byte 10,000. This is known as PC A’s send window. The window size is included in every TCP segment so the destination can modify the window size at any time depending on buffer availability.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: In the figure, the source is transmitting 1,460 bytes of data within each TCP segment. This is known as the MSS (Maximum Segment Size). </p>
+          <p></p>
+          <p>The initial window size is agreed upon when the TCP session is established during the three-way handshake. The source device must limit the number of bytes sent to the destination device based on the destination’s window size. Only after the source device receives an acknowledgment that the bytes have been received, can it continue sending more data for the session. Typically, the destination will not wait for all the bytes for its window size to be received before replying with an acknowledgment. As the bytes are received and processed, the destination will send acknowledgments to inform the source that it can continue to send additional bytes. </p>
+          <p></p>
+          <p>Typically, PC B will not wait until all 10,000 bytes have been received before sending an acknowledgment. This means PC A can adjust its send window as it receives acknowledgments from PC B. As shown in the figure, when PC A receives an acknowledgment with the acknowledgment number 2,921, PC A’s send window will increment another 10,000 bytes (the size of PC B’s current window size) to 12,920. PC A can now continue to send up to another 10,000 bytes to PC B as long as it does not send past its new send window at 12,920.  </p>
+          <p></p>
+          <p>The process of the destination sending acknowledgments as it processes bytes received and the continual adjustment of the source’s send window is known as sliding windows. </p>
+          <p></p>
+          <p>If the availability of the destination’s buffer space decreases, it may reduce its window size to inform the source to reduce the number of bytes it should send without receiving an acknowledgment.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Devices typically use the sliding windows protocol. With sliding windows, the receiver does not wait for the number of bytes in its window size to be reached before sending an acknowledgment. The receiver typically sends an acknowledgement after every two segments it receives. The number of segments received before being acknowledged may vary. The advantage of sliding windows is that it allows the sender to continuously transmit segments, as long as the receiver is acknowledging previous segments. The details of sliding windows are beyond the scope of this course.</p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures shows a window size example. PC B has specified that the window size is 10,000 and the maximum segment size is 1460. PC A sends the first 1460 bytes and then the send 1460 bytes. PC B sends an ACK 2921 and confirms window size is still 10,000. PC A sends another 1460 bytes. PC B send an ACK 4381 and confirms window size is still 10,000.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

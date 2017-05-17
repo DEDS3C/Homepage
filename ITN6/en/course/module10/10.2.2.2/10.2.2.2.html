@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.2 DNS Message Format</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DNS Message Format</h1>
+        <div>
+          <p>The DNS server stores different types of resource records used to resolve names. These records contain the name, address, and type of record. Some of these record types are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>A</b> - An end device IPv4 address</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>NS</b> - An authoritative name server</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>AAAA</b> - An end device IPv6 address (pronounced quad-A)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>MX</b> - A mail exchange record</li>
+            </ul>
+          </p>
+          <p>When a client makes a query, the server’s DNS process first looks at its own records to resolve the name. If it is unable to resolve the name using its stored records, it contacts other servers to resolve the name. After a match is found and returned to the original requesting server, the server temporarily stores the numbered address in the event that the same name is requested again. </p>
+          <p>The DNS Client service on Windows PCs also stores previously resolved names in memory. The <b>ipconfig /displaydns</b> command displays all of the cached DNS entries.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

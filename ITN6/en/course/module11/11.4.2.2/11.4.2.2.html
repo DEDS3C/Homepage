@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.4.2.2 Duplex Mismatch</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.4.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Duplex Mismatch</h1>
+        <div>
+          <p>Duplex mismatches may be difficult to troubleshoot as the communication between devices still occurs. A duplex mismatch may not become apparent even when using tools such as ping. Single small packets may fail to reveal a duplex mismatch problem. A terminal session which sends data slowly (in very short bursts) could also communicate successfully through a duplex mismatch. Even when either end of the connection attempts to send any significant amount of data and the link performance drops considerably, the cause may not be readily apparent because the network is otherwise operational.</p>
+          <p></p>
+          <p>CDP, the Cisco proprietary protocol, can easily detect a duplex mismatch between two Cisco devices. Consider the topology and log messages in Figure 1 where the G0/0 interface on R1 has been erroneously configured to operate in half-duplex mode. CDP will display log messages about the link with the duplex mismatch. The messages also contain the device names and ports involved in the duplex mismatch, which makes it much easier to identify and fix the problem.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Because these are log messages, they are only displayed on a console session by default. You would only see these messages on a remote connection if the terminal monitor command is enabled.</p>
+          <p></p>
+          <p>Figures 2 shows that the S1 interface is properly configured for full-duplex operation. Figure 3 shows that the half-duplex configuration on R1 caused the problem.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1, 2, and 3 have the topology with a switch connected to a router. The devices have duplex mismatch. The switch is operating in full-duplex mode and the router is operating in half-duplex mode. Figure 1 also shows output for the switch’s console messages which indicate there is a duplex mismatch. Figure 2 displays output for the ‘show interfaces fastethernet 0/5’ command on the switch verifying that the switch is operating in full duplex mode. Figure 3 displays output for the ‘show interfaces gigabitethernet0/0’ common on the router verify that the router is operating in half-duplex mode.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

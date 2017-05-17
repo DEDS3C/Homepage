@@ -1,0 +1,11 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>WAN</b>]]></text> 
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>Branch 1 LAN</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>Branch 2 LAN</b>]]></text>
+	</component>
+</textcomponents>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.3 Assigning Addresses to Devices</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Assigning Addresses to Devices</h1>
+        <div>
+          <p>Within a network, there are different types of devices that require addresses, including:</p>
+          <p>
+            <ul>
+              <li>
+                <b>End user clients</b> – Most networks allocate addresses dynamically using Dynamic Host Configuration Protocol (DHCP). This reduces the burden on network support staff and virtually eliminates entry errors.  As well, addresses are only leased for a period of time. Changing the subnetting scheme means that the DHCP server needs to be reconfigured, and the clients must renew their IP addresses. IPv6 clients can obtain address information using DHCPv6 or SLAAC.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Servers and peripherals</b> – These should have a predictable static IP address. Use a consistent numbering system for these devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Servers that are accessible from the Internet</b> – In many networks, servers must be made available to the remote users. In most cases, these servers are assigned private addresses internally, and the router or firewall at the perimeter of the network must be configured to translate the internal address into a public address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Intermediary devices</b> – These devices are assigned addresses for network management, monitoring, and security. Because we must know how to communicate with intermediary devices, they should have predictable, statically assigned addresses. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Gateway</b> - Routers and firewall devices have an IP address assigned to each interface which serves as the gateway for the hosts in that network. Typically, the router interface uses either the lowest or highest address in the network.</li>
+            </ul>
+          </p>
+          <p>The table in the figure provides a sample of address allocation for a small network.</p>
+          <p>When developing an IP addressing scheme, it is generally recommended to have a set pattern of how addresses are allocated to each type of device. This benefits administrators when adding and removing devices, filtering traffic based on IP, as well as simplifying documentation.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a table with a breakdown of IP address assignment based on network design.  This table shows a /24 with breakdown as follows: 1 through 229 for hosts, 230 through 239 for servers, 240 through 249 for printers, 250 through 253 for intermediary devices, and 254 for the gateway.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

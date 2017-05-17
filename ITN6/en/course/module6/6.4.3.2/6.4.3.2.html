@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.3.2 Default Gateway for a Switch</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Default Gateway for a Switch</h1>
+        <div>
+          <p>Typically, a workgroup switch that interconnects client computers is a Layer 2 device. As such, a Layer 2 switch does not require an IP address to function properly. However, if you wish to connect to the switch and administratively manage it over multiple networks, you will need to configure the SVI with an IPv4 address, subnet mask, and default gateway address. </p>
+          <p>The default gateway address is typically configured on all devices that wish to communicate beyond just their local network. In other words, to remotely access the switch from another network using SSH or Telnet, the switch must have an SVI with an IPv4 address, subnet mask, and default gateway address configured. If the switch is accessed from a host within the local network, then the default gateway IPv4 address is not required.</p>
+          <p>To configure a default gateway on a switch, use the <b>ip default-gateway</b> global configuration command. The IP address configured is that of the router interface of the connected switch.</p>
+          <p>Figure 1 shows an administrator establishing a remote connection to switch S1 on another network. S1 must be configured with a default gateway to be able to reply and establish an SSH connection with the administrative host.</p>
+          <p>A common misconception is that the switch uses its configured default gateway address to determine where to forward packets originating from hosts connected to the switch and destined for hosts on remote networks. Actually, the IP address and default gateway information is only used for packets that originate from the switch. Packets originating from host computers connected to the switch must already have the default gateway address configured on their host computer operating systems. </p>
+          <p>Use the Syntax Checker in Figure 2 to practice configuring a default gateway on a switch.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a network with a worker connected to a LAN.  The figure demonstrates how to configure a switch with a management interface (VLAN 1) and a default gateway so a network administrator can manage the switch remotely.  Without these configured, you cannot connect to a switch remotely. Figure 2 is a Syntax Checker activity allowing the learner to practice configuring a management interface and default gateway on a switch.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

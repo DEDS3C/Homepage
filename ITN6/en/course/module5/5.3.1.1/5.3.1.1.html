@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.1.1 Destination on Same Network</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Destination on Same Network</h1>
+        <div>
+          <p>There are two primary addresses assigned to a device on an Ethernet LAN: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Physical address (the MAC address)</b> – Used for Ethernet NIC to Ethernet NIC communications on the same network. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Logical address (the IP address)</b> – Used to send the packet from the original source to the final destination. </li>
+            </ul>
+          </p>
+          <p>IP addresses are used to identify the address of the original source and the final destination. The destination IP address may be on the same IP network as the source or may be on a remote network.</p>
+          <p>
+            <b>Note</b>: Most applications use DNS (Domain Name System) to determine the IP address when given a domain name such as www.cisco.com. DNS is discussed in a later chapter.</p>
+          <p>Layer 2 or physical addresses, like Ethernet MAC addresses, have a different purpose. These addresses are used to deliver the data link frame with the encapsulated IP packet from one NIC to another NIC on the same network. If the destination IP address is on the same network, the destination MAC address will be that of the destination device. </p>
+          <p>The figure shows the Ethernet MAC addresses and IP address for PC-A sending an IP packet to the file server on the same network.</p>
+          <p>The Layer 2 Ethernet frame contains:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination MAC address</b> – This is the MAC address of the file server’s Ethernet NIC.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Source MAC address</b> – This is the MAC address of PC-A’s Ethernet NIC.</li>
+            </ul>
+          </p>
+          <p>The Layer 3 IP packet contains:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Source IP address</b> – This is the IP address of the original source, PC-A.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination IP address</b> – This is the IP address of the final destination, the file server. </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a PC connected to a server. The PC is sending data to the server. The PC puts the Layer 3 source and destination IP addresses in the packet header and then puts the Layer 2 source and destination MAC addresses in the frame header.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

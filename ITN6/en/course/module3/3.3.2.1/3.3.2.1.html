@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.1 Network Addresses</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Network Addresses</h1>
+        <div>
+          <p>The network and data link layers are responsible for delivering the data from the source device to the destination device. As shown in Figure 1, protocols at both layers contain a source and destination address, but their addresses have different purposes.</p>
+          <p>
+            <ul>
+              <li>
+                <b>Network layer source and destination addresses</b> - Responsible for delivering the IP packet from the original source to the final destination, either on the same network or to a remote network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Data link layer source and destination addresses</b> – Responsible for delivering the data link frame from one network interface card (NIC) to another NIC on the same network.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>An IP address is the network layer, or Layer 3, logical address used to deliver the IP packet from the original source to the final destination, as shown in Figure 2. </p>
+          <p></p>
+          <p>The IP packet contains two IP addresses:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Source IP address</b> - The IP address of the sending device, the original source of the packet.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination IP address</b> - The IP address of the receiving device, the final destination of the packet.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the network address and the data link address contained in a message.  The physical layer contains the timing and synchronization bits.  The data link layer contains the destination and source physical addresses.  The network layer contains the destination and source logical network addresses.  The transport layer contains the destination and source port numbers and the upper layers contain the encoded application data. Figure 2 shows an IP packet traversing several routers. The source and destination IP address are inserted into the packet header.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

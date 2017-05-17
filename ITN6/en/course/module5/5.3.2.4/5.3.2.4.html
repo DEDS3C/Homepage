@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.2.4 Video Demonstration – ARP Reply</title>
+    <!-- Activity / Other / Flash PnC -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Video Demonstration – ARP Reply</h1>
+        <div>
+          <p>Only the device with an IPv4 address associated with the target IPv4 address in the ARP request will respond with an ARP reply. The ARP reply message includes:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Sender’s IPv4 address</b> – This is the IPv4 address of the sender, the device whose MAC address was requested. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Sender’s MAC address</b> – This is the MAC address of the sender, the MAC address needed by the sender of the ARP request.</li>
+            </ul>
+          </p>
+          <p>The ARP reply is encapsulated in an Ethernet frame using the following header information:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination MAC address</b> – This is the MAC address of the sender of the ARP request.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Source MAC address</b> – This is the sender of the ARP reply’s MAC address.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Type</b>  - ARP messages have a type field of 0x806. This informs the receiving NIC that the data portion of the frame needs to be passed to the ARP process.</li>
+            </ul>
+          </p>
+          <p>Only the device that originally sent the ARP request will receive the unicast ARP reply. Once the ARP reply is received, the device will add the IPv4 address and the corresponding MAC address to its ARP table. Packets destined for that IPv4 address can now be encapsulated in frames using its corresponding MAC address. </p>
+          <p>Click Play in the figure to view a demonstration of an ARP reply.</p>
+          <p>Click <a href="../../files/5.3.2.4%20Video%20Slides%20-%20ARP%20Operation%20-%20ARP%20Reply.pdf" target="_blank">here</a> to download video slides from the demonstration.</p>
+          <p>If no device responds to the ARP request, the packet is dropped because a frame cannot be created.</p>
+          <p>Entries in the ARP table are time stamped. If a device does not receive a frame from a particular device by the time the timestamp expires, the entry for this device is removed from the ARP table.</p>
+          <p>Additionally, static map entries can be entered in an ARP table, but this is rarely done. Static ARP table entries do not expire over time and must be manually removed.</p>
+          <p>
+            <b>Note</b>: IPv6 uses a similar process to ARP for IPv4, known as ICMPv6 neighbor discovery. IPv6 uses neighbor solicitation and neighbor advertisement messages, similar to IPv4 ARP requests and ARP replies.</p>
+          <p>Click <a href="../../files/5.3.2.4%20Video%20-%20ARP%20Operation%20-%20ARP%20Reply.pdf" target="_blank">here</a> to read the transcript of this video.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a video with the title "ARP Reply".</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

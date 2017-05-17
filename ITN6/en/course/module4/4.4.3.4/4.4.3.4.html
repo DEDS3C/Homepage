@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.3.4 Contention-Based Access – CSMA/CD</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Contention-Based Access – CSMA/CD</h1>
+        <div>
+          <p>WLANs, Ethernet LANs with hubs, and legacy Ethernet bus networks are all examples of contention-based access networks. All of these networks operate in half-duplex mode. This requires a process to govern when a device can send and what happens when multiple devices send at the same time.</p>
+          <p>The Carrier Sense Multiple Access/Collision Detection (CSMA/CD) process is used in half-duplex Ethernet LANs. Figure 1 shows an Ethernet LAN using a hub. The CSMA process is as follows:</p>
+          <p>1. PC1 has an Ethernet frame to send to PC3.</p>
+          <p>2. PC1’s NIC needs to determine if anyone is transmitting on the medium. If it does not detect a carrier signal, in other words, it is not receiving transmissions from another device, it will assume the network is available to send. </p>
+          <p>3. PC1’s NIC sends the Ethernet Frame, as shown in Figure 1.</p>
+          <p>4. The Ethernet hub receives the frame. An Ethernet hub is also known as a multiport repeater. Any bits received on an incoming port are regenerated and sent out all other ports, as shown in Figure 2.  </p>
+          <p>5. If another device, such as PC2, wants to transmit, but is currently receiving a frame, it must wait until the channel is clear.</p>
+          <p>6. All devices attached to the hub will receive the frame. Because the frame has a destination data link address for PC3, only that device will accept and copy in the entire frame. All other devices’ NICs will ignore the frame, as shown in Figure 3.</p>
+          <p>If two devices transmit at the same time, a collision will occur. Both devices will detect the collision on the network, this is the collision detection (CD). This is done by the NIC comparing data transmitted with data received, or by recognizing the signal amplitude is higher than normal on the media. The data sent by both devices will be corrupted and will need to be resent.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1, 2 and 3 show three PCs attached to a hub. In Figure 1, PC1 says “The medium is available so I will send the Ethernet frame to PC3.” A frame is leaving PC1. In Figure 2, the hub forwards the frame to PC2 and PC3. PC2 says “I have a frame to send but I have to wait because I am receiving a frame.” In Figure 3, PC2 and PC3 receive the frame. PC2 says “This frame is not for me, so I will ignore it.” PC3 says, “This frame is for me, so I will copy in the entire frame.”</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

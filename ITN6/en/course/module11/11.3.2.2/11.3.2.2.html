@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.2.2 Extended Traceroute</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Extended Traceroute</h1>
+        <div>
+          <p>Designed as a variation of the <b>traceroute</b> command, the extended <b>traceroute</b> command allows the administrator to adjust parameters related to the command operation. This is helpful when troubleshooting routing loops, determining the exact next-hop router, or to help determine where packets are getting dropped by a router, or denied by a firewall. While the extended <b>ping</b> command can be used to determine the type of connectivity problem, the extended <b>traceroute</b> command is useful in locating the problem.</p>
+          <p></p>
+          <p>Unlike ping, traceroute sends IP packets with a TTL value (30 by default). Each hop usually decreases this value by 1. If a router in the middle receives a packet with a TTL=1, it will send an ICMP “time exceeded” message to the source and <b>traceroute</b> command output displays an asterisk (*). The error message indicates that a router in the path has seen and discarded the packet. An ICMP "destination unreachable" error message indicates that a router has received the packet, but discarded it because it could not be delivered.</p>
+          <p></p>
+          <p>In IOS, the extended traceroute command terminates when any of the following occur:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The destination responds with an ICMP echo reply</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The user interrupts the trace with the escape sequence</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In IOS, you can invoke this escape sequence by pressing <b>Ctrl+Shift+6</b>. In Windows, the escape sequence is invoked by pressing <b>Ctrl+C</b>.</p>
+          <p></p>
+          <p>To use <b>extended</b> traceroute, simply type <b>traceroute</b>, without providing any parameters, and press <b>ENTER</b>. IOS will guide you through the command options by presenting a number of prompts related to the setting of all the different parameters. Figure 1 shows the IOS extended <b>traceroute</b> options and their respective descriptions.</p>
+          <p></p>
+          <p>While the Windows <b>tracert</b> command allows the input of several parameters, it is not guided and must be performed through options in the command line. Figure 2 shows the available options for <b>tracert</b> in Windows.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is a table describing each of IOS traceroute options. Figure 2 shows the tracert options on a Windows machine </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

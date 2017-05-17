@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.2 Automatic IP Address Configuration for End Devices</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Automatic IP Address Configuration for End Devices</h1>
+        <div>
+          <p>PCs typically default to using DHCP for automatic IPv4 address configuration. DHCP is a technology that is used in almost every network. The best way to understand why DHCP is so popular is by considering all the extra work that would have to take place without it.</p>
+          <p></p>
+          <p>In a network, DHCP enables automatic IPv4 address configuration for every end device that has DHCP enabled. Imagine the amount of time it would consume if every time you connected to the network, you had to manually enter the IPv4 address, the subnet mask, the default gateway, and the DNS server. Multiply that by every user and every device in an organization and you see the problem. Manual configuration also increases the chance of misconfiguration by duplicating another device’s IPv4 address. </p>
+          <p></p>
+          <p>As shown in Figure 1, to configure DHCP on a Windows PC, you only need to select “Obtain an IP address automatically" and “Obtain DNS server address automatically". Your PC will search out a DHCP server and be assigned the address settings necessary to communicate on the network.</p>
+          <p></p>
+          <p>It is possible to display the IP configuration settings on a Windows PC by using the <b>ipconfig</b> command at the command prompt. The output will show the IPv4 address, subnet mask, and gateway information received from the DHCP server.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to practice displaying the IPv4 address on a Windows PC.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the Windows TCP/IPv4 Properties window with “Obtain an IP address automatically” and “Obtain DNS server address automatically” selected. Figure 2 is a Syntax Checker allowing the learner to practice verifying Windows PC IP configuration.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

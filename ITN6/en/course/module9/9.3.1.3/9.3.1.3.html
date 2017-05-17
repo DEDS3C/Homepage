@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.3.1.3 Chapter 9: Transport Layer</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Chapter 9: Transport Layer</h1>
+        <div>
+          <p>The transport layer provides transport-related services by:</p>
+          <p>
+            <ul>
+              <li>Dividing data received from an application into segments</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Adding a header to identify and manage each segment</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Using the header information to reassemble the segments back into application data</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Passing the assembled data to the correct application</li>
+            </ul>
+          </p>
+          <p>UDP and TCP are common transport layer protocols.</p>
+          <p>UDP datagrams and TCP segments have headers added in front of the data that include a source port number and destination port number. These port numbers enable data to be directed to the correct application running on the destination computer.</p>
+          <p>TCP does not pass any data to the network until it knows that the destination is ready to receive it. TCP then manages the flow of the data and resends any data segments that are not acknowledged as being received at the destination. TCP uses mechanisms of handshaking, timers, acknowledgment messages, and dynamic windowing to achieve reliability. The reliability process, however, imposes overhead on the network in terms of much larger segment headers and more network traffic between the source and destination.</p>
+          <p>If the application data needs to be delivered across the network quickly, or if network bandwidth cannot support the overhead of control messages being exchanged between the source and the destination systems, UDP would be the developer’s preferred transport layer protocol. UDP provides none of the TCP reliability features. However, this does not necessarily mean that the communication itself is unreliable; there may be mechanisms in the application layer protocols and services that process lost or delayed datagrams if the application has these requirements.</p>
+          <p>The application developer decides the transport layer protocol that best meets the requirements for the application. It is important to remember that the other layers all play a part in data network communications and influences its performance.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a standard graphic for the introduction and conclusion pages.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

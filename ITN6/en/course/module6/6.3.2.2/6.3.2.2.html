@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.2 Router Bootup Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Router Bootup Process</h1>
+        <div>
+          <p>There are three major phases to the bootup process. As shown in Figure 1, they are:</p>
+          <p>1. Perform the POST and load the bootstrap program.</p>
+          <p>2. Locate and load the Cisco IOS software.</p>
+          <p>3. Locate and load the startup configuration file or enter setup mode.</p>
+          <p>
+            <b>1. Performing POST and Load Bootstrap Program (Figure 2)</b>
+          </p>
+          <p>During the Power-On Self-Test (POST), the router executes diagnostics from ROM on several hardware components, including the CPU, RAM, and NVRAM. After the POST, the bootstrap program is copied from ROM into RAM. The main task of the bootstrap program is to locate the Cisco IOS and load it into RAM.</p>
+          <p>
+            <b>Note</b>: At this point, if you have a console connection to the router, you begin to see the output on the screen.</p>
+          <p>
+            <b>2. Locating and Loading Cisco IOS (Figure 3)</b>
+          </p>
+          <p>The IOS is typically stored in flash memory and is copied into RAM for execution by the CPU. If the IOS image is not located in flash, then the router may look for it using a Trivial File Transfer Protocol (TFTP) server. If a full IOS image cannot be located, a limited IOS is copied into RAM, which can be used to diagnose problems and transfer a full IOS into Flash memory.</p>
+          <p>
+            <b>3. Locating and Loading the Configuration File (Figure 4)</b>
+          </p>
+          <p>The bootstrap program then copies the startup configuration file from NVRAM into RAM. This becomes the running configuration. If the startup configuration file does not exist in NVRAM, the router may be configured to search for a TFTP server. If a TFTP server is not found, then the router displays the setup mode prompt. </p>
+          <p>
+            <b>Note</b>: Setup mode is not used in this course to configure the router. When prompted to enter setup mode, always answer <b>no</b>. If you answer yes and enter setup mode, press <b>Ctrl</b>+<b>C</b> at any time to terminate the setup process.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the boot up process.  First the router performs a POST and loads the bootstrap.  Both are found in ROM.  Secondly the router loads the IOS found in flash or by TFTP. Finally the router loads the startup configuration, found in NVRAM or by TFTP or console. Figure 2 highlights the POST section. Figure 3 highlights the loading of the IOS section. Figure 4 highlights the loading of the startup configuration section.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

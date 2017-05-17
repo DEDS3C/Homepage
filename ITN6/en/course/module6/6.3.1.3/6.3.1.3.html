@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.1.3 Router Memory</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Router Memory</h1>
+        <div>
+          <p>A router has access to volatile or non-volatile memory storage. Volatile memory requires continual power to maintain its information. When the router is powered down or restarted, the content is erased and lost. Non-volatile memory retains its information even when a device is rebooted. </p>
+          <p>Specifically, a Cisco router uses four types of memory: </p>
+          <p>
+            <ul>
+              <li>
+                <b>RAM</b> - This is volatile memory used in Cisco routers to store applications, processes, and data needed to be executed by the CPU. Cisco routers use a fast type of RAM called synchronous dynamic random access memory (SDRAM). Click RAM in the figure to view more information.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ROM</b> - This non-volatile memory is used to store crucial operational instructions and a limited IOS.  Specifically, ROM is firmware embedded on an integrated circuit inside the router which can only be altered by Cisco. Click ROM in the figure to view more information.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>NVRAM</b> – This is non-volatile memory is used as the permanent storage for the startup configuration file (startup-config). </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Flash</b> - This non-volatile computer memory used as permanent storage for the IOS and other system related files such as log files, voice configuration files, HTML files, backup configurations, and more. When a router is rebooted, the IOS is copied from flash into RAM. </li>
+            </ul>
+          </p>
+          <p>All router platforms have default settings and components. For instance, the Cisco 1941 comes with 512 MB of SDRAM but is upgradable up to 2.0 GB. The Cisco 1941 routers also come with 256 MB of flash but are upgradable using two external Compact Flash slots. Each slot can support high-speed storage cards upgradable to 4GB. Click <a href="http://www.cisco.com/c/en/us/products/collateral/routers/1900-series-integrated-services-routers-isr/data_sheet_c78_556319.html" target="_blank">here</a> to learn more about the Cisco 1941 Integrated Services Router.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is a diagram showing the four types of memory in the router. RAM holds running IOS as well as many processes that the IOS starts including routing table, ARP table, running configuration, and packet buffer. NVRAM stores the startup-config file. Flash stores the IOS files. ROM stores POST and the ROM monitor firmware, which is a limited IOS. The figure has two buttons, one for RAM and one for ROM. Clicking the buttons provides more information.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

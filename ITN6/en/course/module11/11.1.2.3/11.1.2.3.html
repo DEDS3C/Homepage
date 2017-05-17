@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.1.2.3 Voice and Video Applications</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Voice and Video Applications</h1>
+        <div>
+          <p>Businesses today are increasingly using IP telephony and streaming media to communicate with customers and business partners, as shown in Figure 1. The network administrator must ensure the proper equipment is installed in the network and that the network devices are configured to ensure priority delivery. Figure 2 shows elements of a small network that support real-time applications. </p>
+          <p>
+            <b>Infrastructure</b>
+          </p>
+          <p>To support the existing and proposed real-time applications, the infrastructure must accommodate the characteristics of each type of traffic. The network designer must determine whether the existing switches and cabling can support the traffic that will be added to the network.</p>
+          <p>
+            <b>VoIP</b>
+          </p>
+          <p>VoIP devices convert analog into digital IP packets. The device could be an analog telephone adapter (ATA) that is attached between a traditional analog phone and the Ethernet switch. After the signals are converted into IP packets, the router sends those packets between corresponding locations. VoIP is much less expensive than an integrated IP telephony solution, but the quality of communications does not meet the same standards. Voice and video over IP solutions for small businesses can be realized, for example, with Skype and non-enterprise versions of Cisco WebEx.</p>
+          <p>
+            <b>IP Telephony</b>
+          </p>
+          <p>In IP telephony, the IP phone itself performs voice-to-IP conversion. Voice-enabled routers are not required within a network with an integrated IP telephony solution. IP phones use a dedicated server for call control and signaling. There are now many vendors with dedicated IP telephony solutions for small networks. </p>
+          <p>
+            <b>Real-time Applications</b>
+          </p>
+          <p>To transport streaming media effectively, the network must be able to support applications that require delay-sensitive delivery. Real-Time Transport Protocol (RTP) and Real-Time Transport Control Protocol (RTCP) are two protocols that support this requirement. RTP and RTCP enable control and scalability of the network resources by allowing Quality of Service (QoS) mechanisms to be incorporated. These QoS mechanisms provide valuable tools for minimizing latency issues for real-time streaming applications.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows three pictures of people working at their computers. Figure 2 shows three pictures of network equipment including switches, IP phones, and Cisco unified communications equipment.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.2.3 Video Demonstration – ARP Request</title>
+    <!-- Activity / Other / Flash PnC -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Video Demonstration – ARP Request</h1>
+        <div>
+          <p>An ARP request is sent when a device needs a MAC address associated with an IPv4 address, and it does not have an entry for the IPv4 address in its ARP table. </p>
+          <p>ARP messages are encapsulated directly within an Ethernet frame. There is no IPv4 header. The ARP request message includes:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Target IPv4 address</b> – This is the IPv4 address that requires a corresponding MAC address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Target MAC address</b> - This is the unknown MAC address and will be empty in the ARP request message.</li>
+            </ul>
+          </p>
+          <p>The ARP request is encapsulated in an Ethernet frame using the following header information:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination MAC address</b> – This is a broadcast address requiring all Ethernet NICs on the LAN to accept and process the ARP request.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Source MAC address</b> – This is the sender of the ARP request’s MAC address.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Type</b>  - ARP messages have a type field of 0x806. This informs the receiving NIC that the data portion of the frame needs to be passed to the ARP process.</li>
+            </ul>
+          </p>
+          <p>Because ARP requests are broadcasts, they are flooded out all ports by the switch except the receiving port. All Ethernet NICs on the LAN process broadcasts. Every device must process the ARP request to see if the target IPv4 address matches its own. A router will not forward broadcasts out other interfaces.</p>
+          <p>Only one device on the LAN will have an IPv4 address that matches the target IPv4 address in the ARP request. All other devices will not reply.</p>
+          <p>Click Play in the figure to view a demonstration of an ARP request for a destination IPv4 address that is on the local network.</p>
+          <p>Click <a href="../../files/5.3.2.3%20Video%20Slides%20-%20ARP%20Operation%20-%20ARP%20Request.pdf" target="_blank">here</a> to download video slides from the demonstration.</p>
+          <p>Click <a href="../../files/5.3.2.3%20Video%20-%20ARP%20Operation%20-%20ARP%20Request.pdf" target="_blank">here</a> to read the transcript of this video.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a video with the title "ARP Request".</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.4 Directly Connected Routing Table Entries</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Directly Connected Routing Table Entries</h1>
+        <div>
+          <p>When a router interface is configured with an IPv4 address, a subnet mask, and is activated, the following two routing table entries are automatically created:</p>
+          <p>
+            <ul>
+              <li>
+                <b>C</b> - Identifies a directly-connected network. Directly-connected networks are automatically created when an interface is configured with an IP address and activated.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>L</b> - Identifies that this is a local interface. This is the IPv4 address of the interface on the router.</li>
+            </ul>
+          </p>
+          <p>The figure describes the routing table entries on R1 for the directly-connected network 192.168.10.0. These entries were automatically added to the routing table when the GigabitEthernet 0/0 interface was configured and activated. Click each plus sign to view more information about directly-connected routing table entries. </p>
+          <p>
+            <b>Note</b>: Local interface entries did not appear in routing tables prior to IOS Release 15.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a network and a small portion of the routing table from a router.  There are 3 columns highlighted.  One that identifies how the route was learned (shaded in green), one that identifies the destination network and how it is connected (shaded in pink) and one that identifies the interface which a packet will be forward out of to get to the destination network (shaded in orange).</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.1.1 The IPv6 Global Unicast Address</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The IPv6 Global Unicast Address</h1>
+        <div>
+          <p>IPv6 subnetting requires a different approach than IPv4 subnetting. The same reasons for subnetting IPv4 address space in order to manage network traffic also apply to IPv6. However, due to the large number of IPv6 addresses, there is no longer the concern for conserving addresses. The IPv6 address plan can focus on the best hierarchical approach to manage and assign IPv6 subnets. Refer to the figure for a quick review of the structure of an IPv6 global unicast address.</p>
+          <p>IPv4 subnetting is not only about limiting broadcast domains but is also about managing address scarcity. Determining the subnet mask and the use of VLSM is done to help conserve IPv4 addresses. IPv6 subnetting is not concerned with conserving address space. The subnet ID includes more than enough subnets. IPv6 subnetting is about building an addressing hierarchy based on the number of subnetworks needed. </p>
+          <p>Recall that there are two types of assignable IPv6 addresses. An IPv6 link-local address is never subnetted because it exists only on the local link. However, an IPv6 global unicast address can be subnetted. </p>
+          <p>The IPv6 global unicast address normally consists of a /48 global routing prefix, a 16 bit subnet ID, and a 64 bit interface ID. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the structure of an IPv6 global unicast address with the first 48 bits as the global routing prefix, the next 16 bits as the subnet ID, and the last 64 bits as the interface ID. Click on each opens a textbox with more information.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

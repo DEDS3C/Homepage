@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.1 Host Forwarding Decision</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Host Forwarding Decision</h1>
+        <div>
+          <p>Another role of the network layer is to direct packets between hosts. A host can send a packet to:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Itself</b> - A host can ping itself by sending a packet to a special IPv4 address of 127.0.0.1, which is referred to as the loopback interface. Pinging the loopback interface tests the TCP/IP protocol stack on the host. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Local host</b> - This is a host on the same local network as the sending host. The hosts share the same network address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Remote host</b> - This is a host on a remote network. The hosts do not share the same network address. </li>
+            </ul>
+          </p>
+          <p>Whether a packet is destined for a local host or a remote host is determined by the IPv4 address and subnet mask combination of the source (or sending) device compared to the IPv4 address and subnet mask of the destination device.</p>
+          <p>In a home or business network, you may have several wired and wireless devices interconnected together using an intermediate device, such as a LAN switch and/or a wireless access point (WAP). This intermediate device provides interconnections between local hosts on the local network. Local hosts can reach each other and share information without the need for any additional devices. If a host is sending a packet to a device that is configured with the same IP network as the host device, the packet is simply forwarded out of the host interface, through the intermediate device, and to the destination device directly. </p>
+          <p>Of course, in most situations we want our devices to be able to connect beyond the local network segment, such as out to other homes, businesses, and the Internet. Devices that are beyond the local network segment are known as remote hosts. When a source device sends a packet to a remote destination device, then the help of routers and routing is needed. Routing is the process of identifying the best path to a destination. The router connected to the local network segment is referred to as the <b>default gateway</b>.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a router connected to a LAN with two hosts and the Internet with a remote server.  There is an arrow from one host to another host on the same network.  There is also an arrow from one host to the remote server.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

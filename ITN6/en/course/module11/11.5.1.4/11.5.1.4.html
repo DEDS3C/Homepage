@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.5.1.4 Chapter 11: Build a Small Network</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.5.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Chapter 11: Build a Small Network</h1>
+        <div>
+          <p>In order to meet user requirements, even small networks require planning and design. Planning ensures that all requirements, cost factors, and deployment options are given due consideration. An important part of network design is reliability, scalability, and availability. </p>
+          <p></p>
+          <p>Supporting and growing a small network requires being familiar with the protocols and network applications running over the network. Protocol analyzers enable a network professional to quickly compile statistical information about traffic flows on a network. Information gathered by the protocol analyzer is evaluated based on the source and destination of the traffic as well as the type of traffic being sent. This analysis can be used by a network technician to make decisions on how to manage the traffic more efficiently. Common network protocols include DNS, Telnet, SMTP, POP, DHCP, HTTP, and FTP.</p>
+          <p></p>
+          <p>It is a necessity to consider security threats and vulnerabilities when planning a network implementation. All network devices must be secured. This includes routers, switches, end-user devices, and even security devices. Networks need to be protected from malicious software such as viruses, Trojan horses, and worms. Antivirus software can detect most viruses and many Trojan horse applications and prevent them from spreading in the network. The most effective way to mitigate a worm attack is to download security updates from the operating system vendor and patch all vulnerable systems. </p>
+          <p></p>
+          <p>Networks must also be protected from network attacks. Network attacks can be classified into three major categories: reconnaissance, access attacks, and denial of service. There are several ways to protect a network from attacks. </p>
+          <p>
+            <ul>
+              <li>Authentication, authorization, and accounting (AAA, or “triple A”) network security services provide the primary framework to set up access control on a network device. AAA is a way to control who is permitted to access a network (authenticate), what they can do while they are there (authorize), and to watch the actions they perform while accessing the network (accounting).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A firewall is one of the most effective security tools available for protecting internal network users from external threats. A firewall resides between two or more networks and controls the traffic between them and also helps prevent unauthorized access.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>To protect network devices, it is important to use strong passwords. Also, when accessing network devices remotely, it is highly recommended to enable SSH instead of the unsecured telnet. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>After the network has been implemented, a network administrator must be able to monitor and maintain network connectivity. There are several commands available toward this end. For testing network connectivity to local and remote destinations, commands such as <b>ping</b>, <b>telnet</b>, and <b>traceroute</b> are commonly used. </p>
+          <p></p>
+          <p>On Cisco IOS devices, the <b>show version</b> command can be used to verify and troubleshoot some of the basic hardware and software components used during the boot process. To view information for all network interfaces on a router, the <b>show ip interface</b> command is used. The <b>show ip interface brief</b> can also be used to view a more abbreviated output than the <b>show ip interface</b> command. Cisco Discovery Protocol (CDP) is a Cisco-proprietary protocol that runs at the data link layer. Because CDP operates at the data link layer, two or more Cisco network devices, such as routers that support different network layer protocols, can learn about each other even if Layer 3 connectivity does not exist.</p>
+          <p></p>
+          <p>Cisco IOS configuration files such as startup-config or running-config should be archived. These files can be saved to a text file or stored on a TFTP server. Some models of routers also have a USB port, and a file can be backed up to a USB drive. If needed, these files can be copied to the router and or switch from the TFTP server or USB drive.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a standard graphic for the introduction and conclusion pages.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

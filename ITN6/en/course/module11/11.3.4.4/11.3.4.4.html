@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.4.4 The show ip interface brief Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The show ip interface brief Command</h1>
+        <div>
+          <p>In the same way that commands and utilities are used to verify a host configuration, commands can be used to verify the interfaces of intermediate devices. The Cisco IOS provides commands to verify the operation of router and switch interfaces.</p>
+          <p></p>
+          <p>
+            <b>Verifying Router Interfaces</b>
+          </p>
+          <p></p>
+          <p>One of the most frequently used commands is the <b>show ip interface brief</b> command. This command provides a more abbreviated output than the <b>show ip interface</b> command. It provides a summary of the key information for all the network interfaces on a router.</p>
+          <p></p>
+          <p>Figure 1 shows the topology that is being used in this example.</p>
+          <p></p>
+          <p>On Figure 2, click the R1 button. The <b>show ip interface brief</b> output displays all interfaces on the router, the IP address assigned to each interface, if any, and the operational status of the interface.</p>
+          <p></p>
+          <p>
+            <b>Verifying the Switch Interfaces</b>
+          </p>
+          <p></p>
+          <p>On Figure 2, click the S1 button. The <b>show ip interface brief</b> command can also be used to verify the status of the switch interfaces. The VLAN1 interface is assigned an IPv4 address of 192.168.254.250 and has been enabled, and is operational.</p>
+          <p></p>
+          <p>The output also shows that the FastEthernet0/1 interface is down. This indicates that either no device is connected to the interface or the device that is connected has a network interface that is not operational. </p>
+          <p></p>
+          <p>In contrast, the output shows that the FastEthernet0/2 and FastEthernet0/3 interfaces are operational. This is indicated by both the Status and Protocol being shown as up.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a network consisting of a PC connected to a switch, which is connected to a router, which is connected to a cloud. Figure 2 shows the output of the show ip interface brief command on the router and on the switch. </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>
