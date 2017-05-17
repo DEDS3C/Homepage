@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.7 The Network Command and Wildcard Mask</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The Network Command and Wildcard Mask</h1>
+        <div>
+          <p>By default, when using the<span class="cmd"><b> network </b></span>command and an IPv4 network address, such as 172.16.0.0, all interfaces on the router that belong to that classful network address are enabled for EIGRP. However, there may be times when the network administrator does not want to include all interfaces within a network when enabling EIGRP. For example, in Figure 1, assume that an administrator wants to enable EIGRP on R2, but only for the subnet 192.168.10.8 255.255.255.252, on the S0/0/1 interface.</p>
+          <p></p>
+          <p>To configure EIGRP to advertise specific subnets only, use the<span class="cmd"><i> wildcard-mask </i></span>option with the network command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-router)# </span>
+            <span class="cmd">
+              <b>network</b>
+            </span>
+            <span class="cmd">
+              <i>network-address</i>
+            </span>
+            <span class="cmd">
+              <b></b>
+            </span>[<span class="cmd"><i>wildcard-mask</i></span>]</p>
+          <p></p>
+          <p>Think of a wildcard mask as the inverse of a subnet mask. The inverse of subnet mask 255.255.255.252 is 0.0.0.3. To calculate the inverse of the subnet mask, subtract the subnet mask from 255.255.255.255 as follows:</p>
+          <p></p>
+          <p>         <span class="cmd">255.255.255.255 </span></p>
+          <p>
+            <span class="cmd"> - 255.255.255.252  </span>
+          </p>
+          <p>
+            <span class="cmd">   ---------------</span>
+          </p>
+          <p>
+            <span class="cmd">     0.  0.  0.  3</span>   Wildcard mask</p>
+          <p></p>
+          <p>Figure 2 continues the EIGRP network configuration of R2. The<span class="cmd"><b> network 192.168.10.8 0.0.0.3 </b></span>command specifically enables EIGRP on the S0/0/1 interface, a member of the 192.168.10.8 255.255.255.252 subnet. </p>
+          <p></p>
+          <p>Some IOS versions also let you enter the subnet mask instead of a wildcard mask. Figure 3 shows an example of configuring the same S0/0/1 interface on R2, but this time using a subnet mask in the<span class="cmd"><b> network </b></span>command. However, if the subnet mask is used, the IOS converts the command to the<span class="cmd"><i> wildcard-mask </i></span>format within the configuration. This is verified in the<span class="cmd"><b> show running-config </b></span>output in Figure 3.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure the EIGRP<span class="cmd"><b> network </b></span>commands for router R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

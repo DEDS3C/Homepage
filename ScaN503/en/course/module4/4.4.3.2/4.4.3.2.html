@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.3.2 Wireless Client Not Connecting </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Wireless Client Not Connecting </h1>
+        <div>
+          <p>When troubleshooting a WLAN, a process of elimination is recommended. </p>
+          <p></p>
+          <p>In the figure, a wireless client is not connecting to the WLAN. If there is no connectivity, check the following:</p>
+          <p>
+            <ul>
+              <li>Confirm the network configuration on the PC using the<span class="cmd"><b> ipconfig </b></span>command. Verify that the PC has received an IP address via DHCP or is configured with a static IP address.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Confirm that the device can connect to the wired network. Connect the device to the wired LAN and<span class="cmd"><b> ping </b></span>a known IP address.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If necessary, reload drivers as appropriate for the client. It may be necessary to try a different wireless NIC. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If the wireless NIC of the client is working, check the security mode and encryption settings on the client. If the security settings do not match, the client cannot gain access to the WLAN.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>If the PC is operational but the wireless connection is performing poorly, check the following:</p>
+          <p>
+            <ul>
+              <li>How far is the PC from an AP? Is the PC out of the planned coverage area (BSA)?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Check the channel settings on the wireless client. The client software should detect the appropriate channel as long as the SSID is correct.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Check for the presence of other devices in the area that may be interfering with the 2.4 GHz band. Examples of other devices are cordless phones, baby monitors, microwave ovens, wireless security systems, and potentially rogue APs. Data from these devices can cause interference in the WLAN and intermittent connection problems between a wireless client and AP.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Next, ensure that all the devices are actually in place. Consider a possible physical security issue. Is there power to all devices and are they powered on?</p>
+          <p></p>
+          <p>Finally, inspect links between cabled devices looking for bad connectors or damaged or missing cables. If the physical plant is in place, verify the wired LAN by pinging devices, including the AP. If connectivity still fails at this point, perhaps something is wrong with the AP or its configuration.</p>
+          <p></p>
+          <p>When the user PC is eliminated as the source of the problem, and the physical status of devices is confirmed, begin investigating the performance of the AP. Check the power status of the AP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

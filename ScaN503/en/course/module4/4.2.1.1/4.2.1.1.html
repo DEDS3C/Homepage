@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.1 Wireless 802.11 Frame </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Wireless 802.11 Frame </h1>
+        <div>
+          <p>All Layer 2 frames consist of a header, payload, and FCS section as shown in Figure 1. The 802.11 frame format is similar to the Ethernet frame format, with the exception that it contains more fields. </p>
+          <p></p>
+          <p>As shown in Figure 2, all 802.11 wireless frames contain the following fields:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Frame Control </b>- Identifies the type of wireless frame and contains subfields for protocol version, frame type, address type, power management, and security settings. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Duration </b>- Typically used to indicate the remaining duration needed to receive the next frame transmission. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address1 </b>- Usually contains the MAC address of the receiving wireless device or AP. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address2 </b>- Usually contains the MAC address of the transmitting wireless device or AP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address3 </b>- Sometimes contains the MAC address of the destination, such as the router interface (default gateway) to which the AP is attached.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Sequence Control </b>- Contains the Sequence Number and the Fragment Number subfields. The Sequence Number indicates the sequence number of each frame. The Fragment Number indicates the number of each frame sent of a fragmented frame. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address4 </b>- Usually missing because it is used only in ad hoc mode.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Payload </b>- Contains the data for transmission.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>FCS </b>- Frame Check Sequence; used for Layer 2 error control.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 3 displays a Wireshark capture of a WLAN beacon frame. Notice how the Frame Control field has also been expanded to display its subfields.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The content of the Address fields vary depending on settings in the Frame Control field.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

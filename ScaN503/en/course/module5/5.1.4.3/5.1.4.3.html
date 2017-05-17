@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.4.3 Modifying OSPFv3 Intervals</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Modifying OSPFv3 Intervals</h1>
+        <div>
+          <p>Like OSPFv2, OSPFv3 intervals can also be adjusted.</p>
+          <p></p>
+          <p>OSPFv3 Hello and Dead intervals can be modified manually using the following interface configuration mode commands: </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>ipv6 ospf hello-interval </b>
+                </span>
+                <span class="cmd">
+                  <i>seconds</i>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>ipv6 ospf dead-interval </b>
+                </span>
+                <span class="cmd">
+                  <i>seconds</i>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Use the<span class="cmd"><b> no ipv6 ospf hello-interval </b></span>and<span class="cmd"><b> no ipv6 ospf dead-interval </b></span>commands to reset the intervals to their default.</p>
+          <p></p>
+          <p>Refer to the IPv6 topology in Figure 1.  Assume that the network has converged using OSPFv3.</p>
+          <p></p>
+          <p>The example in Figure 2 modifies the OSPFv3 Hello interval to<span class="cmd"> 5 </span>seconds. Immediately after changing the Hello interval, the Cisco IOS automatically modifies the Dead interval to four times the Hello interval. However, as with OSPFv2, it is always good practice to explicitly modify the timer instead of relying on an automatic IOS feature so that modifications are documented in the configuration. Therefore, the Dead interval is also manually set to<span class="cmd"> 20 </span>seconds on the R1 Serial 0/0/0 interface.</p>
+          <p></p>
+          <p>Once the Dead Timer on R1 expires, R1 and R2 lose adjacency, as displayed by the highlighted OSPFv3 adjacency message in Figure 2, because the values have only been altered on one side of the serial link between R1 and R2. Recall that the OSPFv3 Hello and Dead intervals must be equivalent between neighbors. </p>
+          <p></p>
+          <p>Use the<span class="cmd"><b> show ipv6 ospf neighbor </b></span>command on R1 to verify the neighbor adjacencies (Figure 3). Notice that R1 is no longer adjacent with the 2.2.2.2 (R2) neighbor. </p>
+          <p></p>
+          <p>To restore adjacency between R1 and R2, the R2 Serial 0/0/0 interface Hello interval is set to<span class="cmd"> 5 </span>seconds (Figure 4). Almost immediately, the IOS displays a message that adjacency has been established with a state of<span class="cmd"><b> FULL</b></span>.</p>
+          <p></p>
+          <p>Verify the interface intervals using the<span class="cmd"><b> show ipv6 ospf interface </b></span>command (Figure 5). Notice that the Hello time is<span class="cmd"> 5 </span>seconds and that the Dead Time was automatically set to<span class="cmd"> 20 </span>seconds instead of the default<span class="cmd"> 40 </span>seconds. Remember that the OSPF automatically sets the Dead interval to four times the Hello interval.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

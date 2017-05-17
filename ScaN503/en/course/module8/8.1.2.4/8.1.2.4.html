@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.4 EIGRP for IPv6: Manual Summary Routes</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP for IPv6: Manual Summary Routes</h1>
+        <div>
+          <p>While autosummarization is not available for EIGRP IPv6 networks, it is possible to configure manually summarized routes for EIGRP IPv6.</p>
+          <p></p>
+          <p>Figure 1 shows an EIGRP IPv6 topology with four loopback addresses configured on R3. These virtual addresses are used to represent physical networks in R3’s IPv6 routing table. These networks can be manually summarized in EIGRP for IPv6.</p>
+          <p></p>
+          <p>Figure 2 shows the configuration of the IPv6 loopback addresses on R3. Only four loopback addresses are shown in the topology and configured on R3; however, for this example it is assumed that all 2001:DB8:ACAD::/48 subnets can be reachable via R3.</p>
+          <p></p>
+          <p>To configure EIGRP for IPv6 manual summarization on a specific EIGRP interface, use the following interface configuration mode command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ipv6 summary-address eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>as-number prefix/prefix-length</i>
+            </span>
+          </p>
+          <p></p>
+          <p>Figure 3 shows the configuration to propagate an EIGRP for IPv6 manual summary route to R1 and R2 for the 2001:DB8:ACAD::/48 prefix. Similar to EIGRP for IPv4, R3 includes a summary route to null0 as a loop prevention mechanism.</p>
+          <p></p>
+          <p>The reception of the manual summary route can be verified by examining the routing table of the other routers in the routing domain. Figure 4 shows the 2001:DB8:ACAD::/48 route in the IPv6 routing table of R1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

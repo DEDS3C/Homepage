@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.5.3 MD5 Authentication</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.5.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>MD5 Authentication</h1>
+        <div>
+          <p>The following example illustrates how MD5 authentication is used to authenticate two neighboring OSPF routers. </p>
+          <p></p>
+          <p>In Figure 1, R1 combines the routing message with the pre-shared secret key and calculates the signature using the MD5 algorithm. The signature is also known as a hash value. </p>
+          <p></p>
+          <p>In Figure 2, R1 adds the signature to the routing message and sends it to R2. </p>
+          <p></p>
+          <p>MD5 does not encrypt the message; therefore, the content is easily readable. </p>
+          <p></p>
+          <p>In Figure 3, R2 opens the packet, combines the routing message with the pre-shared secret key and calculates the signature using the MD5 algorithm. </p>
+          <p>
+            <ul>
+              <li>If the signatures match, then R2 accepts the routing update. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If the signatures do not match, then R2 discards the update.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>OSPFv3 (OSPF for IPv6) does not include any authentication capabilities of its own. Instead it relies entirely on IPSec to secure communications between neighbors using the<span class="cmd"><b> ipv6 ospf authentication ipsec spi </b></span>interface configuration mode command. This is beneficial in simplifying the OSPFv3 protocol and standardizing its authentication mechanism.  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

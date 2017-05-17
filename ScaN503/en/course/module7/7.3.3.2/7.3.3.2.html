@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.3.2 Introduction to DUAL</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Introduction to DUAL</h1>
+        <div>
+          <p>EIGRP uses convergence algorithm DUAL. Convergence is critical to a network to avoid routing loops. </p>
+          <p></p>
+          <p>Routing loops, even temporary ones, can be detrimental to network performance. Distance vector routing protocols, such as RIP, prevent routing loops with hold-down timers and split horizon. Although EIGRP uses both of these techniques, it uses them somewhat differently; the primary way that EIGRP prevents routing loops is with the DUAL algorithm. </p>
+          <p></p>
+          <p>Click Play in the figure to view the basic operation of DUAL.</p>
+          <p></p>
+          <p>The DUAL algorithm is used to obtain loop-freedom at every instance throughout a route computation. This allows all routers involved in a topology change to synchronize at the same time. Routers that are not affected by the topology changes are not involved in the recomputation. This method provides EIGRP with faster convergence times than other distance vector routing protocols.</p>
+          <p></p>
+          <p>The decision process for all route computations is done by the DUAL Finite State Machine (FSM). An FSM is a workflow model, similar to a flow chart that is composed of the following:</p>
+          <p>
+            <ul>
+              <li>A finite number of stages (states)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Transitions between those stages</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Operations </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The DUAL FSM tracks all routes, uses EIGRP metrics to select efficient, loop-free paths, and identify the routes with the least-cost path to be inserted into the routing table. </p>
+          <p></p>
+          <p>Recomputation of the DUAL algorithm can be processor-intensive. EIGRP avoids recomputation whenever possible by maintaining a list of backup routes that DUAL has already determined to be loop-free. If the primary route in the routing table fails, the best backup route is immediately added to the routing table.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

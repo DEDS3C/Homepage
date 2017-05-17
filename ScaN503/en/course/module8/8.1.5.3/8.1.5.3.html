@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.5.3 EIGRP Authentication Example</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.5.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Authentication Example</h1>
+        <div>
+          <p>To authenticate routing updates, all EIGRP-enabled interfaces must be configured to support authentication. Figure 1 shows the IPv4 topology and which interfaces are configured with authentication. </p>
+          <p></p>
+          <p>Figure 2 shows the configuration for router R1 using the<span class="cmd"><b> EIGRP_KEY </b></span>keychain and the<span class="cmd"><b> cisco123 </b></span>key string. After R1 is configured, the other routers receive authenticated routing updates. Adjacencies are lost until the neighbors are configured with routing protocol authentication.</p>
+          <p></p>
+          <p>Figure 3 shows a similar configuration for router R2. Notice that the same key string, <span class="cmd"><b>cisco123</b></span>, is used to authenticate information with R1 and ultimately R3. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure EIGRP authentication for R3.</p>
+          <p></p>
+          <p>
+            <b>Configuring EIGRP for IPv6 Authentication</b>
+          </p>
+          <p></p>
+          <p>The algorithms and the configuration to authenticate EIGRP for IPv6 messages are the same as EIGRP for IPv4. The only difference is the interface configuration mode commands use<span class="cmd"><b> ipv6</b></span>, instead of<span class="cmd"><b> ip</b></span>.</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ipv6 authentication mode eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>as-number</i>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <b>md5</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ipv6 authentication key-chain eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>as-number name-of-chain</i>
+            </span>
+          </p>
+          <p></p>
+          <p>Figure 5 shows the commands to configure EIGRP for IPv6 authentication on router R1 using the<span class="cmd"><b> EIGRP_IPV6_KEY </b></span>keychain and the<span class="cmd"><b> cisco123 </b></span>key string. Similar configurations would be entered on R2 and R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

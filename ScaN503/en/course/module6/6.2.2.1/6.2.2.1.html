@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.1 OSPF Route Summarization</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSPF Route Summarization</h1>
+        <div>
+          <p>Summarization helps keep routing tables small. It involves consolidating multiple routes into a single advertisement, which can then be propagated into the backbone area. </p>
+          <p></p>
+          <p>Normally, type 1 and type 2 LSAs are generated inside each area, translated into type 3 LSAs, and sent to other areas. If area 1 had 30 networks to advertise, then 30 type 3 LSAs would be forwarded into the backbone. With route summarization, the ABR consolidates the 30 networks into one of two advertisements. </p>
+          <p></p>
+          <p>In Figure 1, R1 consolidates all of the network advertisements into one summary LSA. Instead of forwarding individual LSAs for each route in area 1, R1 forwards a summary LSA to the core router C1. C1 in turn, forwards the summary LSA to R2 and R3. R2 and R3 then forward it to their respective internal routers.</p>
+          <p></p>
+          <p>Summarization also helps increase the network’s stability, because it reduces unnecessary LSA flooding. This directly affects the amount of bandwidth, CPU, and memory resources consumed by the OSPF routing process. Without route summarization, every specific-link LSA is propagated into the OSPF backbone and beyond, causing unnecessary network traffic and router overhead. </p>
+          <p></p>
+          <p>In Figure 2, a network link on R1a fails. R1a sends an LSA to R1. However, R1 does not propagate the update, because it has a summary route configured. Specific-link LSA flooding outside the area does not occur.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

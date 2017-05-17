@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.1 Carrier Sense Multiple Access with Collision Avoidance </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Carrier Sense Multiple Access with Collision Avoidance </h1>
+        <div>
+          <p>Recall that the media contention method is the method in which devices determine how and when to access the media when traffic must be forwarded across the network. The IEEE 802.11 WLANs use the MAC protocol CSMA/CA. While the name is similar to the Ethernet CSMA/CD, the operating concept is completely different.</p>
+          <p></p>
+          <p>Wi-Fi systems are half-duplex, shared media configurations; therefore, wireless clients can transmit and receive on the same radio channel. This creates a problem because a wireless client cannot hear while it is sending; thus, making it impossible to detect a collision. To address this problem, the IEEE developed an additional collision avoidance mechanism called the Distributed Coordination Function (DCF). Using DCF, a wireless client transmits only if the channel is clear. All transmissions are acknowledged; therefore, if a wireless client does not receive an acknowledgment, it assumes a collision occurred and retries after a random waiting interval.</p>
+          <p></p>
+          <p>Wireless clients and APs use the RTS and CTS control frames to facilitate the actual data transfer. </p>
+          <p></p>
+          <p>As shown in Figure 1, when a wireless client sends data, it first senses the media to determine if other devices are transmitting. If not, it then sends an RTS frame to the AP. This frame is used to request dedicated access to the RF medium for a specified duration. The AP receives the frame and, if available, grants the wireless client access to the RF medium by sending a CTS frame of the same time duration. All other wireless devices observing the CTS frame relinquish the media to the transmitting node for transmission.</p>
+          <p></p>
+          <p>The CTS control frame includes the time duration that the transmitting node is allowed to transmit. Other wireless clients withhold transmissions for, at least, the specified duration.</p>
+          <p></p>
+          <p>Figure 2 displays a flowchart detailing the CSMA/CA process.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

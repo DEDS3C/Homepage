@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.3.2 Selecting Channels</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Selecting Channels</h1>
+        <div>
+          <p>The IEEE 802.11b/g/n all operate in the microwaves frequencies of the radio spectrum. The IEEE 802.11b/g/n standards operate in the 2.4 GHz to 2.5 GHz spectrum while 802.11a/n/ac standards operate in the more heavily regulated 5 GHz band. Figure 1 highlights which 802.11 standard operates in the 2.4 GHz, 5 GHz, and 60 GHz bands. Each spectrum is subdivided into channels with a center frequency and bandwidth, analogous to the way radio bands are subdivided.  </p>
+          <p></p>
+          <p>The 2.4 GHz band is subdivided into multiple channels. The overall, combined channel bandwidth is 22 MHz with each channel separated by 5 MHz. The 802.11b standard identifies 11 channels for North America. The 22 MHz bandwidth, combined with the 5 MHz separation between frequencies, results in an overlap between successive channels, as shown in Figure 2. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In Europe, there are 13 802.11b channels.</p>
+          <p></p>
+          <p>Interference occurs when an undesired signal overlaps a channel reserved for a desired signal, causing possible distortion. The solution to interference is to use non-overlapping channels. Specifically, channels 1, 6, and 11 are non-overlapping 802.11b channels, as shown in Figure 3.</p>
+          <p></p>
+          <p>A best practice for WLANs requiring multiple APs is to use non-overlapping channels. If there are three adjacent APs, use channels 1, 6, and 11. If there are just two, select any two that are five channels apart, such as channels 5 and 10. Most APs can automatically select a channel based on adjacent channels used. Some products continuously monitor the radio space to adjust the channel settings dynamically in response to environmental changes.</p>
+          <p></p>
+          <p>As enterprise WLANs migrate to 802.11n, they can use channels in the larger, less-crowded 5 GHz band, reducing “accidental denial of service (DoS)”. For instance, the 802.11n standard uses OFDM and can support three non-overlapping channels, as shown in Figure 4. </p>
+          <p></p>
+          <p>802.11n can also use channel bonding, which combines two 20 MHz channel into one 40 MHz channel, as shown in Figure 5. Channel bonding increase throughput by using two channels at one time to deliver data.</p>
+          <p></p>
+          <p>Most modern APs can auto-adjust channels to circumvent interference. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: IEEE 802.11ac uses OFDM with channels widths of 80, 160, and 80+80.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

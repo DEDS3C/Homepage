@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.6 Verifying Auto-Summary: Routing Table</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Auto-Summary: Routing Table</h1>
+        <div>
+          <p>Examine the routing table to verify that the summarized route was received.  </p>
+          <p></p>
+          <p>Figure 1 shows R3’s routing table prior to automatic summarization, and then with automatic summarization enabled using the<span class="cmd"><b> auto-summary </b></span>command. Notice that with automatic summarization enabled, R3’s routing table now only contains the single class B network address 172.16.0.0/16. The successor or next-hop router is R1 via 192.168.10.5.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Automatic summarization is only an option with EIGRP for IPv4. Classful addressing does not exist in IPv6; therefore, there is no need for automatic summarization with EIGRP for IPv6.</p>
+          <p></p>
+          <p>When enabling automatic summarization , it is also necessary to understand the Null interface. Figure 2 shows the routing table for R1. Notice the two entries highlighted are using an exit interface of Null0. EIGRP has automatically included a summary route to Null0 for two classful networks 192.168.10.0/24 and 172.16.0.0/16. </p>
+          <p></p>
+          <p>The Null0 interface is a virtual IOS interface that is a route to nowhere, commonly known as "the bit bucket." Packets that match a route with a Null0 exit interface are discarded. </p>
+          <p></p>
+          <p>EIGRP for IPv4 automatically includes a Null0 summary route whenever the following conditions exist:</p>
+          <p>
+            <ul>
+              <li>There is at least one subnet that was learned via EIGRP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>There are two or more<span class="cmd"><b> network </b></span>EIGRP router configuration mode commands.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Automatic summarization is enabled.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The purpose of the Null0 summary route is to prevent routing loops for destinations that are included in the summary, but do not actually exist in the routing table.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

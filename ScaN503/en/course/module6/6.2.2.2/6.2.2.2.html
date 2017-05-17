@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.2 Interarea and External Route Summarization</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Interarea and External Route Summarization</h1>
+        <div>
+          <p>In OSPF, summarization can only be configured on ABRs or ASBRs. Instead of advertising many specific networks, the ABR routers and ASBR routers advertise a summary route. ABR routers summarize type 3 LSAs and ASBR routers summarize type 5 LSAs. </p>
+          <p></p>
+          <p>By default, summary LSAs (type 3 LSAs) and external LSAs (type 5 LSAs) do not contain summarized (aggregated) routes; that is, by default, summary LSAs are not summarized.</p>
+          <p></p>
+          <p>As illustrated in Figures 1 and 2, route summarization can be configured as follows:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Interarea route summarization </b>- Interarea route summarization occurs on ABRs and applies to routes from within each area. It does not apply to external routes injected into OSPF via redistribution. To perform effective interarea route summarization, network addresses within areas should be assigned contiguously so that these addresses can be summarized into a minimal number of summary addresses.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>External route summarization </b>- External route summarization is specific to external routes that are injected into OSPF via route redistribution. Again, it is important to ensure the contiguity of the external address ranges that are being summarized. Generally, only ASBRs summarize external routes. As shown in Figure 2, EIGRP external routes are summarized by ASBR R2 in a single LSA and sent to R1 and R3. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: External route summarization is configured on ASBRs using the<span class="cmd"><b> summary-address </b></span><span class="cmd"><i>address mask </i></span>router configuration mode command. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

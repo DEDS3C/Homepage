@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.1 Manual Summary Routes</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Manual Summary Routes</h1>
+        <div>
+          <p>EIGRP can be configured to use manual summary routes, whether or not autosummarization (<span class="cmd"><b>auto-summary</b></span>) is enabled.  Because EIGRP is a classless routing protocol and includes the subnet mask in the routing updates, manual summarization can include supernet routes. Remember, a supernet is an aggregation of multiple major classful network addresses.</p>
+          <p></p>
+          <p>In Figure 1, two more networks are added to router R3 using loopback interfaces: 192.168.2.0/24 and 192.168.3.0/24. Although the loopback interfaces are virtual interfaces, they are used to represent physical networks for this example.</p>
+          <p></p>
+          <p>Figure 2 shows the commands on R3 to configure the two loopback interfaces and the configuration to enable both interfaces for EIGRP. </p>
+          <p></p>
+          <p>To verify that R3 sent EIGRP update packets to R1 and R2, the routing tables are examined on both routers. </p>
+          <p></p>
+          <p>In Figure 3, only the pertinent routes are shown. R1 and R2 routing tables show these additional networks in their routing tables: 192.168.2.0/24 and 192.168.3.0/24. Instead of sending three separate networks, R3 can summarize the 192.168.1.0/24, 192.168.2.0/24, and 192.168.3.0/24 networks as a single route.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

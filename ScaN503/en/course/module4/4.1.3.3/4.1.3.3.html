@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.3.3 Infrastructure Mode</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Infrastructure Mode</h1>
+        <div>
+          <p>The IEEE 802.11 architecture consists of several components that interact to provide a WLAN that supports clients. It defines two infrastructure mode topology building blocks: a Basic Service Set (BSS) and an Extended Service Set (ESS).</p>
+          <p></p>
+          <p>
+            <b>Basic Service Set </b>
+          </p>
+          <p>A BSS consists of a single AP interconnecting all associated wireless clients. In Figure 1, two BSSs are displayed. The circles depict the coverage area within which the wireless clients of the BSS may remain in communication. This area is called the Basic Service Area (BSA). If a wireless client moves out of its BSA, it can no longer directly communicate with other wireless clients within the BSA. The BSS is the topology building block while the BSA is the actual coverage area (the terms BSA and BSS are often used interchangeably).</p>
+          <p></p>
+          <p>The Layer 2 MAC address of the AP is used to uniquely identify each BSS, which is called the Basic Service Set Identifier (BSSID). Therefore, the BSSID is the formal name of the BSS and is always associated with only one AP. </p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Extended Service Set</b>
+          </p>
+          <p>When a single BSS provides insufficient RF coverage, two or more BSSs can be joined through a common distribution system (DS) into an ESS. As shown in Figure 2, an ESS is the union of two or more BSSs interconnected by a wired DS. Wireless clients in one BSA can now communicate with wireless clients in another BSA within the same ESS. Roaming mobile wireless clients may move from one BSA to another (within the same ESS) and seamlessly connect.</p>
+          <p></p>
+          <p>The rectangular area depicts the coverage area within which members of an ESS may communicate. This area is called the Extended Service Area (ESA). An ESA typically involves several BSSs in overlapping and/or separated configurations. </p>
+          <p></p>
+          <p>Each ESS is identified by an SSID and in an ESS each BSS is identified by its BSSID. For security reasons, additional SSIDs can be propagated through the ESS to segregate the level of network access.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The 802.11 standard refers to ad hoc mode as an IBSS.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

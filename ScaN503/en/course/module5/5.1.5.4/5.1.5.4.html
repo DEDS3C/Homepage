@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.5.4 Configuring OSPF MD5 Authentication</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.5.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring OSPF MD5 Authentication</h1>
+        <div>
+          <p>OSPF supports routing protocol authentication using MD5. MD5 authentication can be enabled globally for all interfaces or on a per-interface basis.</p>
+          <p></p>
+          <p>To enable OSPF MD5 authentication globally, configure:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>ip ospf message-digest-key </b>
+                </span>
+                <span class="cmd">
+                  <i>key</i>
+                </span>
+                <span class="cmd">
+                  <b> md5 </b>
+                </span>
+                <span class="cmd">
+                  <i>password</i>
+                </span>
+                <span class="cmd">
+                  <b></b>
+                </span>interface configuration mode command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>area </b>
+                </span>
+                <span class="cmd">
+                  <i>area-id</i>
+                </span>
+                <span class="cmd">
+                  <b> authentication message-digest </b>
+                </span>router configuration mode command.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>This method forces authentication on all OSPF enabled interfaces. If an interface is not configured with the<span class="cmd"><b> ip ospf message-digest-key </b></span>command, it will not be able to form adjacencies with other OSPF neighbors. </p>
+          <p></p>
+          <p>To provide more flexibility, authentication is now supported on a per-interface basis. To enable MD5 authentication on a per-interface basis, configure:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>ip ospf message-digest-key </b>
+                </span>
+                <span class="cmd">
+                  <i>key</i>
+                </span>
+                <span class="cmd">
+                  <b> md5 </b>
+                </span>
+                <span class="cmd">
+                  <i>password</i>
+                </span>
+                <span class="cmd">
+                  <b></b>
+                </span>interface configuration mode command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>ip ospf authentication message-digest </b>
+                </span>interface configuration mode command.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Global and per-interface OSPF MD5 authentication can be used on the same router. However, the interface setting overrides the global setting. MD5 authentication passwords do not have to be the same throughout an area; however, they do need to be the same between neighbors.</p>
+          <p></p>
+          <p>For example, assume that all routers in the figure have converged using OSPF and routing is functioning properly. OSPF authentication will be implemented on all routers. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

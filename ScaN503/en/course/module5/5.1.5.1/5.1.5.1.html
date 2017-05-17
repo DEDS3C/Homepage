@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.5.1 Routers are Targets</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.5.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Routers are Targets</h1>
+        <div>
+          <p>The role of routers in a network is so crucial that they are often the targets of network attacks. Network administrators must be aware that routers are at risk from attack just as much as end-user systems. </p>
+          <p></p>
+          <p>In general, routing systems can be attacked by disrupting the routing peers or by falsifying the information carried within the routing protocol. Falsified routing information may generally be used to cause systems to misinform (lie to) each other, cause a denial-of-service (DoS) attack, or cause traffic to follow a path it would not normally follow. The consequences of falsifying routing information are:</p>
+          <p>
+            <ul>
+              <li>Redirecting traffic to create routing loops</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Redirecting traffic so it can be monitored on an insecure link</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Redirecting traffic to discard it</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Click the Play button in the animation to see an example of an attack that creates a routing loop. An attacker has been able to connect directly to the link between routers R1 and R2. The attacker injects false routing information destined to router R1 only, indicating that R2 is the preferred destination to the 192.168.10.10/32 host route. Although R1 has a routing table entry to the directly connected 192.168.10.0/24 network, it adds the injected route to its routing table because of the longer subnet mask. A route with a longer matching subnet mask is considered to be superior to a route with a shorter subnet mask. Consequently, when a router receives a packet, it selects the longer subnet mask, because it is a more precise route to the destination.</p>
+          <p></p>
+          <p>When PC3 sends a packet to PC1 (192.168.10.10/24), R1 does not forward the packet to the PC1 host. Instead, it routes the packet to router R2, because the apparent best path to 192.168.10.10/32 is through R2. When R2 gets the packet, it looks in its routing table and forwards the packet back to R1, which creates the loop.</p>
+          <p></p>
+          <p>To mitigate against routing protocol attacks, configure OSPF authentication.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

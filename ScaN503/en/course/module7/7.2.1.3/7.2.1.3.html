@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.3 The Router EIGRP Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The Router EIGRP Command</h1>
+        <div>
+          <p>The Cisco IOS includes the processes to enable and configure several different types of dynamic routing protocols. The <span class="cmd"><b>router</b></span> global configuration mode command is used to begin the configuration of any dynamic routing protocol. The topology shown in Figure 1 is used to demonstrate this command.</p>
+          <p></p>
+          <p>As shown in Figure 2, when followed by a question mark (<span class="cmd"><b>?</b></span>), the<span class="cmd"><b> router </b></span>global configuration mode command lists of all the available routing protocols supported by this specific IOS release running on the router.</p>
+          <p></p>
+          <p>The following global configuration mode command is used to enter the router configuration mode for EIGRP and begin the configuration of the EIGRP process: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>router eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>autonomous-system</i>
+            </span>
+          </p>
+          <p></p>
+          <p>The<span class="cmd"><i> autonomous-system </i></span>argument can be assigned to any 16-bit value between the number 1 and 65,535. All routers within the EIGRP routing domain must use the same autonomous system number.</p>
+          <p></p>
+          <p>Figure 3 shows the configuration of the EIGRP process on routers R1, R2, and R3. Notice that the prompt changes from a global configuration mode prompt to router configuration mode. </p>
+          <p></p>
+          <p>In this example,<span class="cmd"><b> 1 </b></span>identifies this particular EIGRP process running on this router. To establish neighbor adjacencies, EIGRP requires all routers in the same routing domain to be configured with the same autonomous system number. In Figure 3, that same EIGRP is enabled on all three routers using the same autonomous system number of<span class="cmd"><b> 1</b></span>.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Both EIGRP and OSPF can support multiple instances of each routing protocol, although this type of multiple routing protocol implementation is not usually needed or recommended.</p>
+          <p></p>
+          <p>The<span class="cmd"><b> router eigrp </b></span><span class="cmd"><i>autonomous-system </i></span>command does not start the EIGRP process itself. The router does not start sending updates. Rather, this command only provides access to configure the EIGRP settings. </p>
+          <p></p>
+          <p>To completely remove the EIGRP routing process from a device, use the<span class="cmd"><b> no router eigrp </b></span><span class="cmd"><i>autonomous-system </i></span>global configuration mode command, which stops the EIGRP process and removes all existing EIGRP router configurations.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

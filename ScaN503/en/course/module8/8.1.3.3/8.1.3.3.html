@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.3.3 EIGRP for IPv6: Default Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP for IPv6: Default Route</h1>
+        <div>
+          <p>Recall that EIGRP maintains separate tables for IPv4 and IPv6; therefore, an IPv6 default route must be propagated separately, as shown in Figure 1. Similar to EIGRP for IPv4, a default static route is configured on the gateway router (R2), as shown in Figure 2: </p>
+          <p></p>
+          <p>
+            <span class="cmd">R2(config)# </span>
+            <span class="cmd">
+              <b>ipv6 route ::/0 serial 0/1/0</b>
+            </span>
+          </p>
+          <p></p>
+          <p>The ::/0 prefix and prefix-length is equivalent to the 0.0.0.0 0.0.0.0 address and subnet mask used in IPv4. Both are all-zero addresses with a /0 prefix-length.</p>
+          <p></p>
+          <p>The IPv6 default static route is redistributed into the EIGRP for IPv6 domain using the same<span class="cmd"><b> redistribute static </b></span>command used in EIGRP for IPv4.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Some IOSs may require that the <span class="cmd"><b>redistribute static</b></span> command include the EIGRP metric parameters before the static route can be redistributed. </p>
+          <p></p>
+          <p>
+            <b>Verifying Propagation of Default Route </b>
+          </p>
+          <p></p>
+          <p>The propagation of the IPv6 static default route can be verified by examining R1’s IPv6 routing table using the<span class="cmd"><b> show ipv6 route </b></span>command, as shown in Figure 3. Notice that the successor or next-hop address is not R2, but R3. This is because R3 provides a better path to R2, at a lower cost metric than R1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

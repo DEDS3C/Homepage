@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.1.4 Cisco Enterprise Architecture</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Cisco Enterprise Architecture</h1>
+        <div>
+          <p>The Cisco Enterprise Architecture divides the network into functional components while still maintaining the core, distribution, and access layers. As the figure shows, the primary Cisco Enterprise Architecture modules include:</p>
+          <p>
+            <ul>
+              <li>Enterprise Campus </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Enterprise Edge </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Service Provider Edge </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Remote</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Enterprise Campus</b>
+          </p>
+          <p>The Enterprise Campus consists of the entire campus infrastructure, to include the access, distribution, and core layers. The access layer module contains Layer 2 or Layer 3 switches to provide the required port density. Implementation of VLANs and trunk links to the building distribution layer occurs here. Redundancy to the building distribution switches is important. The distribution layer module aggregates building access using Layer 3 devices. Routing, access control, and QoS are performed at this distribution layer module. The core layer module provides high-speed interconnectivity between the distribution layer modules, data center server farms, and the enterprise edge. Redundancy, fast convergence, and fault tolerance are the focus of the design in this module.</p>
+          <p></p>
+          <p>In addition to these modules, the Enterprise Campus can include other submodules such as: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Server Farm and Data Center Module </b>- This area provides high-speed connectivity and protection for servers. It is critical to provide security, redundancy, and fault tolerance. The network management systems monitor performance by monitoring device and network availability. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Services Module </b>- This area provides access to all services, such as IP Telephony services, wireless controller services, and unified services. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Enterprise Edge </b>
+          </p>
+          <p>The Enterprise Edge consists of the Internet, VPN, and WAN modules connecting the enterprise with the service provider's network. This module extends the enterprise services to remote sites and enables the enterprise to use Internet and partner resources. It provides QoS, policy reinforcement, service levels, and security.</p>
+          <p></p>
+          <p>
+            <b>Service Provider Edge </b>
+          </p>
+          <p>The Service Provider Edge provides Internet, Public Switched Telephone Network (PSTN), and WAN services.</p>
+          <p></p>
+          <p>All data that enters or exits the Enterprise Composite Network Model (ECNM) passes through an edge device. This is the point that all packets can be examined and a decision made whether the packet should be allowed on the enterprise network. Intrusion detection systems (IDS) and intrusion prevention systems (IPS) can also be configured at the enterprise edge to protect against malicious activity.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.2.3 Encryption Methods</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Encryption Methods</h1>
+        <div>
+          <p>Encryption is used to protect data. If an intruder has captured encrypted data, they would not be able to decipher it in any reasonable amount of time.</p>
+          <p></p>
+          <p>The IEEE 802.11i and the Wi-Fi Alliance WPA and WPA2 standards use the following encryption protocols: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Temporal Key Integrity Protocol (TKIP) </b>- TKIP is the encryption method used by WPA. It provides support for legacy WLAN equipment by addressing the original flaws associated with the 802.11 WEP encryption method. It makes use of WEP, but encrypts the Layer 2 payload using TKIP, and carries out a Message Integrity Check (MIC) in the encrypted packet to ensure the message has not been tampered with.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Advanced Encryption Standard (AES) </b>- AES is the encryption method used by WPA2. It is the preferred method because it aligns with the industry standard IEEE 802.11i. AES performs the same functions as TKIP, but it is a far stronger method of encryption. It uses the Counter Cipher Mode with Block Chaining Message Authentication Code Protocol (CCMP) that allows destination hosts to recognize if the encrypted and non-encrypted bits have been tampered with. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Always choose WPA2 with AES when possible.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

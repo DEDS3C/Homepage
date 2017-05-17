@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.2.5 Authentication in the Enterprise </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Authentication in the Enterprise </h1>
+        <div>
+          <p>In networks that have stricter security requirements, an additional authentication or login is required to grant wireless clients such access. The Enterprise security mode choices require an Authentication, Authorization, and Accounting (AAA) RADIUS server.</p>
+          <p></p>
+          <p>The figure shows the fields that are displayed when selecting the Enterprise version of WPA or WPA2. These fields are necessary to supply the AP with the required information to contact the AAA server: </p>
+          <p>
+            <ul>
+              <li>
+                <b>RADIUS Server IP address </b>- This is the reachable address of the RADIUS server.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>RADIUS port numbers </b>- Officially assigned UDP ports 1812 for RADIUS Authentication and 1813 for RADIUS Accounting, but could also operate using UDP ports 1645 and 1646, as shown in the figure</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Shared key </b>- Used to authenticate the AP with the RADIUS server.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The shared key is not a parameter that must be configured on a wireless client. It is only required on the AP to authenticate with the RADIUS server. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: There is no Password field listed, because the actual user authentication and authorization is handled by the 802.1X standard, which provides a centralized, server-based authentication of end users. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

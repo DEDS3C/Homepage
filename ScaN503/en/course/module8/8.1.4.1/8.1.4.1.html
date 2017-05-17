@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.4.1 EIGRP Bandwidth Utilization</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Bandwidth Utilization</h1>
+        <div>
+          <p>
+            <b>EIGRP Bandwidth for IPv4</b>
+          </p>
+          <p></p>
+          <p>By default, EIGRP uses only up to 50 percent of an interface’s bandwidth for EIGRP information. This prevents the EIGRP process from over-utilizing a link and not allowing enough bandwidth for the routing of normal traffic. </p>
+          <p></p>
+          <p>Use the <span class="cmd"><b>ip bandwidth-percent eigrp </b></span>command to configure the percentage of bandwidth that can be used by EIGRP on an interface. </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ip bandwidth-percent eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>as-number percent</i>
+            </span>
+          </p>
+          <p></p>
+          <p>In Figure 1, R1 and R2 share a very slow 64 kb/s link. The configuration to limit how much bandwidth EIGRP uses is shown in Figure 2. The<span class="cmd"><b> ip bandwidth-percent eigrp </b></span>command uses the amount of configured bandwidth (or the default bandwidth) when calculating the percent that EIGRP can use. In this example, EIGRP is limited to no more than 40 percent of the link's bandwidth. Therefore, EIGRP never uses more the 32 kb/s of the link’s bandwidth for EIGRP packet traffic.</p>
+          <p></p>
+          <p>To restore the default value, use the<span class="cmd"><b> no </b></span>form of this command.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to limit the bandwidth used by EIGRP between R2 and R3, to 75 percent of the link’s bandwidth.</p>
+          <p></p>
+          <p>
+            <b>EIGRP Bandwidth for IPv6</b>
+          </p>
+          <p></p>
+          <p>To configure the percentage of bandwidth that can be used by EIGRP for IPv6 on an interface, use the<span class="cmd"><b> ipv6 bandwidth-percent eigrp </b></span>command in interface configuration mode. To restore the default value, use the<span class="cmd"><b> no </b></span>form of this command.</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ipv6 bandwidth-percent eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>as-number percent</i>
+            </span>
+          </p>
+          <p></p>
+          <p>Figure 4 shows the configuration of the interfaces between R1 and R2 to limit the bandwidth used by EIGRP for IPv6. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.4.3.2 GLBP Verification</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.4.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>GLBP Verification</h1>
+        <div>
+          <p>Although HSRP and VRRP provide gateway resiliency, for the standby members of the redundancy group, the upstream bandwidth is not used while the device is in standby mode. </p>
+          <p></p>
+          <p>Only the active router in HSRP and VRRP groups forwards traffic for the virtual MAC address. Resources that are associated with the standby router are not fully utilized. You can accomplish some load balancing with these protocols by creating multiple groups and assigning multiple default gateways, but this configuration creates an administrative burden.</p>
+          <p></p>
+          <p>GLBP is a Cisco proprietary solution to allow automatic selection and simultaneous use of multiple available gateways in addition to automatic failover between those gateways. Multiple routers share the load of frames that, from a client perspective, are sent to a single default gateway address, as shown in Figure 1.</p>
+          <p></p>
+          <p>With GLBP, you can fully utilize resources without the administrative burden of configuring multiple groups and managing multiple default gateway configurations. GLBP has the following characteristics:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Allows full use of resources on all devices without the administrative burden of creating multiple groups.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Provides a single virtual IP address and multiple virtual MAC addresses.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Routes traffic to single gateway distributed across routers.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Provides automatic rerouting in the event of any failure.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the<span class="cmd"><b> show glbp </b></span>command to verify the GLBP status. Figure 2 shows that GLBP group 1 is in the active state with virtual IP address 192.168.2.100.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

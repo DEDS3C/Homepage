@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.7 Configuring Single-Area OSPFv3</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring Single-Area OSPFv3</h1>
+        <div>
+          <p>The following is a review of a basic implementation of the OSPFv3 routing protocol for IPv6.</p>
+          <p></p>
+          <p>The example in Figure 1 displays the topology used for configuring OSPFv3. The routers in the topology have a starting configuration, including enabled interface IPv6 addresses. There is currently no static routing or dynamic routing configured on any of the routers. All interfaces on routers R1, R2, and R3 (except the loopback on R2) are within the OSPF backbone area. </p>
+          <p></p>
+          <p>In Figure 2, from OSPFv3 router configuration mode on R1, the router ID is manually assigned and the reference bandwidth is adjusted to account for fast interfaces. Next the interfaces participating in OSPFv3 are configured. The Gigabit Ethernet 0/0 is also configured to reflect its true bandwidth. Notice how there is no wildcard mask require when configuring OSPFv3. </p>
+          <p></p>
+          <p>In Figure 3, from OSPFv3 router configuration mode on R2, the router ID is manually assigned and the reference bandwidth is adjusted to account for fast interfaces. Next the interfaces participating in OSPFv3 are configured. Again, the Gigabit Ethernet 0/0 is also configured to reflect its true bandwidth. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to manually assign the router ID and adjust the reference bandwidth. Next configure the interfaces accordingly starting with interface Gigabit Ethernet 0/0. Also assign the true bandwidth to that interface. </p>
+          <p></p>
+          <p>Notice the informational messages displaying that R3 has established a full neighbor adjacency with R1 with router ID 1.1.1.1 and R2 with router ID 2.2.2.2. The OSPFv3 network has converged.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

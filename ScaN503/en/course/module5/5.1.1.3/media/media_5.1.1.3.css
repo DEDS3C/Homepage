@@ -1,0 +1,33 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+@media only screen and (device-width: 768px) {
+#ID_txt02 li{
+margin-left:0.8px !important;
+}
+#ID_txt03 li{
+margin-left:0.8px !important;
+}
+}
+#ID_txt03{letter-spacing:-0.7px;}
+
+#ID_static_9, #ID_static_10{
+	letter-spacing:-0.8px !important;
+	}
+
+
+@media only screen and (device-width: 768px) {
+#ID_static_9, #ID_static_10, #ID_static_11{
+	letter-spacing:-1.5px !important;
+	}
+}

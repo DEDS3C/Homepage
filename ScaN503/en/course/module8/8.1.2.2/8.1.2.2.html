@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.2 Configuring EIGRP Manual Summary Routes</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring EIGRP Manual Summary Routes</h1>
+        <div>
+          <p>
+            <b>Determining the Summary EIGRP Route</b>
+          </p>
+          <p></p>
+          <p>Figure 1 shows the two manual summary routes that are configured on R3. These summary routes are sent out of the Serial 0/0/0 and Serial 0/0/1 interfaces to R3’s EIGRP neighbors.</p>
+          <p></p>
+          <p>To determine the summary of these three networks, the same method is used to determine summary static routes, as shown in Figure 2:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Write out the networks to be summarized in binary. </p>
+          <p>
+            <b>Step 2.</b> To find the subnet mask for summarization, start with the far left bit. </p>
+          <p>
+            <b>Step 3.</b> Working from left to right, find all the bits that match consecutively. </p>
+          <p>
+            <b>Step 4.</b> When there is a column of bits that do not match, stop. This is the summary boundary. </p>
+          <p>
+            <b>Step 5.</b> Count the number of far left matching bits, which in this example is 22. This number is used to determine the subnet mask for the summarized route: /22 or 255.255.252.0.</p>
+          <p>
+            <b>Step 6.</b> To find the network address for summarization, copy the matching 22 bits and add all 0 bits to the end to make 32 bits.</p>
+          <p></p>
+          <p>The result is the summary network address and mask for 192.168.0.0/22.</p>
+          <p></p>
+          <p>
+            <b>Configure EIGRP Manual Summarization</b>
+          </p>
+          <p></p>
+          <p>To establish EIGRP manual summarization on a specific EIGRP interface, use the following interface configuration mode command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ip summary-address eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>as-number network-address subnet-mask</i>
+            </span>
+          </p>
+          <p></p>
+          <p>Figure 2 shows the configuration to propagate a manual summary route on R3’s Serial 0/0/0 interface. Because R3 has two EIGRP neighbors, the EIGRP manual summarization must be configured on both Serial 0/0/0 and Serial 0/0/1.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure the same manual summary route on R3’s Serial 0/0/1 interface.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

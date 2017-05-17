@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.5 Control Frames </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Control Frames </h1>
+        <div>
+          <p>Control frames are used to manage the information exchange between a wireless client and an AP. They help prevent collisions from occurring on the wireless medium. </p>
+          <p></p>
+          <p>The figure displays the field value of common control frames including:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Request to Send (RTS) frame </b>- The RTS and CTS frames provide an optional collision reduction scheme for APs with hidden wireless clients. A wireless client sends an RTS frame as the first step in the two-way handshake, which is required before sending data frames.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Clear to Send (CTS) frame </b>- A wireless AP responds to an RTS frame with a CTS frame. It provides clearance for the requesting wireless client to send a data frame. The CTS contributes to collision control management by including a time value. This time delay minimizes the chance that other wireless clients will transmit while the requesting client transmits.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Acknowledgment (ACK) frame </b>- After receiving a data frame, the receiving wireless client sends an ACK frame to the sending client if no errors are found. If the sending client does not receive an ACK frame within a predetermined period of time, the sending client resends the frame.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Control frames are integral to wireless transmission and play a significant role in the media contention method used by wireless, known as Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA).  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

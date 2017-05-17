@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.2 Missing Network Statement</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Missing Network Statement</h1>
+        <div>
+          <p>Figure 1 shows that R1’s GigabitEthernet 0/1 interface has now been configured with the 10.10.10.1/24 address and is active.</p>
+          <p></p>
+          <p>R1 and R3 still have their neighbor adjacency, but a ping test from the R3 router to a R1’s G0/1 interface of 10.10.10.1 is unsuccessful. Figure 2 shows a failed connectivity test from R3 to the destination network of 10.10.10.0/24.</p>
+          <p></p>
+          <p>In Figure 3, using the<span class="cmd"><b> show ip protocols </b></span>on the R1 router shows that the network 10.10.10.0/24 is not advertised to EIGRP neighbors. </p>
+          <p></p>
+          <p>As shown in Figure 4, R1’s EIGRP process is configured to include the advertisement of the 10.10.10.0/24 network.</p>
+          <p></p>
+          <p>Figure 5 shows that there is now a route in R3’s routing table for the 10.10.10.0/24 network and reachability is verified by pinging R1’s GigabitEthernet 0/1 interface.</p>
+          <p></p>
+          <p>
+            <b>EIGRP for IPv6</b>
+          </p>
+          <p></p>
+          <p>Similar commands and troubleshooting criteria also apply to EIGRP for IPv6.</p>
+          <p></p>
+          <p>The following are the equivalent commands used with EIGRP for IPv6:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 protocols </b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 route</b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>To add a missing network statement under IPv6, use the <b>ipv6 eigrp </b><i>autonomous-system</i> command in interface configuration mode: <span class="cmd">Router(config-if)#</span><span class="cmd"><b> ipv6 eigrp </b></span><span class="cmd"><i>autonomous-system</i></span></p>
+          <p>
+            <b>Note</b>: Another form of missing route may result from the router filtering inbound or outbound routing updates. ACLs provide filtering for different protocols, and these ACLs may affect the exchange of the routing protocol messages that cause routes to be absent from the routing table. The<span class="cmd"><b> show ip protocols </b></span>command shows whether there are any ACLs that are applied to EIGRP. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

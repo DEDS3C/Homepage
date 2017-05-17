@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.4 Management Frames </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Management Frames </h1>
+        <div>
+          <p>Management frames are used exclusively to find, authenticate, and associate with an AP. </p>
+          <p></p>
+          <p>Figure 1 displays the field value of common management frames including:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Association request frame </b>- (0x00) Sent from a wireless client, it enables the AP to allocate resources and synchronize. The frame carries information about the wireless connection including supported data rates and SSID of the network to the wireless client that wants to associate. If the request is accepted, the AP reserves memory and establishes an association ID for the device.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Association response frame </b>- (0x01) Sent from an AP to a wireless client containing the acceptance or rejection to an association request. If it is an acceptance, the frame contains information, such as an association ID and supported data rates.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Reassociation request frame </b>- (0x02) A device sends a reassociation request when it drops from range of the currently associated AP and finds another AP with a stronger signal. The new AP coordinates the forwarding of any information that may still be contained in the buffer of the previous AP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Reassociation response frame </b>- (0x03) Sent from an AP containing the acceptance or rejection to a device reassociation request frame. The frame includes information required for association, such as the association ID and supported data rates.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Probe request frame </b>- (0x04) Sent from a wireless client when it requires information from another wireless client.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Probe response frame</b> - (0x05) Sent from an AP containing capability information, such as the supported data rates, after receiving a probe request frame.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Beacon frame </b>- (0x08) Sent periodically from an AP to announce its presence and provide the SSID and other preconfigured parameters.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Disassociation frame </b>- (0x0A) Sent from a device wanting to terminate a connection. Allows the AP to relinquish memory allocation and remove the device from the association table.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Authentication frame </b>- (0x0B) The sending device sends an authentication frame to the AP containing its identity. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Deauthentication frame</b> - (0x0C) Sent from a wireless client wanting to terminate connection from another wireless client.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Beacons are the only management frame that may regularly be broadcast by an AP. All other probing, authentication, and association frames are used only during the association (or reassociation) process.</p>
+          <p></p>
+          <p>Figure 2 displays a sample Wireshark screen capture of a management frame. The field values change to reflect the purpose of the frame. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The example provided was captured using Wireshark. However, Wireshark must be specifically configured to capture WLAN traffic. The ability to capture traffic varies between operating systems and may require a special wireless NIC.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

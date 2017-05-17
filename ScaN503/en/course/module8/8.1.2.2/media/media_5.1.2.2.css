@@ -1,0 +1,51 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+.orange{background-color:#ECA654 !important;width:56%;}
+#ID_s3_title{font-size:13px !important;}
+#s2_router_txt01{margin-left:-13px !important;}
+#ID_s2_txt01{background-color:#E6EBA8}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  #s2_router_txt01{margin-left:-8px !important;}
+  .color{letter-spacing:.65px;}
+  .orange{background-color:#ECA654 !important;width:56%!important;}
+  #s2_element_txt01{
+  letter-spacing:0.4px!important;
+  }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  #s2_router_txt01{margin-left:-8px !important;}
+  .color{letter-spacing:.65px;}
+  .orange{background-color:#ECA654 !important;width:53%!important;}
+  
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+	#ID_s2_txt01{top:-2px !important}
+	}
+
+#ID_SC3_prompt_1{letter-spacing:-0.5px}
+
+.alignment{
+	letter-spacing: -0.8px !important;
+	}
+	
+@media only screen and (device-width: 768px) {
+.alignment1{
+	letter-spacing: -0.8px !important;
+	}
+.alignment{
+	margin-left:-2px !important;
+	letter-spacing: -1.2px !important;
+	}
+}

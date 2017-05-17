@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.5.5 OSPF MD5 Authentication Example</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.5.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSPF MD5 Authentication Example</h1>
+        <div>
+          <p>The example in Figure 1 configures R1 to enable OSPF MD5 authentication on all interfaces. Notice the informational messages stating that the OSPF neighbor adjacencies with R2 and R3 have changed to the<span class="cmd"> Down </span>state, because R2 and R3 have not yet been configured to support MD5 authentication.</p>
+          <p></p>
+          <p>As an alternative to globally enabling MD5 authentication, the example in Figure 2 demonstrates how to configure R1 to enable OSPF MD5 authentication on a per-interface basis. Again, notice how the OSPF neighbor adjacencies have changed to the<span class="cmd"> Down </span>state. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to enable OSPF MD5 authentication globally on R2 and per interface on R3.</p>
+          <p></p>
+          <p>Again, informational messages appear. The first message is because the neighbor adjacency with R1 has been re-established. However, the adjacency with R3 has transitioned to the<span class="cmd"> Down </span>state, because R3 is still not configured</p>
+          <p></p>
+          <p>After R3 is configured, all neighbor adjacencies have been re-established.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

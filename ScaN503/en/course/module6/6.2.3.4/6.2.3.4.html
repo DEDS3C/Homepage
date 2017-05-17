@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.4 Verify the Multiarea OSPF LSDB</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify the Multiarea OSPF LSDB</h1>
+        <div>
+          <p>Use the<span class="cmd"><b> show ip ospf database </b></span>command to verify the contents of the LSDB.</p>
+          <p></p>
+          <p>There are many command options available with the<span class="cmd"><b> show ip ospf database </b></span>command.</p>
+          <p></p>
+          <p>For example, Figure 1 displays the content of the LSDB of R1. Notice R1 has entries for area 0 and area 1, because ABRs must maintain a separate LSDB for each area to which they belong. In the output,<span class="cmd"> Router Link States </span>in area 0 identifies three routers. The<span class="cmd"> Summary Net Link States </span>section identifies networks learned from other areas and which neighbor advertised the network.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to verify the LSDB of R2 and R3 using the<span class="cmd"><b> show ip ospf database </b></span>command. R2 only has interfaces in area 0; therefore, only one LSDB is required. Like R1, R3 contains two LSDBs.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

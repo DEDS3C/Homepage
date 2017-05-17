@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.5.4 Verify Authentication</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.5.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify Authentication</h1>
+        <div>
+          <p>After EIGRP message authentication is configured on one router, any adjacent neighbors that have not yet been configured for authentication are no longer EIGRP neighbors. For example, when R1’s Serial 0/0/0 interface was configured for MD5 authentication, but R2 had not yet been configured, the following IOS message appeared on R1:</p>
+          <p></p>
+          <p>
+            <span class="cmd">%DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 172.16.3.2 (Serial0/0/0) is down: authentication mode changed</span>
+          </p>
+          <p></p>
+          <p>When the adjacent Serial 0/0/0 interface on R2 is configured, the adjacency is re-established and the following IOS message is displayed on R1:</p>
+          <p></p>
+          <p>
+            <span class="cmd">%DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 172.16.3.2 (Serial0/0/0) is up: new adjacency</span>
+          </p>
+          <p></p>
+          <p>Similar messages are also displayed on R2.</p>
+          <p></p>
+          <p>Adjacencies are only formed when both connecting devices have authentication configured, as shown in Figure 1. To verify that the correct EIGRP adjacencies were formed after being configured for authentication, use the<span class="cmd"><b> show ip eigrp neighbors </b></span>command on each router. Figure 2 shows that all three routers have re-established neighbor adjacencies after being configured for EIGRP authentication. </p>
+          <p></p>
+          <p>To verify the neighbor adjacencies EIGRP for IPv6, use the<span class="cmd"><b> show ipv6 eigrp neighbors </b></span>command.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

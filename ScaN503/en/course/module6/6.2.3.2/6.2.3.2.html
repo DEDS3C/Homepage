@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.2 Verify General Multiarea OSPF Settings</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify General Multiarea OSPF Settings</h1>
+        <div>
+          <p>Use the<span class="cmd"><b> show ip protocols </b></span>command to verify the OSPF status. The output of the command reveals which routing protocols are configured on a router. It also includes routing protocol specifics such as the router ID, number of areas in the router, and networks included within the routing protocol configuration. </p>
+          <p></p>
+          <p>Figure 1 displays the OSPF settings of R1. Notice that the command shows that there are two areas. The<span class="cmd"> Routing for Networks </span>section identifies the networks and their respective areas.</p>
+          <p></p>
+          <p>Use the<span class="cmd"><b> show ip ospf interface brief </b></span>command to display concise OSPF-related information of OSPF-enabled interfaces. This command reveals useful information, such as the OSPF process ID that the interface is assigned to, the area that the interfaces are in, and the cost of the interface. </p>
+          <p></p>
+          <p>Figure 2 verifies the OSPF-enabled interfaces and the areas to which they belong.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to verify general settings on R2 and R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic"></iframe>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>
