@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.1.1 The Data Link Layer</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The Data Link Layer</h1>
+        <div>
+          <p>The data link layer of the OSI model (Layer 2), as shown in Figure 1, is responsible for:</p>
+          <p>
+            <ul>
+              <li>Allowing the upper layers to access the media </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Accepting Layer 3 packets and packaging them into frames</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Preparing network data for the physical network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Controlling how data is placed and received on the media</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Exchanging frames between nodes over a physical network media, such as UTP or fiber-optic</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receiving and directing packets to an upper layer protocol</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Performing error detection</li>
+            </ul>
+          </p>
+          <p>The Layer 2 notation for network devices connected to a common media is called a node. Nodes build and forward frames. As shown in Figure 2, the OSI data link layer is responsible for the exchange of Ethernet frames between source and destination nodes over a physical network media. </p>
+          <p>The data link layer effectively separates the media transitions that occur as the packet is forwarded from the communication processes of the higher layers. The data link layer receives packets from and directs packets to an upper layer protocol, in this case IPv4 or IPv6. This upper layer protocol does not need to be aware of which media the communication will use. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a user at a computer.  Below is the OSI model with layer two highlighted.  There is a line, representing a connection, going from the user to a router connected to the Internet. Figure 2 shows a PC adding layer 2 source and destination addresses to a frame.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.1 MAC Address and Hexadecimal</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>MAC Address and Hexadecimal</h1>
+        <div>
+          <p>An Ethernet MAC address is a 48-bit binary value expressed as 12 hexadecimal digits (4 bits per hexadecimal digit).</p>
+          <p>Just as decimal is a base ten number system, hexadecimal is a base sixteen system. The base sixteen number system uses the numbers 0 to 9 and the letters A to F. Figure 1 shows the equivalent decimal and hexadecimal values for binary 0000 to 1111. It is easier to express a value as a single hexadecimal digit than as four binary bits. </p>
+          <p>Given that 8 bits (one byte) is a common binary grouping, binary 00000000 to 11111111 can be represented in hexadecimal as the range 00 to FF, as shown in Figure 2. Leading zeroes are always displayed to complete the 8-bit representation. For example, the binary value 0000 1010 is shown in hexadecimal as 0A.</p>
+          <p>
+            <b>Note</b>: It is important to distinguish hexadecimal values from decimal values regarding the characters 0 to 9, as shown in the figure. </p>
+          <p>
+            <b>Representing Hexadecimal Values</b>
+          </p>
+          <p>Hexadecimal is usually represented in text by the value preceded by 0x (for example 0x73) or a subscript 16. Less commonly, it may be followed by an H(for example 73H). However, because subscript text is not recognized in command line or programming environments, the technical representation of hexadecimal is preceded with "0x" (zero X). Therefore, the examples above would be shown as 0x0A and 0x73 respectively.</p>
+          <p>Hexadecimal is used to represent Ethernet MAC addresses and IP Version 6 addresses.</p>
+          <p>
+            <b>Hexadecimal Conversions</b>
+          </p>
+          <p>Number conversions between decimal and hexadecimal values are straightforward, but quickly dividing or multiplying by 16 is not always convenient. If such conversions are required, it is usually easier to convert the decimal or hexadecimal value to binary, and then to convert the binary value to either decimal or hexadecimal as appropriate. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a table with Decimal values between 0 and 15 with the Binary and Hexadecimal equivalents.  This table demonstrates why Hexadecimal has letters A through F along with numbers 0 through 9. Figure 2 shows a table with Decimal values between 0 and 255 with the Binary and Hexadecimal equivalents.  This table only shows 19 examples.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.2.3 Logical Point-to-Point Topology</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Logical Point-to-Point Topology</h1>
+        <div>
+          <p>The end nodes communicating in a point-to-point network can be physically connected via a number of intermediate devices. However, the use of physical devices in the network does not affect the logical topology. </p>
+          <p>As shown in Figure 1, the source and destination node may be indirectly connected to each other over some geographical distance. In some cases, the logical connection between nodes forms what is called a virtual circuit. A virtual circuit is a logical connection created within a network between two network devices. The two nodes on either end of the virtual circuit exchange the frames with each other. This occurs even if the frames are directed through intermediary devices, as shown in Figure 2. Virtual circuits are important logical communication constructs used by some Layer 2 technologies. </p>
+          <p>The media access method used by the data link protocol is determined by the logical point-to-point topology, not the physical topology. This means that the logical point-to-point connection between two nodes may not necessarily be between two physical nodes at each end of a single physical link. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows two routers connected with a point to point connection through a cloud.  The cloud is empty. Figure 2 shows the same two routers connected with a point to point connection through a cloud.  This cloud has several pieces of network equipment.  This demonstrates that sometimes a point to point is not a physical wire connecting two routers.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

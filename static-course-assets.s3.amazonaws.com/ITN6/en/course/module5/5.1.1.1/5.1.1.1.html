@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.1 Ethernet Encapsulation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Ethernet Encapsulation</h1>
+        <div>
+          <p>Ethernet is the most widely used LAN technology today. </p>
+          <p>Ethernet operates in the data link layer and the physical layer. It is a family of networking technologies that are defined in the IEEE 802.2 and 802.3 standards. Ethernet supports data bandwidths of:</p>
+          <p>
+            <ul>
+              <li>10 Mb/s</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>100 Mb/s</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>1000 Mb/s (1 Gb/s)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>10,000 Mb/s (10 Gb/s)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>40,000 Mb/s (40 Gb/s)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>100,000 Mb/s (100 Gb/s)</li>
+            </ul>
+          </p>
+          <p>As shown in Figure 1, Ethernet standards define both the Layer 2 protocols and the Layer 1 technologies. For the Layer 2 protocols, as with all 802 IEEE standards, Ethernet relies on the two separate sublayers of the data link layer to operate, the Logical Link Control (LLC) and the MAC sublayers.</p>
+          <p>
+            <b>LLC sublayer</b>
+          </p>
+          <p>The Ethernet LLC sublayer handles the communication between the upper layers and the lower layers. This is typically between the networking software and the device hardware. The LLC sublayer takes the network protocol data, which is typically an IPv4 packet, and adds control information to help deliver the packet to the destination node. The LLC is used to communicate with the upper layers of the application, and transition the packet to the lower layers for delivery.</p>
+          <p>LLC is implemented in software, and its implementation is independent of the hardware. In a computer, the LLC can be considered the driver software for the NIC. The NIC driver is a program that interacts directly with the hardware on the NIC to pass the data between the MAC sublayer and the physical media.</p>
+          <p>
+            <b>MAC sublayer</b>
+          </p>
+          <p>MAC constitutes the lower sublayer of the data link layer. MAC is implemented by hardware, typically in the computer NIC. The specifics are listed in the IEEE 802.3 standards. Figure 2 lists common IEEE Ethernet standards. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the seven layers of the OSI model with the lower two layers highlighted.  This figure demonstrates that Ethernet spans Layers 1 and 2.  802.3 covers Layer 1 and the MAC sublayer of Layer 2.  802.2 is the LLC sublayer and covers the upper half of Layer 2. Figure 2 shows a different representation of how the different implementations of Ethernet span the layers.  In this figure, we see that Ethernet, Fast Ethernet and Gigabit Ethernet spans Layer 1 and the lower half of Layer 2.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

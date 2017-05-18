@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.3.3 Calculating the Hosts</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Calculating the Hosts</h1>
+        <div>
+          <p>To calculate the number of hosts each subnet can support, examine the third and fourth octet. After borrowing 7 bits for the subnet, there is one host bit remaining in the third octet and 8 host bits remaining in the fourth octet for a total of 9 bits that were not borrowed. </p>
+          <p>Apply the host calculation formula as shown in Figure 1. There are only 510 host addresses that are available for each /23 subnet. </p>
+          <p>As shown in Figure 2, the first host address for the first subnet is 172.16.0.1, and the last host address is 172.16.1.254. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the formula for calculating the number of valid hosts, which is 2 to power of 9 minus 2, or 510 valid hosts. Figure 2 shows the network address, first host address, last host address, and broadcast address. The last two octets are shown in binary</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.3.4 IPv6 Link-Local Unicast Addresses</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 Link-Local Unicast Addresses</h1>
+        <div>
+          <p>An IPv6 link-local address enables a device to communicate with other IPv6-enabled devices on the same link and only on that link (subnet). Packets with a source or destination link-local address cannot be routed beyond the link from which the packet originated.</p>
+          <p>The global unicast address is not a requirement. However, every IPv6-enabled network interface is required to have a link-local address. </p>
+          <p>If a link-local address is not configured manually on an interface, the device will automatically create its own without communicating with a DHCP server. IPv6-enabled hosts create an IPv6 link-local address even if the device has not been assigned a global unicast IPv6 address. This allows IPv6-enabled devices to communicate with other IPv6-enabled devices on the same subnet. This includes communication with the default gateway (router). </p>
+          <p>IPv6 link-local addresses are in the FE80::/10 range. The /10 indicates that the first 10 bits are 1111 1110 10xx xxxx. The first hextet has a range of 1111 1110 10<b>00 0000</b> (FE80) to 1111 1110 10<b>11 1111</b> (FEBF). </p>
+          <p>Figure 1 shows an example of communication using IPv6 link-local addresses.</p>
+          <p>Figure 2 shows some of the uses for IPv6 link-local addresses.</p>
+          <p>
+            <b>Note</b>: Typically, it is the link-local address of the router, and not the global unicast address, that is used as the default gateway for other devices on the link. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a router with a switch connected. The router also has two other networks attached. The router is configured with the same FE80::1/64 IPv6 link-local address on all three interfaces. On one of the LANs, there are two computers, a server, and a printer attached to the switch.  A computer is using link-local source and destination addresses to send a job to the printer. The router would not forward this job to another LAN because link-local addresses is local to the link. Figure 2 show a router connected to another router. One of the routers has a PC connected. The two routers are using the link-local address to send routing updates. The PC is using the router's link-local address as its default gateway.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.3.5.2 The terminal monitor Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.3.5.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The terminal monitor Command</h1>
+        <div>
+          <p>Connections to grant access to the IOS command line interface can be established locally or remotely.</p>
+          <p></p>
+          <p>Local connections require physical access to the router or switch; therefore, a cable connection is required. This connection is usually established by connecting a PC to the router or switch console port using a rollover cable. In this course, we refer to a local connection as a console connection.</p>
+          <p></p>
+          <p>Remote connections are established over the network;  therefore, they require a network protocol such as IP. No direct physical access is required for remote sessions. SSH and Telnet are two common connection protocols used for remote sessions. In this course, we use the protocol when discussing a specific remote connection, such as a Telnet connection or an SSH connection.</p>
+          <p></p>
+          <p>While IOS log messages are sent to the console by default, these same log messages are not sent to the virtual lines by default. Because debug messages are log messages, this behavior prevents any debug-related messages from being displayed on VTY lines.</p>
+          <p></p>
+          <p>To display log messages on a terminal (virtual console), use the <b>terminal monitor</b> privileged EXEC command.</p>
+          <p></p>
+          <p>To stop logging messages on a terminal, use the <b>terminal no monitor</b> privileged EXEC command.</p>
+          <p></p>
+          <p>User the Syntax Checker to practice using <b>terminal monito</b>r and <b>debug</b> for troubleshooting.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is output from the ‘debug ip icmp’ command. Figure 2 is a syntax checker activity.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

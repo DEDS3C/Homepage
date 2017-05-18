@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.3 Classless Subnetting</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Classless Subnetting</h1>
+        <div>
+          <p>The examples seen so far borrowed host bits from the common /8, /16, and /24 network prefixes. However, subnets can borrow bits from <i>any</i> host bit position to create other masks.</p>
+          <p>For instance, a /24 network address is commonly subnetted using longer prefix lengths by borrowing bits from the fourth octet. This provides the administrator with additional flexibility when assigning network addresses to a smaller number of end devices.  </p>
+          <p>As shown in the figure: </p>
+          <p>
+            <ul>
+              <li>/25 row - Borrowing 1 bit from the fourth octet creates 2 subnets supporting 126 hosts each.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/26 row - Borrowing 2 bits creates 4 subnets supporting 62 hosts each.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/27 row – Borrowing 3 bits creates 8 subnets supporting 30 hosts each. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/28 row – Borrowing 4 bits creates 16 subnets supporting 14 hosts each. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/29 row – Borrowing 5 bits creates 32 subnets supporting 6 hosts each. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>/30 row – Borrowing 6 bits creates 64 subnets supporting 2 hosts each. </li>
+            </ul>
+          </p>
+          <p>For each bit borrowed in the fourth octet, the number of subnetworks available is doubled while reducing the number of host addresses per subnet.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table. The first column lists the six prefix lengths from /25 to /30. The second column lists the six subnet masks from 255.255.255.128 to 255.255.255.252. The third column shows the subnet mask in binary with the letter “n” above one bits and the letter “h” above zero bits. The effect is to show the borrowing of bits into the fourth octet from borrowing one bit in the first row (/25) to borrowing six bits in the last row (/30). The fourth and fifth columns show the number of subnets and hosts respectively. For example, borrowing 3 bits gets you 8 subnets with 30 hosts per subnet.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

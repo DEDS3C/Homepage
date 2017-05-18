@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.3 Rule 2 – Omit All 0 Segments</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Rule 2 – Omit All 0 Segments</h1>
+        <div>
+          <p>The second rule to help reduce the notation of IPv6 addresses is that a double colon (::) can replace any single, contiguous string of one or more 16-bit segments (hextets) consisting of all 0s. </p>
+          <p>The double colon (::) can only be used once within an address, otherwise there would be more than one possible resulting address. When used with the omitting leading 0s technique, the notation of IPv6 address can often be greatly reduced. This is commonly known as the compressed format.</p>
+          <p>Incorrect address: </p>
+          <p>
+            <ul>
+              <li>2001:0DB8::ABCD::1234</li>
+            </ul>
+          </p>
+          <p>Possible expansions of ambiguous compressed addresses:</p>
+          <p>
+            <ul>
+              <li>2001:0DB8::ABCD:0000:0000:1234</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8::ABCD:0000:0000:0000:1234</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:0000:ABCD::1234</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:0000:0000:ABCD::1234</li>
+            </ul>
+          </p>
+          <p>The Figures 1 to 7 show several examples of how using the double colon (::) and omitting leading 0s can reduce the size of an IPv6 address.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1 through 7 show examples of Rule 2 which replaces a single, continuous string of one or more all zero hextets with a double colon. For example, the IPv6 address 2001:DB8:0:1111:0:0:0:200 that has already had Rule 1 applied to it becomes 2001:DB8:0:1111::200</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

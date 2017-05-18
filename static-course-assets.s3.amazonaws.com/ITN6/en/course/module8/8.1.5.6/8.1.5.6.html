@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.5.6 VLSM Chart</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.5.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>VLSM Chart</h1>
+        <div>
+          <p>An addressing chart can be used to identify which blocks of addresses are available for use and which ones are already assigned, as shown in Figure 1. This method helps to prevent assigning addresses that have already been allocated. </p>
+          <p>In order to use the address space more efficiently, /30 subnets are created for WAN links, as shown in the VLSM chart in Figure 2. To keep the unused blocks of addresses together in a block of contiguous address space, the last /27 subnet was further subnetted to create the /30 subnets. The first 3 subnets were assigned to WAN links.</p>
+          <p>Designing the addressing scheme in this way leaves 3 unused, contiguous /27 subnets and 5 unused contiguous /30 subnets. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a chart using basic subnetting to assign equal sized subnets to the LANs and WANs. Figure 2 shows a chart using VLSM subnetting to assign equal sized (slash twenty sevens) subnets to each of the LAN links and different but equal sized (slash thirties) subnets to each of the WAN links.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

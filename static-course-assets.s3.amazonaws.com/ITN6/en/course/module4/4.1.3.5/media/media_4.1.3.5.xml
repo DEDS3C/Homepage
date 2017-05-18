@@ -1,0 +1,90 @@
+﻿<textcomponents>
+
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity - Physical Layer Terminology</b>]]></text>
+</component>
+
+	<component id='ID_s1_instr_title'>
+		<text><![CDATA[Instructions]]></text>
+	</component>
+
+	<component id='ID_s1_instr_body'>
+		<text><![CDATA[Descriptions of the physical layer are provided in the table. Drag each physical layer term to its description.]]></text>
+	</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[Media that uses patterns of microwaves to represents bits.]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[The capacity of a medium to carry data.]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[Media that uses patterns of light to represents bits.]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[A measure of the transfer of bits across the media.]]></text>
+</component>
+
+<component id='ID_s1_txt05'>
+	<text><![CDATA[Media that uses electrical pulses to represents bits.]]></text>
+</component>
+
+<component id='ID_s1_txt06'>
+	<text><![CDATA[Term]]></text>
+</component>
+
+<component id='ID_s1_txt07'>
+	<text><![CDATA[Physical Layer Description]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s1_traget01'>
+	<text><![CDATA[<font color="#393536">Fiber-optic</font>]]></text>
+</component>
+
+<component id='ID_s1_traget02'>
+	<text><![CDATA[<font color="#393536">Bandwidth</font>]]></text>
+</component>
+
+<component id='ID_s1_traget03'>
+	<text><![CDATA[<font color="#393536">Throughput</font>]]></text>
+</component>
+
+<component id='ID_s1_traget04'>
+	<text><![CDATA[<font color="#393536">Copper</font>]]></text>
+</component>
+
+<component id='ID_s1_traget05'>
+	<text><![CDATA[<font color="#393536">Wireless</font>]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each physical layer term to its description.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each physical layer term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+</textcomponents>

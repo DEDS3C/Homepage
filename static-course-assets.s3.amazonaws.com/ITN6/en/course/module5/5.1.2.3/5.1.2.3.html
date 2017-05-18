@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.3 Frame Processing</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Frame Processing</h1>
+        <div>
+          <p>The MAC address is often referred to as a burned-in address (BIA) because, historically, this address is burned into ROM (Read-Only Memory) on the NIC. This means that the address is encoded into the ROM chip permanently. </p>
+          <p>
+            <b>Note</b>: On modern PC operating systems and NICs, it is possible to change the MAC address in software. This is useful when attempting to gain access to a network that filters based on BIA. Consequently, filtering or controlling traffic based on the MAC address is no longer as secure. </p>
+          <p>When the computer starts up, the first thing the NIC does is copy the MAC address from ROM into RAM. When a device is forwarding a message to an Ethernet network, it attaches header information to the frame. The header information contains the source and destination MAC address.</p>
+          <p>Click Play in the animation to view the frame forwarding process. When a NIC receives an Ethernet frame, it examines the destination MAC address to see if it matches the device’s physical MAC address stored in RAM. If there is no match, the device discards the frame. If there is a match, it passes the frame up the OSI layers, where the de-encapsulation process takes place.</p>
+          <p>
+            <b>Note:</b> Ethernet NICs will also accept frames if the destination MAC address is a broadcast or a multicast group of which the host is a member.</p>
+          <p></p>
+          <p>Any device that can be the source or destination of an Ethernet frame must be assigned a MAC address. This includes workstations, servers, printers, mobile devices, and routers.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows how a frame is forwarded.  There are four computers on shared media.  Each has a different MAC address.  Computer 1 sends a frame to Computer 3 using the correct MAC addresses for source and destination.  The frame is forwarded to all of the computers.  Computers 2 and 4 ignore the frame since the destination MAC address does not match their own.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

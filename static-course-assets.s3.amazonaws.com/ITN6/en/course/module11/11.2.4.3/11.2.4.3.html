@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>11.2.4.3 Basic Security Practices</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_11.2.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Basic Security Practices</h1>
+        <div>
+          <p>
+            <b>Additional Password Security</b>
+          </p>
+          <p>Strong passwords are only as useful as they are secret. There are several steps that can be taken to help ensure that passwords remain secret. Using the global configuration command <b>service password-encryption</b> prevents unauthorized individuals from viewing passwords in plain text in the configuration file, as shown in the figure. This command causes the encryption of all passwords that are unencrypted. </p>
+          <p>Additionally, to ensure that all configured passwords are a minimum of a specified length, use the <b>security passwords min-length</b> command in global configuration mode.</p>
+          <p>Another way hackers learn passwords is simply by brute-force attacks, trying multiple passwords until one works. It is possible to prevent this type of attack by blocking login attempts to the device if a set number of failures occur within a specific amount of time. </p>
+          <p>Router(config)# <b>login block-for 120 attempts 3 within 60</b></p>
+          <p>This command will block login attempts for 120 seconds if there are three failed login attempts within 60 seconds. </p>
+          <p>
+            <b>Exec Timeout</b>
+          </p>
+          <p>Another recommendation is setting executive timeouts. By setting the exec timeout, you are telling the Cisco device to automatically disconnect users on a line after they have been idle for the duration of the exec timeout value. Exec timeouts can be configured on console, VTY, and aux ports using the <b>exec-timeout</b> command in line configuration mode. </p>
+          <p>Router(config)# <b>line vty 0 4</b></p>
+          <p>Router(config-line)# <b>exec-timeout 10 </b></p>
+          <p>This command configures the device to disconnect idle users after 10 minutes.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows router output for configuring encrypted line passwords and setting restrictions on password length or failed attempts. Commands entered include “security password-encryption”, “security password min-length 8”, login block-for 120 attempts 3 within 60”, and “exec-timeout 10” on the VTY lines.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

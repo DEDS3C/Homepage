@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.1.4 TCP Three-way Handshake Analysis</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP Three-way Handshake Analysis</h1>
+        <div>
+          <p>Hosts track each data segment within a session and exchange information about what data is received using the information in the TCP header. TCP is a full-duplex protocol, where each connection represents two one-way communication streams or sessions. To establish the connection, the hosts perform a three-way handshake. Control bits in the TCP header indicate the progress and status of the connection. </p>
+          <p>The three-way handshake:</p>
+          <p>
+            <ul>
+              <li>Establishes that the destination device is present on the network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Verifies that the destination device has an active service and is accepting requests on the destination port number that the initiating client intends to use</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Informs the destination device that the source client intends to establish a communication session on that port number</li>
+            </ul>
+          </p>
+          <p>After the communication is completed, the sessions are closed, and the connection is terminated. The connection and session mechanisms enable TCP’s reliability function.</p>
+          <p>The six bits in the Control Bits field of the TCP segment header are also known as flags. A flag is a bit that is either set to on or off. Click the Control Bits field in the figure to see all six flags. We have discussed SYN, ACK, and FIN. The RST flag is used to reset a connection when an error or timeout occurs. Click <a href="http://packetlife.net/blog/2011/mar/2/tcp-flags-psh-and-urg/" target="_blank">here</a> to learn more about the PSH and URG flags.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the TCP header. Clicking on the Control Bits field opens a text box listing the six different control bits.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

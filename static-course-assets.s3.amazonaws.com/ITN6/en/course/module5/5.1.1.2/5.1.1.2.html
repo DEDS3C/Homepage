@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.2 MAC Sublayer</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>MAC Sublayer</h1>
+        <div>
+          <p>As shown in the figure, the Ethernet MAC sublayer has two primary responsibilities:</p>
+          <p>
+            <ul>
+              <li>Data encapsulation</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Media access control</li>
+            </ul>
+          </p>
+          <p>
+            <b>Data encapsulation</b>
+          </p>
+          <p>The data encapsulation process includes frame assembly before transmission, and frame disassembly upon reception of a frame. In forming the frame, the MAC layer adds a header and trailer to the network layer PDU. </p>
+          <p>Data encapsulation provides three primary functions:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Frame delimiting -</b> The framing process provides important delimiters that are used to identify a group of bits that make up a frame. These delimiting bits provide synchronization between the transmitting and receiving nodes.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Addressing -</b> The encapsulation process contains the Layer 3 PDU and also provides for data link layer addressing. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Error detection -</b> Each frame contains a trailer used to detect any errors in transmissions.</li>
+            </ul>
+          </p>
+          <p>The use of frames aids in the transmission of bits as they are placed on the media and in the grouping of bits at the receiving node.</p>
+          <p>
+            <b>Media Access Control</b>
+          </p>
+          <p>The second responsibility of the MAC sublayer is media access control. Media access control is responsible for the placement of frames on the media and the removal of frames from the media. As its name implies, it controls access to the media. This sublayer communicates directly with the physical layer.</p>
+          <p>The underlying logical topology of Ethernet is a multi-access bus; therefore, all nodes (devices) on a single network segment share the medium. Ethernet is a contention-based method of networking. A contention-based method means that any device can try to transmit data across the shared medium whenever it has data to send.  The Carrier Sense Multiple Access/Collision Detection (CSMA/CD) process is used in half-duplex Ethernet LANs to detect and resolve collisions. Today’s Ethernet LANs use full-duplex switches, which allow multiple devices to send and receive simultaneously with no collisions.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the physical layer and how it connects to the MAC sublayer of layer 2.  This figure also shows how the MAC sublayer is split into Signaling standards as well as physical media standards.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

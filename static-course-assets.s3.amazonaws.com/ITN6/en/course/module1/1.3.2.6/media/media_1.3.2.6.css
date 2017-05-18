@@ -1,0 +1,14 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#mc_table{
+	height: 356px !important;
+}
+
+
+.spaceLeft{
+	margin-left: 14px !important;
+}

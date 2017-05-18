@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.3.8 Packet Tracer – Investigate Unicast, Broadcast, and Multicast Traffic</title>
+    <!-- Activity / Packet Tracer / Skills Integration Challenge -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.3.8_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Packet Tracer – Investigate Unicast, Broadcast, and Multicast Traffic</h1>
+        <div>
+          <p>This activity will examine unicast, broadcast, and multicast behavior. Most traffic in a network is unicast. When a PC sends an ICMP echo request to a remote router, the source address in the IPv4 packet header is the IPv4 address of the sending PC. The destination address in the IPv4 packet header is the IPv4 address of the interface on the remote router. The packet is sent only to the intended destination.</p>
+          <p>Using the ping command or the Add Complex PDU feature of Packet Tracer, you can directly ping broadcast addresses to view broadcast traffic.</p>
+          <p>For multicast traffic, you will view EIGRP traffic. EIGRP is used by Cisco routers to exchange routing information between routers. Routers using EIGRP send packets to the multicast address 224.0.0.10, which represents the group of EIGRP routers. Although these packets are received by other devices, they are dropped at Layer 3 by all devices except EIGRP routers, with no other processing required.</p>
+          <p>
+            <a href="../../files/7.1.3.8%20Packet%20Tracer%20-%20Investigate%20Unicast,%20Broadcast,%20and%20Multicast%20Traffic.pdf" target="_blank">Packet Tracer - Investigate Unicast, Broadcast, and Multicast Traffic Instructions</a>
+          </p>
+          <p>
+            <a href="../../files/7.1.3.8%20Packet%20Tracer%20-%20Investigate%20Unicast,%20Broadcast,%20and%20Multicast%20Traffic.pka" target="_blank">Packet Tracer - Investigate Unicast, Broadcast, and Multicast Traffic - PKA</a>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is standard graphic for a Packet Tracer page.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

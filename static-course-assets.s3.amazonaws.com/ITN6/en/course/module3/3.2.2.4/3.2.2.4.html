@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.2.4 TCP/IP Communication Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>TCP/IP Communication Process</h1>
+        <div>
+          <p>Figures 1 and 2 demonstrate the complete communication process using an example of a web server transmitting data to a client. This process and these protocols will be covered in more detail in later chapters.</p>
+          <p>Click the <b>Play</b> button to view the animated demonstrations:</p>
+          <p>
+            <b>1</b>. In Figure 1, the animation begins with the web server preparing the Hypertext Markup Language (HTML) page as data to be sent. </p>
+          <p>
+            <b>2</b>. The application protocol HTTP header is added to the front of the HTML data. The header contains various information, including the HTTP version the server is using and a status code indicating it has information for the web client.</p>
+          <p>
+            <b>3.</b> The HTTP application layer protocol delivers the HTML-formatted web page data to the transport layer. The TCP transport layer protocol is used to manage individual conversations, in this example between the web server and web client.</p>
+          <p>
+            <b>4</b>. Next, the IP information is added to the front of the TCP information. IP assigns the appropriate source and destination IP addresses. This information is known as an IP packet.</p>
+          <p>
+            <b>5</b>. The Ethernet protocol adds information to both ends of the IP packet, known as a data link frame. This frame is delivered to the nearest router along the path towards the web client. This router removes the Ethernet information, analyzes the IP packet, determines the best path for the packet, inserts the packet into a new frame, and sends it to the next neighboring router towards the destination. Each router removes and adds new data link information before forwarding the packet.</p>
+          <p>
+            <b>6</b>. This data is now transported through the internetwork, which consists of media and intermediary devices. </p>
+          <p>
+            <b>7</b>. In Figure 2, the animation begins with the client receiving the data link frames that contain the data. Each protocol header is processed and then removed in the opposite order it was added. The Ethernet information is processed and removed, followed by the IP protocol information, the TCP information, and finally the HTTP information. </p>
+          <p>
+            <b>8</b>. The web page information is then passed on to the client’s web browser software.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 is an animation that shows the protocol encapsulation process involved when a web server sends a web page to a client across a network. Figure 2 is an animation that shows the protocol de-encapsulation process involved when a web client receives a web page from a web server across a network.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

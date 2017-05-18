@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.2 ICMPv6 Router Solicitation and Router Advertisement Messages</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ICMPv6 Router Solicitation and Router Advertisement Messages</h1>
+        <div>
+          <p>The informational and error messages found in ICMPv6 are very similar to the control and error messages implemented by ICMPv4. However, ICMPv6 has new features and improved functionality not found in ICMPv4. ICMPv6 messages are encapsulated in IPv6.</p>
+          <p>ICMPv6 includes four new protocols as part of the Neighbor Discovery Protocol (ND or NDP). </p>
+          <p>Messaging between an IPv6 router and an IPv6 device: </p>
+          <p>
+            <ul>
+              <li>Router Solicitation (RS) message</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Router Advertisement (RA) message</li>
+            </ul>
+          </p>
+          <p>Messaging between IPv6 devices: </p>
+          <p>
+            <ul>
+              <li>Neighbor Solicitation (NS) message</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Neighbor Advertisement (NA) message</li>
+            </ul>
+          </p>
+          <p>
+            <b>Note</b>: ICMPv6 ND also includes the redirect message, which has a similar function to the redirect message used in ICMPv4.</p>
+          <p>Figure 1 shows an example of a PC and router exchanging Solicitation and Router Advertisement messages. Click each message for more information.</p>
+          <p>Neighbor Solicitation and Neighbor Advertisement messages are used for Address resolution and Duplicate Address Detection (DAD).</p>
+          <p>
+            <b>Address Resolution</b>
+          </p>
+          <p>Address resolution is used when a device on the LAN knows the IPv6 unicast address of a destination but does not know its Ethernet MAC address. To determine the MAC address for the destination, the device will send an NS message to the solicited node address. The message will include the known (targeted) IPv6 address. The device that has the targeted IPv6 address will respond with an NA message containing its Ethernet MAC address. Figure 2 shows two PCs exchanging NS and NA messages. Click each message for more information.</p>
+          <p>
+            <b>Duplicate Address Detection </b>
+          </p>
+          <p>When a device is assigned a global unicast or link-local unicast address, it is recommended that DAD is performed on the address to ensure that it is unique. To check the uniqueness of an address, the device will send an NS message with its own IPv6 address as the targeted IPv6 address, shown in Figure 3. If another device on the network has this address, it will respond with an NA message. This NA message will notify the sending device that the address is in use. If a corresponding NA message is not returned within a certain period of time, the unicast address is unique and acceptable for use.</p>
+          <p>
+            <b>Note</b>: DAD is not required, but RFC 4861 recommends that DAD is performed on unicast addresses.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a PC is booting and sends out an RS requesting an RA. The router is sending out RAs every 200 seconds. Clicking the two message types opens a textbox with more information. In Figure 2, one PC knows the IPv6 address of another PC but does not know the MAC address. It sends out a NS message, which is a solicited-node multicast. The PC replies with an NS unicast message. Figure 3 shows the DAD process with one PC using a solicited-node multicast to make sure other PCs are not currently using the IPv6 address that the PC wants to use.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

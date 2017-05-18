@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.1.6 LAN and WAN Interfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>LAN and WAN Interfaces</h1>
+        <div>
+          <p>The connections on a Cisco router can be grouped into two categories: In-band router interfaces and management ports. Click the highlighted areas in Figure 1 to view more information.</p>
+          <p>Similar to a Cisco switch, there are several ways to access user EXEC mode in the CLI environment on a Cisco router. These are the most common:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Console</b> – This is a physical management port that provides out-of-band access to a Cisco device. Out-of-band access refers to access via a dedicated management channel that is used for device maintenance purposes only.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Secure Shell (SSH)</b> – SSH is a method for remotely establishing a secure CLI connection through a virtual interface, over a network. Unlike a console connection, SSH connections require active networking services on the device including an active interface configured with an address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Telnet</b> - Telnet is an insecure method of remotely establishing a CLI session through a virtual interface, over a network. Unlike SSH, Telnet does not provide a securely encrypted connection. User authentication, passwords, and commands are sent over the network in plaintext. </li>
+            </ul>
+          </p>
+          <p>
+            <b>Note:</b> Some devices, such as routers, may also support a legacy auxiliary port that was used to establish a CLI session remotely using a modem. Similar to a console connection, the AUX port is out-of-band and does not require networking services to be configured or available.</p>
+          <p>Telnet and SSH require an inband network connection which means that an administrator must access the router through one of the WAN or LAN interfaces. Click the highlighted areas in Figure 2 to view more information. </p>
+          <p>Inband interfaces receive and forward IP packets. Every configured and active interface on the router is a member or host on a different IP network. Each interface must be configured with an IPv4 address and subnet mask of a different network. The Cisco IOS does not allow two active interfaces on the same router to belong to the same network.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the backplane of a 1941 router. Connections and ports highlighted include the management ports and interfaces. Clicking each provides more information. Figure 2 shows the backplane of a 1941 router. Connections and ports highlighted include the serial interfaces (HWICs) and the Gigabit Ethernet interfaces as examples of inband interfaces. Click each provides more information.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

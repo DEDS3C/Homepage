@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.2 IPv4 and IPv6 Coexistence</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv4 and IPv6 Coexistence</h1>
+        <div>
+          <p>There is not a single date to move to IPv6. For the foreseeable future, both IPv4 and IPv6 will coexist. The transition is expected to take years. The IETF has created various protocols and tools to help network administrators migrate their networks to IPv6. The migration techniques can be divided into three categories:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Dual Stack </b>– As shown in Figure 1, dual stack allows IPv4 and IPv6 to coexist on the same network segment. Dual stack devices run both IPv4 and IPv6 protocol stacks simultaneously.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Tunneling </b>– As shown in Figure 2, tunneling is a method of transporting an IPv6 packet over an IPv4 network. The IPv6 packet is encapsulated inside an IPv4 packet, similar to other types of data. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Translation </b>– As shown in Figure 3, Network Address Translation 64 (NAT64) allows IPv6-enabled devices to communicate with IPv4-enabled devices using a translation technique similar to NAT for IPv4. An IPv6 packet is translated to an IPv4 packet and vice versa. </li>
+            </ul>
+          </p>
+          <p>
+            <b>Note: </b>Tunneling and translation are only used where needed. The goal should be native IPv6 communications from source to destination.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a router connected to three network segments. Each has a computer running IPv4 and IPv6 in dual-stack mode, which allows the two protocols to co-exist. Figure 2 shows two routers. Each router has a network segment on one of the Fast Ethernet ports.  There is a computer on each network segment that is running only IPv6.  There is an IPv4 only tunnel connecting the two routers. The tunnel encapsulates the IPv6 packet within an IPv4 packet for transmission. Figure 3 shows a router that has an IPv6 only segment on one Fast Ethernet port and an IPv4 only segment on another Fast Ethernet port.  The router is serving as a Network Address Translation 64 device allowing IPv6 enabled devices to communicate with IPv4 enabled devices.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

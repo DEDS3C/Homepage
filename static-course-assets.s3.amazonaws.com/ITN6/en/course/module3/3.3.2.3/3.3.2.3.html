@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.3 Devices on the Same Network</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Devices on the Same Network</h1>
+        <div>
+          <p>To understand how devices communicate within a network, it is important to understand the roles of both the network layer addresses and the data link addresses.</p>
+          <p></p>
+          <p>
+            <b>Role of the Network Layer Addresses</b>
+          </p>
+          <p></p>
+          <p>The network layer addresses, or IP addresses, indicate the original source and final destination. An IP address contains two parts:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Network portion</b> – The left-most part of the address that indicates which network the IP address is a member. All devices on the same network will have the same network portion of the address.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Host portion</b> – The remaining part of the address that identifies a specific device on the network. The host portion is unique for each device on the network.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The subnet mask is used to identify the network portion of an address from the host portion. The subnet mask is discussed in later chapters.</p>
+          <p></p>
+          <p>In this example we have a client computer, PC1, communicating with an FTP server on the same IP network.</p>
+          <p>
+            <ul>
+              <li>
+                <b>Source IP address</b> - The IP address of the sending device, the client computer PC1: 192.168.1.110.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination IP address</b> - The IP address of the receiving device, FTP server: 192.168.1.9.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Notice in the figure that the network portion of both the source IP address and destination IP address are on the same network.</p>
+          <p></p>
+          <p>
+            <b>Role of the Data Link Layer Addresses</b>
+          </p>
+          <p></p>
+          <p>When the sender and receiver of the IP packet are on the same network, the data link frame is sent directly to the receiving device. On an Ethernet network, the data link addresses are known as Ethernet (Media Access Control) addresses. MAC addresses are physically embedded on the Ethernet NIC. </p>
+          <p>
+            <ul>
+              <li>
+                <b>Source MAC address</b> - This is the data link address, or the Ethernet MAC address, of the device that sends the data link frame with the encapsulated IP packet. The MAC address of the Ethernet NIC of PC1 is AA-AA-AA-AA-AA-AA, written in hexadecimal notation.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination MAC address</b> - When the receiving device is on the same network as the sending device, this is the data link address of the receiving device. In this example, the destination MAC address is the MAC address of the FTP server: CC-CC-CC-CC-CC-CC, written in hexadecimal notation.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The frame with the encapsulated IP packet can now be transmitted from PC1 directly to the FTP server.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the source and destination MAC addresses being added to an Ethernet frame.  PC 1 is the source and the server is the destination.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>
