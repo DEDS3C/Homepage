@@ -11,8 +11,7 @@ function registerSWF(){
 		{src:"images/Bitmap4.png", id:"Bitmap4"},
 		{src:"images/Bitmap5.png", id:"Bitmap5"},
 		{src:"images/Bitmap6.png", id:"Bitmap6"},
-		{src:"images/Bitmap7.png", id:"Bitmap7"},
-		{src:"images/Bitmap8.png", id:"Bitmap8"}
+		{src:"images/Bitmap7.png", id:"Bitmap7"}
 	];
 		return manifest;	
 });

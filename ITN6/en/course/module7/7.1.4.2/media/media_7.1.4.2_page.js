@@ -172,9 +172,9 @@ canvas.width = 1000;
 		_container.addChild(rtr);
 		
 		bubble = new createjs.Bitmap("block_ball.png"); 
-		bubble.scaleX = bubble.scaleY = 0.4;
-		bubble.x = rtr.x-21;
-		bubble.y = rtr.y - 25;
+		bubble.scaleX = bubble.scaleY = 0.3;
+		bubble.x = rtr.x-20;
+		bubble.y = rtr.y - 13;
 		bubble.visible = false;
 		
 		_container.addChild(bubble);

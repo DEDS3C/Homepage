@@ -7,12 +7,11 @@ loadScript("../../../common/scripts/swfobject.js", registerSWF);
 		
 var manifest = [
 		{src:"images/Bitmap1.png", id:"Bitmap1"},
+		{src:"images/Bitmap1_2.png", id:"Bitmap1_2"},
 		{src:"images/Bitmap2.png", id:"Bitmap2"},
-		{src:"images/Bitmap3.png", id:"Bitmap3"},
-		{src:"images/Bitmap4.png", id:"Bitmap4"},
-		{src:"images/Bitmap5.png", id:"Bitmap5"},
-		{src:"images/Bitmap6.png", id:"Bitmap6"},
-		{src:"images/CiscoWebpage1copy.jpg", id:"CiscoWebpage1copy"}
+		{src:"images/Bitmap2_2.png", id:"Bitmap2_2"},
+		{src:"images/Bitmap3_2.png", id:"Bitmap3_2"},
+		{src:"images/Bitmap4.png", id:"Bitmap4"}
 	];
 
 	return manifest;			

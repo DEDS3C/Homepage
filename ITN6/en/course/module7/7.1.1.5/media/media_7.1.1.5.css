@@ -52,10 +52,7 @@ input[disabled="true"] {
         left: -17px !important;
         top: 0px !important;
     }
-    #htmlMedia {
-        left: -130px !important;
-        top: 5px !important;
-    }
+   
     #ID_txt01 {
         font-size: 11px !important;
         line-height: 12px;
